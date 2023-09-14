@@ -1,0 +1,876 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A006EBB42AAE339700411CE5 /* DmAudioSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A006EBB32AAE339700411CE5 /* DmAudioSession.swift */; };
+		A006EBB62AAE3D5600411CE5 /* DMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A006EBB52AAE3D5600411CE5 /* DMNavigationController.swift */; };
+		A006EBB82AAE422B00411CE5 /* ADService+NativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A006EBB72AAE422B00411CE5 /* ADService+NativeAd.swift */; };
+		A02584AB2A8BA06E00E19B08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02584AA2A8BA06E00E19B08 /* AppDelegate.swift */; };
+		A02584AD2A8BA06E00E19B08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02584AC2A8BA06E00E19B08 /* SceneDelegate.swift */; };
+		A02584B22A8BA06E00E19B08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02584B02A8BA06E00E19B08 /* Main.storyboard */; };
+		A02584B42A8BA06E00E19B08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A02584B32A8BA06E00E19B08 /* Assets.xcassets */; };
+		A02584B72A8BA06E00E19B08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02584B52A8BA06E00E19B08 /* LaunchScreen.storyboard */; };
+		A056F0032AACCE5500E0721F /* RewardedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F0022AACCE5500E0721F /* RewardedViewController.swift */; };
+		A056F09B2AACD27A00E0721F /* DramAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A056F0932AACD27A00E0721F /* DramAds.framework */; };
+		A056F09C2AACD27A00E0721F /* DramAds.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A056F0932AACD27A00E0721F /* DramAds.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A056F1162AACD30000E0721F /* DramAds.docc in Sources */ = {isa = PBXBuildFile; fileRef = A056F0E82AACD30000E0721F /* DramAds.docc */; };
+		A056F1322AACD36600E0721F /* DMRewardedAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F0ED2AACD30000E0721F /* DMRewardedAdViewController.swift */; };
+		A056F1332AACD36600E0721F /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A056F0EE2AACD30000E0721F /* Storyboard.storyboard */; };
+		A056F1342AACD36A00E0721F /* Dram.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F1082AACD30000E0721F /* Dram.swift */; };
+		A056F1352AACD36F00E0721F /* OperationBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F0F32AACD30000E0721F /* OperationBase.swift */; };
+		A056F1362AACD36F00E0721F /* OperationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F0F22AACD30000E0721F /* OperationManager.swift */; };
+		A056F1372AACD36F00E0721F /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F0F42AACD30000E0721F /* Operation.swift */; };
+		A056F1382AACD36F00E0721F /* OperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F0F12AACD30000E0721F /* OperationQueue.swift */; };
+		A056F1392AACD37400E0721F /* DMPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F0F72AACD30000E0721F /* DMPlayerView.swift */; };
+		A056F13A2AACD37C00E0721F /* ADService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F0FF2AACD30000E0721F /* ADService.swift */; };
+		A056F13B2AACD38100E0721F /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F0FB2AACD30000E0721F /* Ad.swift */; };
+		A056F13C2AACD38100E0721F /* EpomAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F0FC2AACD30000E0721F /* EpomAd.swift */; };
+		A056F13D2AACD38100E0721F /* EpomNativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F0FA2AACD30000E0721F /* EpomNativeAd.swift */; };
+		A056F13E2AACD39200E0721F /* RewardedAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F0FE2AACD30000E0721F /* RewardedAd.swift */; };
+		A056F13F2AACD3A000E0721F /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F1022AACD30000E0721F /* NetworkOperation.swift */; };
+		A056F1402AACD3A000E0721F /* NetworkDataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F1032AACD30000E0721F /* NetworkDataOperation.swift */; };
+		A056F1412AACD3A500E0721F /* EpomAdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F1052AACD30000E0721F /* EpomAdRequest.swift */; };
+		A056F1422AACD3A500E0721F /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F1072AACD30000E0721F /* NetworkDispatcher.swift */; };
+		A056F1432AACD3A500E0721F /* IDMRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F1062AACD30000E0721F /* IDMRequest.swift */; };
+		A056F1442AACD3AA00E0721F /* DMPlayerTimeObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F10A2AACD30000E0721F /* DMPlayerTimeObserver.swift */; };
+		A056F1452AACD3AA00E0721F /* DMPLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F10B2AACD30000E0721F /* DMPLayer.swift */; };
+		A056F1462AACD3B000E0721F /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F10F2AACD30000E0721F /* Error.swift */; };
+		A056F1472AACD3B000E0721F /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F10D2AACD30000E0721F /* Decoder.swift */; };
+		A056F1482AACD3B000E0721F /* WeakArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F10E2AACD30000E0721F /* WeakArray.swift */; };
+		A056F1492AACD3B600E0721F /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F1142AACD30000E0721F /* Utility.swift */; };
+		A056F14A2AACD3B600E0721F /* Dictionary+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F1122AACD30000E0721F /* Dictionary+Operation.swift */; };
+		A056F14B2AACD3B600E0721F /* String+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F1132AACD30000E0721F /* String+Operation.swift */; };
+		A056F14C2AACD3B600E0721F /* Decoding+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F1112AACD30000E0721F /* Decoding+Operation.swift */; };
+		A056F14E2AACDCDD00E0721F /* DramAdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F14D2AACDCDD00E0721F /* DramAdsViewController.swift */; };
+		A056F1512AACDFBE00E0721F /* NetworkDownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056F1502AACDFBE00E0721F /* NetworkDownloadOperation.swift */; };
+		A0E82E4E2AAD01AF00A66A36 /* DMImageServiceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E82E4D2AAD01AF00A66A36 /* DMImageServiceOperation.swift */; };
+		A0E82E502AAD044D00A66A36 /* DMImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E82E4F2AAD044D00A66A36 /* DMImageService.swift */; };
+		A0E82E522AAD04AA00A66A36 /* DMLocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E82E512AAD04AA00A66A36 /* DMLocker.swift */; };
+		A0E82E542AAD0AE800A66A36 /* DMImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E82E532AAD0AE800A66A36 /* DMImageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A056F0992AACD27A00E0721F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A025849F2A8BA06E00E19B08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A056F0922AACD27A00E0721F;
+			remoteInfo = DramAds;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A003262F2A8BA42D003E272F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A056F09C2AACD27A00E0721F /* DramAds.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A006EBB32AAE339700411CE5 /* DmAudioSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DmAudioSession.swift; sourceTree = "<group>"; };
+		A006EBB52AAE3D5600411CE5 /* DMNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMNavigationController.swift; sourceTree = "<group>"; };
+		A006EBB72AAE422B00411CE5 /* ADService+NativeAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ADService+NativeAd.swift"; sourceTree = "<group>"; };
+		A02584A72A8BA06E00E19B08 /* DramAdsIosSdkExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DramAdsIosSdkExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A02584AA2A8BA06E00E19B08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A02584AC2A8BA06E00E19B08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A02584B12A8BA06E00E19B08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A02584B32A8BA06E00E19B08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A02584B62A8BA06E00E19B08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A02584B82A8BA06E00E19B08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A056F0022AACCE5500E0721F /* RewardedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardedViewController.swift; sourceTree = "<group>"; };
+		A056F0932AACD27A00E0721F /* DramAds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DramAds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A056F0E82AACD30000E0721F /* DramAds.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DramAds.docc; sourceTree = "<group>"; };
+		A056F0ED2AACD30000E0721F /* DMRewardedAdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMRewardedAdViewController.swift; sourceTree = "<group>"; };
+		A056F0EE2AACD30000E0721F /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		A056F0F12AACD30000E0721F /* OperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationQueue.swift; sourceTree = "<group>"; };
+		A056F0F22AACD30000E0721F /* OperationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationManager.swift; sourceTree = "<group>"; };
+		A056F0F32AACD30000E0721F /* OperationBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationBase.swift; sourceTree = "<group>"; };
+		A056F0F42AACD30000E0721F /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		A056F0F72AACD30000E0721F /* DMPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMPlayerView.swift; sourceTree = "<group>"; };
+		A056F0FA2AACD30000E0721F /* EpomNativeAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpomNativeAd.swift; sourceTree = "<group>"; };
+		A056F0FB2AACD30000E0721F /* Ad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
+		A056F0FC2AACD30000E0721F /* EpomAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpomAd.swift; sourceTree = "<group>"; };
+		A056F0FE2AACD30000E0721F /* RewardedAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardedAd.swift; sourceTree = "<group>"; };
+		A056F0FF2AACD30000E0721F /* ADService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADService.swift; sourceTree = "<group>"; };
+		A056F1022AACD30000E0721F /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		A056F1032AACD30000E0721F /* NetworkDataOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDataOperation.swift; sourceTree = "<group>"; };
+		A056F1052AACD30000E0721F /* EpomAdRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpomAdRequest.swift; sourceTree = "<group>"; };
+		A056F1062AACD30000E0721F /* IDMRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDMRequest.swift; sourceTree = "<group>"; };
+		A056F1072AACD30000E0721F /* NetworkDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		A056F1082AACD30000E0721F /* Dram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dram.swift; sourceTree = "<group>"; };
+		A056F10A2AACD30000E0721F /* DMPlayerTimeObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMPlayerTimeObserver.swift; sourceTree = "<group>"; };
+		A056F10B2AACD30000E0721F /* DMPLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMPLayer.swift; sourceTree = "<group>"; };
+		A056F10D2AACD30000E0721F /* Decoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		A056F10E2AACD30000E0721F /* WeakArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakArray.swift; sourceTree = "<group>"; };
+		A056F10F2AACD30000E0721F /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		A056F1112AACD30000E0721F /* Decoding+Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Decoding+Operation.swift"; sourceTree = "<group>"; };
+		A056F1122AACD30000E0721F /* Dictionary+Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Operation.swift"; sourceTree = "<group>"; };
+		A056F1132AACD30000E0721F /* String+Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Operation.swift"; sourceTree = "<group>"; };
+		A056F1142AACD30000E0721F /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		A056F1152AACD30000E0721F /* DramAds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DramAds.h; sourceTree = "<group>"; };
+		A056F14D2AACDCDD00E0721F /* DramAdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DramAdsViewController.swift; sourceTree = "<group>"; };
+		A056F1502AACDFBE00E0721F /* NetworkDownloadOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDownloadOperation.swift; sourceTree = "<group>"; };
+		A0E82E4D2AAD01AF00A66A36 /* DMImageServiceOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMImageServiceOperation.swift; sourceTree = "<group>"; };
+		A0E82E4F2AAD044D00A66A36 /* DMImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMImageService.swift; sourceTree = "<group>"; };
+		A0E82E512AAD04AA00A66A36 /* DMLocker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMLocker.swift; sourceTree = "<group>"; };
+		A0E82E532AAD0AE800A66A36 /* DMImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMImageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A02584A42A8BA06E00E19B08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A056F09B2AACD27A00E0721F /* DramAds.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A056F0902AACD27A00E0721F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A025849E2A8BA06E00E19B08 = {
+			isa = PBXGroup;
+			children = (
+				A02584A92A8BA06E00E19B08 /* DramAdsIosSdkExample */,
+				A02584A82A8BA06E00E19B08 /* Products */,
+				A02584DA2A8BA13C00E19B08 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A02584A82A8BA06E00E19B08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A02584A72A8BA06E00E19B08 /* DramAdsIosSdkExample.app */,
+				A056F0932AACD27A00E0721F /* DramAds.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A02584A92A8BA06E00E19B08 /* DramAdsIosSdkExample */ = {
+			isa = PBXGroup;
+			children = (
+				A056F0012AACCE2E00E0721F /* ViewControllers */,
+				A02584AA2A8BA06E00E19B08 /* AppDelegate.swift */,
+				A02584AC2A8BA06E00E19B08 /* SceneDelegate.swift */,
+				A02584B02A8BA06E00E19B08 /* Main.storyboard */,
+				A02584B32A8BA06E00E19B08 /* Assets.xcassets */,
+				A02584B52A8BA06E00E19B08 /* LaunchScreen.storyboard */,
+				A02584B82A8BA06E00E19B08 /* Info.plist */,
+			);
+			path = DramAdsIosSdkExample;
+			sourceTree = "<group>";
+		};
+		A02584DA2A8BA13C00E19B08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A056F0E72AACD30000E0721F /* DramAds */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A056F0012AACCE2E00E0721F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A056F14D2AACDCDD00E0721F /* DramAdsViewController.swift */,
+				A056F14F2AACDD4800E0721F /* Ads */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A056F0E72AACD30000E0721F /* DramAds */ = {
+			isa = PBXGroup;
+			children = (
+				A056F1152AACD30000E0721F /* DramAds.h */,
+				A056F0E82AACD30000E0721F /* DramAds.docc */,
+				A056F0E92AACD30000E0721F /* Classes */,
+			);
+			path = DramAds;
+			sourceTree = "<group>";
+		};
+		A056F0E92AACD30000E0721F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A056F1082AACD30000E0721F /* Dram.swift */,
+				A056F0EA2AACD30000E0721F /* UI */,
+				A056F0EF2AACD30000E0721F /* Common */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A056F0EA2AACD30000E0721F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A056F0EB2AACD30000E0721F /* Moduls */,
+				A056F0EE2AACD30000E0721F /* Storyboard.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A056F0EB2AACD30000E0721F /* Moduls */ = {
+			isa = PBXGroup;
+			children = (
+				A006EBB52AAE3D5600411CE5 /* DMNavigationController.swift */,
+				A056F0EC2AACD30000E0721F /* Rewarded */,
+			);
+			path = Moduls;
+			sourceTree = "<group>";
+		};
+		A056F0EC2AACD30000E0721F /* Rewarded */ = {
+			isa = PBXGroup;
+			children = (
+				A056F0ED2AACD30000E0721F /* DMRewardedAdViewController.swift */,
+			);
+			path = Rewarded;
+			sourceTree = "<group>";
+		};
+		A056F0EF2AACD30000E0721F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A0E82E4B2AAD015E00A66A36 /* Services */,
+				A056F0F02AACD30000E0721F /* Operation */,
+				A056F0F52AACD30000E0721F /* UI */,
+				A056F0F82AACD30000E0721F /* AD */,
+				A056F1002AACD30000E0721F /* Network */,
+				A056F1092AACD30000E0721F /* Player */,
+				A056F10C2AACD30000E0721F /* Utility */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A056F0F02AACD30000E0721F /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				A056F0F12AACD30000E0721F /* OperationQueue.swift */,
+				A056F0F22AACD30000E0721F /* OperationManager.swift */,
+				A056F0F32AACD30000E0721F /* OperationBase.swift */,
+				A056F0F42AACD30000E0721F /* Operation.swift */,
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
+		A056F0F52AACD30000E0721F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A056F0F62AACD30000E0721F /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A056F0F62AACD30000E0721F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A056F0F72AACD30000E0721F /* DMPlayerView.swift */,
+				A0E82E532AAD0AE800A66A36 /* DMImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A056F0F82AACD30000E0721F /* AD */ = {
+			isa = PBXGroup;
+			children = (
+				A056F0FF2AACD30000E0721F /* ADService.swift */,
+				A006EBB72AAE422B00411CE5 /* ADService+NativeAd.swift */,
+				A056F0F92AACD30000E0721F /* Ads */,
+				A056F0FD2AACD30000E0721F /* UiAds */,
+			);
+			path = AD;
+			sourceTree = "<group>";
+		};
+		A056F0F92AACD30000E0721F /* Ads */ = {
+			isa = PBXGroup;
+			children = (
+				A056F0FB2AACD30000E0721F /* Ad.swift */,
+				A056F0FC2AACD30000E0721F /* EpomAd.swift */,
+				A056F0FA2AACD30000E0721F /* EpomNativeAd.swift */,
+			);
+			path = Ads;
+			sourceTree = "<group>";
+		};
+		A056F0FD2AACD30000E0721F /* UiAds */ = {
+			isa = PBXGroup;
+			children = (
+				A056F0FE2AACD30000E0721F /* RewardedAd.swift */,
+			);
+			path = UiAds;
+			sourceTree = "<group>";
+		};
+		A056F1002AACD30000E0721F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A056F1072AACD30000E0721F /* NetworkDispatcher.swift */,
+				A056F1012AACD30000E0721F /* Operations */,
+				A056F1042AACD30000E0721F /* Request */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A056F1012AACD30000E0721F /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				A056F1022AACD30000E0721F /* NetworkOperation.swift */,
+				A056F1032AACD30000E0721F /* NetworkDataOperation.swift */,
+				A056F1502AACDFBE00E0721F /* NetworkDownloadOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		A056F1042AACD30000E0721F /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				A056F1052AACD30000E0721F /* EpomAdRequest.swift */,
+				A056F1062AACD30000E0721F /* IDMRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		A056F1092AACD30000E0721F /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				A056F10A2AACD30000E0721F /* DMPlayerTimeObserver.swift */,
+				A056F10B2AACD30000E0721F /* DMPLayer.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		A056F10C2AACD30000E0721F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A056F10D2AACD30000E0721F /* Decoder.swift */,
+				A056F10E2AACD30000E0721F /* WeakArray.swift */,
+				A056F10F2AACD30000E0721F /* Error.swift */,
+				A056F1142AACD30000E0721F /* Utility.swift */,
+				A0E82E512AAD04AA00A66A36 /* DMLocker.swift */,
+				A006EBB32AAE339700411CE5 /* DmAudioSession.swift */,
+				A056F1102AACD30000E0721F /* Extensions */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		A056F1102AACD30000E0721F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A056F1112AACD30000E0721F /* Decoding+Operation.swift */,
+				A056F1122AACD30000E0721F /* Dictionary+Operation.swift */,
+				A056F1132AACD30000E0721F /* String+Operation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A056F14F2AACDD4800E0721F /* Ads */ = {
+			isa = PBXGroup;
+			children = (
+				A056F0022AACCE5500E0721F /* RewardedViewController.swift */,
+			);
+			path = Ads;
+			sourceTree = "<group>";
+		};
+		A0E82E4B2AAD015E00A66A36 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A0E82E4F2AAD044D00A66A36 /* DMImageService.swift */,
+				A0E82E4C2AAD019800A66A36 /* Operations */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A0E82E4C2AAD019800A66A36 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				A0E82E4D2AAD01AF00A66A36 /* DMImageServiceOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A056F08E2AACD27A00E0721F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A02584A62A8BA06E00E19B08 /* DramAdsIosSdkExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A02584BB2A8BA06E00E19B08 /* Build configuration list for PBXNativeTarget "DramAdsIosSdkExample" */;
+			buildPhases = (
+				A02584A32A8BA06E00E19B08 /* Sources */,
+				A02584A42A8BA06E00E19B08 /* Frameworks */,
+				A02584A52A8BA06E00E19B08 /* Resources */,
+				A003262F2A8BA42D003E272F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A056F09A2AACD27A00E0721F /* PBXTargetDependency */,
+			);
+			name = DramAdsIosSdkExample;
+			productName = DramAdsIosSdkExample;
+			productReference = A02584A72A8BA06E00E19B08 /* DramAdsIosSdkExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A056F0922AACD27A00E0721F /* DramAds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A056F09D2AACD27A00E0721F /* Build configuration list for PBXNativeTarget "DramAds" */;
+			buildPhases = (
+				A056F08E2AACD27A00E0721F /* Headers */,
+				A056F08F2AACD27A00E0721F /* Sources */,
+				A056F0902AACD27A00E0721F /* Frameworks */,
+				A056F0912AACD27A00E0721F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DramAds;
+			productName = DramAds;
+			productReference = A056F0932AACD27A00E0721F /* DramAds.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A025849F2A8BA06E00E19B08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A02584A62A8BA06E00E19B08 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					A056F0922AACD27A00E0721F = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A02584A22A8BA06E00E19B08 /* Build configuration list for PBXProject "DramAdsIosSdkExample" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A025849E2A8BA06E00E19B08;
+			productRefGroup = A02584A82A8BA06E00E19B08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A02584A62A8BA06E00E19B08 /* DramAdsIosSdkExample */,
+				A056F0922AACD27A00E0721F /* DramAds */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A02584A52A8BA06E00E19B08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A02584B72A8BA06E00E19B08 /* LaunchScreen.storyboard in Resources */,
+				A02584B42A8BA06E00E19B08 /* Assets.xcassets in Resources */,
+				A02584B22A8BA06E00E19B08 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A056F0912AACD27A00E0721F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A056F1332AACD36600E0721F /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A02584A32A8BA06E00E19B08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A056F0032AACCE5500E0721F /* RewardedViewController.swift in Sources */,
+				A056F1162AACD30000E0721F /* DramAds.docc in Sources */,
+				A056F14E2AACDCDD00E0721F /* DramAdsViewController.swift in Sources */,
+				A02584AB2A8BA06E00E19B08 /* AppDelegate.swift in Sources */,
+				A02584AD2A8BA06E00E19B08 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A056F08F2AACD27A00E0721F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A006EBB62AAE3D5600411CE5 /* DMNavigationController.swift in Sources */,
+				A056F13A2AACD37C00E0721F /* ADService.swift in Sources */,
+				A056F1322AACD36600E0721F /* DMRewardedAdViewController.swift in Sources */,
+				A056F1402AACD3A000E0721F /* NetworkDataOperation.swift in Sources */,
+				A056F1512AACDFBE00E0721F /* NetworkDownloadOperation.swift in Sources */,
+				A056F1422AACD3A500E0721F /* NetworkDispatcher.swift in Sources */,
+				A056F1472AACD3B000E0721F /* Decoder.swift in Sources */,
+				A056F13E2AACD39200E0721F /* RewardedAd.swift in Sources */,
+				A0E82E542AAD0AE800A66A36 /* DMImageView.swift in Sources */,
+				A056F1452AACD3AA00E0721F /* DMPLayer.swift in Sources */,
+				A056F13B2AACD38100E0721F /* Ad.swift in Sources */,
+				A056F1442AACD3AA00E0721F /* DMPlayerTimeObserver.swift in Sources */,
+				A006EBB82AAE422B00411CE5 /* ADService+NativeAd.swift in Sources */,
+				A0E82E502AAD044D00A66A36 /* DMImageService.swift in Sources */,
+				A056F14B2AACD3B600E0721F /* String+Operation.swift in Sources */,
+				A0E82E4E2AAD01AF00A66A36 /* DMImageServiceOperation.swift in Sources */,
+				A056F1462AACD3B000E0721F /* Error.swift in Sources */,
+				A056F1432AACD3A500E0721F /* IDMRequest.swift in Sources */,
+				A056F1482AACD3B000E0721F /* WeakArray.swift in Sources */,
+				A056F13C2AACD38100E0721F /* EpomAd.swift in Sources */,
+				A056F1382AACD36F00E0721F /* OperationQueue.swift in Sources */,
+				A0E82E522AAD04AA00A66A36 /* DMLocker.swift in Sources */,
+				A056F1412AACD3A500E0721F /* EpomAdRequest.swift in Sources */,
+				A056F14A2AACD3B600E0721F /* Dictionary+Operation.swift in Sources */,
+				A006EBB42AAE339700411CE5 /* DmAudioSession.swift in Sources */,
+				A056F13F2AACD3A000E0721F /* NetworkOperation.swift in Sources */,
+				A056F1492AACD3B600E0721F /* Utility.swift in Sources */,
+				A056F1362AACD36F00E0721F /* OperationManager.swift in Sources */,
+				A056F14C2AACD3B600E0721F /* Decoding+Operation.swift in Sources */,
+				A056F1352AACD36F00E0721F /* OperationBase.swift in Sources */,
+				A056F13D2AACD38100E0721F /* EpomNativeAd.swift in Sources */,
+				A056F1372AACD36F00E0721F /* Operation.swift in Sources */,
+				A056F1342AACD36A00E0721F /* Dram.swift in Sources */,
+				A056F1392AACD37400E0721F /* DMPlayerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A056F09A2AACD27A00E0721F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A056F0922AACD27A00E0721F /* DramAds */;
+			targetProxy = A056F0992AACD27A00E0721F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A02584B02A8BA06E00E19B08 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A02584B12A8BA06E00E19B08 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A02584B52A8BA06E00E19B08 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A02584B62A8BA06E00E19B08 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A02584B92A8BA06E00E19B08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A02584BA2A8BA06E00E19B08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A02584BC2A8BA06E00E19B08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DramAdsIosSdkExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dram.DramAdsIosSdkExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A02584BD2A8BA06E00E19B08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DramAdsIosSdkExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dram.DramAdsIosSdkExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A056F09E2AACD27A00E0721F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = Dram.DramAds;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A056F09F2AACD27A00E0721F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = Dram.DramAds;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A02584A22A8BA06E00E19B08 /* Build configuration list for PBXProject "DramAdsIosSdkExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A02584B92A8BA06E00E19B08 /* Debug */,
+				A02584BA2A8BA06E00E19B08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A02584BB2A8BA06E00E19B08 /* Build configuration list for PBXNativeTarget "DramAdsIosSdkExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A02584BC2A8BA06E00E19B08 /* Debug */,
+				A02584BD2A8BA06E00E19B08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A056F09D2AACD27A00E0721F /* Build configuration list for PBXNativeTarget "DramAds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A056F09E2AACD27A00E0721F /* Debug */,
+				A056F09F2AACD27A00E0721F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A025849F2A8BA06E00E19B08 /* Project object */;
+}
