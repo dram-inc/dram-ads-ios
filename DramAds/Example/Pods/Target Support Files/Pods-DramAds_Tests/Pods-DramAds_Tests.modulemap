@@ -1,0 +1,6 @@
+framework module Pods_DramAds_Tests {
+  umbrella header "Pods-DramAds_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
