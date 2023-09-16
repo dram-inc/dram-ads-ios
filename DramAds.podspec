@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'DramAds/Classes/**/*'
+  s.source_files = 'DramAds/**/*'
   
   # s.resource_bundles = {
   #   'DramAds' => ['DramAds/Assets/*.png']
