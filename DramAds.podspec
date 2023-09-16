@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DramAds'
-  s.version          = '0.1.2'
+  s.version          = '0.1.4'
   s.summary          = 'DramAds'
 
 # This description is used to generate tags and improve search results.
@@ -31,8 +31,8 @@ TODO: Add long description of the pod here.
   s.swift_version = ['5']
   s.ios.deployment_target = '13.0'
   s.tvos.deployment_target = '13.0'
-
-  s.source_files = 'Source/**/*'
+  
+  s.source_files = 'DramAds/Source/**/*'
   
   # s.resource_bundles = {
   #   'DramAds' => ['DramAds/Assets/*.png']
