@@ -1,0 +1,22 @@
+{
+  "name": "DramAds",
+  "version": "0.1.0",
+  "summary": "A short description of DramAds.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/DramAds/DramAds",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "DramAds": "khoren@dram.studio"
+  },
+  "source": {
+    "git": "https://github.com/DramAds/DramAds.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "DramAds/Classes/**/*"
+}
