@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'DramAds'
   s.version          = '0.1.1'
-  s.summary          = 'DramAds.'
+  s.summary          = 'DramAds'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -22,16 +22,17 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/dram-inc/dram-ads-ios'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  # s.screenshots    = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'DramAds' => 'khoren@dram.studio' }
-  s.source           = { :git => 'https://github.com/dram-inc/dram-ads-ios.git', :tag => s.version.to_s }
+  s.source = { :git => 'https://github.com/dram-inc/dram-ads-ios.git', :tag => s.version }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.swift_version = '5.0'
+  s.swift_version = ['5']
   s.ios.deployment_target = '13.0'
+  s.tvos.deployment_target = '13.0'
 
-  s.source_files = 'DramAds/Classes/**/*'
+  s.source_files = 'DramAds/Classes/*.swift'
   
   # s.resource_bundles = {
   #   'DramAds' => ['DramAds/Assets/*.png']
