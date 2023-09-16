@@ -15,7 +15,6 @@
 		9100548CA40C3BFA665E77AF5F28EBA0 /* Pods-DramAds_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2562605DF1D34B4874ACA917F57DB2 /* Pods-DramAds_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		943964A5C091D0904F58B0E75A079326 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		A0C558642AB642DC00AB4F69 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C558632AB642DC00AB4F69 /* Test.swift */; };
-		A0C558692AB6439700AB4F69 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C558682AB6439700AB4F69 /* Test.swift */; };
 		A959EB383830B9B96AD7A23B3A256EA1 /* DramAds-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 000AB2C520AC44C3E3A93F084FE08C11 /* DramAds-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABA471EC00C1367FAAFAF81AA76C50BF /* DramAds-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66DF81967FD4D715FC6115328CE743 /* DramAds-dummy.m */; };
 /* End PBXBuildFile section */
@@ -62,7 +61,6 @@
 		99B76D95B96B2FED56A0FA78933EF0BA /* Pods-DramAds_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DramAds_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0C558632AB642DC00AB4F69 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
-		A0C558682AB6439700AB4F69 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		A2BA99D183C7D73837F433BFDCA23864 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B8A11D771179A0FF59F54178B0B1219B /* Pods-DramAds_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DramAds_Example.modulemap"; sourceTree = "<group>"; };
 		B9216396B6B793F0E49054B15BFA03AB /* DramAds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DramAds.debug.xcconfig; sourceTree = "<group>"; };
@@ -185,15 +183,6 @@
 			path = DramAds/Source;
 			sourceTree = "<group>";
 		};
-		A0C558672AB6439700AB4F69 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				A0C558682AB6439700AB4F69 /* Test.swift */,
-			);
-			name = Source;
-			path = DramAds/Source;
-			sourceTree = "<group>";
-		};
 		A87B8B2239637EB54B6F70596527BECF /* Pod */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,7 +206,6 @@
 		CB418F10FB4ADBF67E78D122B4023704 /* DramAds */ = {
 			isa = PBXGroup;
 			children = (
-				A0C558672AB6439700AB4F69 /* Source */,
 				A87B8B2239637EB54B6F70596527BECF /* Pod */,
 				98DB88DACAB6D04DD013159871105D67 /* Support Files */,
 			);
@@ -398,7 +386,6 @@
 			files = (
 				ABA471EC00C1367FAAFAF81AA76C50BF /* DramAds-dummy.m in Sources */,
 				A0C558642AB642DC00AB4F69 /* Test.swift in Sources */,
-				A0C558692AB6439700AB4F69 /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
