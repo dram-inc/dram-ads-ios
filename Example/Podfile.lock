@@ -1,5 +1,5 @@
 PODS:
-  - DramAds (0.1.1)
+  - DramAds (0.1.4)
 
 DEPENDENCIES:
   - DramAds (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DramAds: 1547cef96a98fe03588d85275211caad084cf1c9
+  DramAds: 08bbe53135e6abcf7244ca92173ba5ef6a56c10e
 
 PODFILE CHECKSUM: 14d5494265ecdaf7972347deb987f53c50ea284e
 

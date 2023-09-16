@@ -1,6 +1,6 @@
 {
   "name": "DramAds",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "summary": "DramAds",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/dram-inc/dram-ads-ios",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/dram-inc/dram-ads-ios.git",
-    "tag": "0.1.1"
+    "tag": "0.1.4"
   },
   "swift_versions": [
     "5"
@@ -22,6 +22,6 @@
     "ios": "13.0",
     "tvos": "13.0"
   },
-  "source_files": "DramAds/Classes/**/*",
+  "source_files": "DramAds/Source/**/*",
   "swift_version": "5"
 }
