@@ -1,6 +1,0 @@
-framework module DramAds {
-  umbrella header "DramAds-umbrella.h"
-
-  export *
-  module * { export * }
-}
