@@ -35,8 +35,7 @@ TODO: Add long description of the pod here.
   # s.resource_bundles = {
   #   'DramAds' => ['DramAds/Assets/*.png']
   # }
-#/Users/khorenasatryan/Documents/Work/Apps/Github/HarutAm/dram-ads-ios/DramAds/Classes/Source/Test.swift
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  #s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
