@@ -9,4 +9,8 @@ import Foundation
 
 public class Test {
     
+    public class func prrr(wd: String) {
+        
+    }
+    
 }
