@@ -1,0 +1,25 @@
+{
+  "name": "dram-ads-ios",
+  "version": "0.1.0",
+  "summary": "dram-ads-ios.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/dram-inc/dram-ads-ios",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "DramAds": "khoren@dram.studio"
+  },
+  "source": {
+    "git": "https://github.com/dram-inc/dram-ads-ios.git",
+    "tag": "0.1.0"
+  },
+  "swift_versions": "5.0",
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "Classes/**/*",
+  "frameworks": "UIKit",
+  "swift_version": "5.0"
+}

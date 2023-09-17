@@ -1,0 +1,16 @@
+PODS:
+  - dram-ads-ios (0.1.0)
+
+DEPENDENCIES:
+  - dram-ads-ios (from `../`)
+
+EXTERNAL SOURCES:
+  dram-ads-ios:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  dram-ads-ios: 4f9d47c002bbc27a7c3c6005d333ebf13e6482ed
+
+PODFILE CHECKSUM: 10dce04dd8acf028f0182f80f5fee33b8fae7242
+
+COCOAPODS: 1.12.1

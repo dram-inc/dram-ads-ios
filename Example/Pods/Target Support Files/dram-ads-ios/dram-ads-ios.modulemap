@@ -1,0 +1,6 @@
+framework module dram_ads_ios {
+  umbrella header "dram-ads-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}
