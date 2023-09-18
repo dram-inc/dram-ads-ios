@@ -12,12 +12,45 @@
 		13D2FE240A59F53D8CD6C6628AF71451 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		21427692749E9D9785A593DEA4FB88D6 /* Pods-DramAds_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F0894B8CE403E02F7D2D04509B6589 /* Pods-DramAds_Tests-dummy.m */; };
 		64403D1CC030C326C824E4542CF0EAE7 /* Pods-DramAds_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA7BD6464D32331AE4AB7B94405560AE /* Pods-DramAds_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		754629D4140AF2ECDC92FB06C90EA194 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3FEC762D45E13B111F30A1B098A2B2 /* ReplaceMe.swift */; };
-		77FD41DAEAC333EB36A4A38D8220D647 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B2C07CD289A3546A60974EAA2B7AA2 /* File.swift */; };
 		7F102444BB6F941C4F017FD5514AED1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		9100548CA40C3BFA665E77AF5F28EBA0 /* Pods-DramAds_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2562605DF1D34B4874ACA917F57DB2 /* Pods-DramAds_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		943964A5C091D0904F58B0E75A079326 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		9EC8024864EFCF326629164A0A590F73 /* DramAds-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1C5C636B5ACFE82935B16E0DAFFD5B /* DramAds-dummy.m */; };
+		A070E5BE2AB8FB6200875E5E /* DMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E58B2AB8FB6200875E5E /* DMNavigationController.swift */; };
+		A070E5BF2AB8FB6200875E5E /* DMRewardedAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E58D2AB8FB6200875E5E /* DMRewardedAdViewController.swift */; };
+		A070E5C02AB8FB6200875E5E /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A070E58E2AB8FB6200875E5E /* Storyboard.storyboard */; };
+		A070E5C12AB8FB6200875E5E /* OperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5912AB8FB6200875E5E /* OperationQueue.swift */; };
+		A070E5C22AB8FB6200875E5E /* OperationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5922AB8FB6200875E5E /* OperationManager.swift */; };
+		A070E5C32AB8FB6200875E5E /* OperationBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5932AB8FB6200875E5E /* OperationBase.swift */; };
+		A070E5C42AB8FB6200875E5E /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5942AB8FB6200875E5E /* Operation.swift */; };
+		A070E5C52AB8FB6200875E5E /* DMImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5972AB8FB6200875E5E /* DMImageView.swift */; };
+		A070E5C62AB8FB6200875E5E /* DMPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5982AB8FB6200875E5E /* DMPlayerView.swift */; };
+		A070E5C72AB8FB6200875E5E /* ADService+NativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E59A2AB8FB6200875E5E /* ADService+NativeAd.swift */; };
+		A070E5C82AB8FB6200875E5E /* EpomNativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E59C2AB8FB6200875E5E /* EpomNativeAd.swift */; };
+		A070E5C92AB8FB6200875E5E /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E59D2AB8FB6200875E5E /* Ad.swift */; };
+		A070E5CA2AB8FB6200875E5E /* EpomAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E59E2AB8FB6200875E5E /* EpomAd.swift */; };
+		A070E5CB2AB8FB6200875E5E /* RewardedAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5A02AB8FB6200875E5E /* RewardedAd.swift */; };
+		A070E5CC2AB8FB6200875E5E /* ADService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5A12AB8FB6200875E5E /* ADService.swift */; };
+		A070E5CD2AB8FB6200875E5E /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5A42AB8FB6200875E5E /* NetworkOperation.swift */; };
+		A070E5CE2AB8FB6200875E5E /* NetworkDownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5A52AB8FB6200875E5E /* NetworkDownloadOperation.swift */; };
+		A070E5CF2AB8FB6200875E5E /* NetworkDataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5A62AB8FB6200875E5E /* NetworkDataOperation.swift */; };
+		A070E5D02AB8FB6200875E5E /* EpomAdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5A82AB8FB6200875E5E /* EpomAdRequest.swift */; };
+		A070E5D12AB8FB6200875E5E /* IDMRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5A92AB8FB6200875E5E /* IDMRequest.swift */; };
+		A070E5D22AB8FB6200875E5E /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5AA2AB8FB6200875E5E /* NetworkDispatcher.swift */; };
+		A070E5D32AB8FB6200875E5E /* DMImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5AC2AB8FB6200875E5E /* DMImageService.swift */; };
+		A070E5D42AB8FB6200875E5E /* DMImageServiceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5AE2AB8FB6200875E5E /* DMImageServiceOperation.swift */; };
+		A070E5D52AB8FB6200875E5E /* DMPlayerTimeObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5B02AB8FB6200875E5E /* DMPlayerTimeObserver.swift */; };
+		A070E5D62AB8FB6200875E5E /* DMPLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5B12AB8FB6200875E5E /* DMPLayer.swift */; };
+		A070E5D72AB8FB6200875E5E /* DMLocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5B32AB8FB6200875E5E /* DMLocker.swift */; };
+		A070E5D82AB8FB6200875E5E /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5B42AB8FB6200875E5E /* Decoder.swift */; };
+		A070E5D92AB8FB6200875E5E /* WeakArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5B52AB8FB6200875E5E /* WeakArray.swift */; };
+		A070E5DA2AB8FB6200875E5E /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5B62AB8FB6200875E5E /* Error.swift */; };
+		A070E5DB2AB8FB6200875E5E /* DmAudioSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5B72AB8FB6200875E5E /* DmAudioSession.swift */; };
+		A070E5DC2AB8FB6200875E5E /* Decoding+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5B92AB8FB6200875E5E /* Decoding+Operation.swift */; };
+		A070E5DD2AB8FB6200875E5E /* Dictionary+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5BA2AB8FB6200875E5E /* Dictionary+Operation.swift */; };
+		A070E5DE2AB8FB6200875E5E /* String+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5BB2AB8FB6200875E5E /* String+Operation.swift */; };
+		A070E5DF2AB8FB6200875E5E /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5BC2AB8FB6200875E5E /* Utility.swift */; };
+		A070E5E02AB8FB6200875E5E /* Dram.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E5BD2AB8FB6200875E5E /* Dram.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +77,10 @@
 		178B8C5F57B8B41C4DDCFD89543FA114 /* Pods-DramAds_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DramAds_Example-frameworks.sh"; sourceTree = "<group>"; };
 		1C2562605DF1D34B4874ACA917F57DB2 /* Pods-DramAds_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DramAds_Example-umbrella.h"; sourceTree = "<group>"; };
 		1D24DE87569EC6AF7107737000896EC2 /* Pods-DramAds_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DramAds_Tests"; path = Pods_DramAds_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DC4260E79EF69FA32DDB67FE81A5DA3 /* DramAds */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DramAds; path = DramAds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C7A3C4C831FA3588670A545656A17B9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		1DC4260E79EF69FA32DDB67FE81A5DA3 /* DramAds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DramAds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C7A3C4C831FA3588670A545656A17B9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		2E2D750843B9DF683B4F8860DE246259 /* Pods-DramAds_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DramAds_Tests.modulemap"; sourceTree = "<group>"; };
-		3178F357835886557A23563CD135AE37 /* DramAds.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DramAds.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3178F357835886557A23563CD135AE37 /* DramAds.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DramAds.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		319BF391EB295107D9AFED37D00AFC47 /* Pods-DramAds_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DramAds_Example-Info.plist"; sourceTree = "<group>"; };
 		326AE2A094785CFF2DEE43AB1D3A502B /* Pods-DramAds_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DramAds_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3D1C5C636B5ACFE82935B16E0DAFFD5B /* DramAds-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DramAds-dummy.m"; sourceTree = "<group>"; };
@@ -60,17 +93,50 @@
 		7EEE0BD4F0CBC43E9879A3D87F00CFAC /* Pods-DramAds_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DramAds_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		87E4FA26EE6E5BC2B5C4A8B8A7BE3EBE /* Pods-DramAds_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DramAds_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		99B76D95B96B2FED56A0FA78933EF0BA /* Pods-DramAds_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DramAds_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A070E58B2AB8FB6200875E5E /* DMNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMNavigationController.swift; sourceTree = "<group>"; };
+		A070E58D2AB8FB6200875E5E /* DMRewardedAdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMRewardedAdViewController.swift; sourceTree = "<group>"; };
+		A070E58E2AB8FB6200875E5E /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		A070E5912AB8FB6200875E5E /* OperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationQueue.swift; sourceTree = "<group>"; };
+		A070E5922AB8FB6200875E5E /* OperationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationManager.swift; sourceTree = "<group>"; };
+		A070E5932AB8FB6200875E5E /* OperationBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationBase.swift; sourceTree = "<group>"; };
+		A070E5942AB8FB6200875E5E /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		A070E5972AB8FB6200875E5E /* DMImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMImageView.swift; sourceTree = "<group>"; };
+		A070E5982AB8FB6200875E5E /* DMPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMPlayerView.swift; sourceTree = "<group>"; };
+		A070E59A2AB8FB6200875E5E /* ADService+NativeAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ADService+NativeAd.swift"; sourceTree = "<group>"; };
+		A070E59C2AB8FB6200875E5E /* EpomNativeAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpomNativeAd.swift; sourceTree = "<group>"; };
+		A070E59D2AB8FB6200875E5E /* Ad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
+		A070E59E2AB8FB6200875E5E /* EpomAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpomAd.swift; sourceTree = "<group>"; };
+		A070E5A02AB8FB6200875E5E /* RewardedAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardedAd.swift; sourceTree = "<group>"; };
+		A070E5A12AB8FB6200875E5E /* ADService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADService.swift; sourceTree = "<group>"; };
+		A070E5A42AB8FB6200875E5E /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		A070E5A52AB8FB6200875E5E /* NetworkDownloadOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDownloadOperation.swift; sourceTree = "<group>"; };
+		A070E5A62AB8FB6200875E5E /* NetworkDataOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDataOperation.swift; sourceTree = "<group>"; };
+		A070E5A82AB8FB6200875E5E /* EpomAdRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpomAdRequest.swift; sourceTree = "<group>"; };
+		A070E5A92AB8FB6200875E5E /* IDMRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDMRequest.swift; sourceTree = "<group>"; };
+		A070E5AA2AB8FB6200875E5E /* NetworkDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		A070E5AC2AB8FB6200875E5E /* DMImageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMImageService.swift; sourceTree = "<group>"; };
+		A070E5AE2AB8FB6200875E5E /* DMImageServiceOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMImageServiceOperation.swift; sourceTree = "<group>"; };
+		A070E5B02AB8FB6200875E5E /* DMPlayerTimeObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMPlayerTimeObserver.swift; sourceTree = "<group>"; };
+		A070E5B12AB8FB6200875E5E /* DMPLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMPLayer.swift; sourceTree = "<group>"; };
+		A070E5B32AB8FB6200875E5E /* DMLocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMLocker.swift; sourceTree = "<group>"; };
+		A070E5B42AB8FB6200875E5E /* Decoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		A070E5B52AB8FB6200875E5E /* WeakArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakArray.swift; sourceTree = "<group>"; };
+		A070E5B62AB8FB6200875E5E /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		A070E5B72AB8FB6200875E5E /* DmAudioSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DmAudioSession.swift; sourceTree = "<group>"; };
+		A070E5B92AB8FB6200875E5E /* Decoding+Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Decoding+Operation.swift"; sourceTree = "<group>"; };
+		A070E5BA2AB8FB6200875E5E /* Dictionary+Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Operation.swift"; sourceTree = "<group>"; };
+		A070E5BB2AB8FB6200875E5E /* String+Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Operation.swift"; sourceTree = "<group>"; };
+		A070E5BC2AB8FB6200875E5E /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		A070E5BD2AB8FB6200875E5E /* Dram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dram.swift; path = DramAds/Classes/Dram.swift; sourceTree = "<group>"; };
 		A48FF2BD8296410594B53B84EFA48909 /* DramAds-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DramAds-Info.plist"; sourceTree = "<group>"; };
-		A7B2C07CD289A3546A60974EAA2B7AA2 /* File.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = File.swift; path = DramAds/Classes/File.swift; sourceTree = "<group>"; };
 		B8A11D771179A0FF59F54178B0B1219B /* Pods-DramAds_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DramAds_Example.modulemap"; sourceTree = "<group>"; };
 		BA7BD6464D32331AE4AB7B94405560AE /* Pods-DramAds_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DramAds_Tests-umbrella.h"; sourceTree = "<group>"; };
 		C2DDB6DE49F38E8FA042E35088390D0B /* Pods-DramAds_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DramAds_Example-dummy.m"; sourceTree = "<group>"; };
-		E1694DD8FFADD6C8C9FEDBA81CBD161B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E1694DD8FFADD6C8C9FEDBA81CBD161B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E4BA177718E1C48C0EDB531992C53AC6 /* Pods-DramAds_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DramAds_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EA60FB283E9E60B79F9C37E9B5CC9C02 /* Pods-DramAds_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DramAds_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EBF9E8EF279D38F302CA2724789DCE1E /* Pods-DramAds_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DramAds_Example"; path = Pods_DramAds_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED3FEC762D45E13B111F30A1B098A2B2 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = DramAds/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		F6ED9A8133A00AE2728C422864EFD6BC /* DramAds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DramAds.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,7 +195,7 @@
 		6A32FFEB1C16663E2A79C745721200AD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1DC4260E79EF69FA32DDB67FE81A5DA3 /* DramAds */,
+				1DC4260E79EF69FA32DDB67FE81A5DA3 /* DramAds.framework */,
 				EBF9E8EF279D38F302CA2724789DCE1E /* Pods-DramAds_Example */,
 				1D24DE87569EC6AF7107737000896EC2 /* Pods-DramAds_Tests */,
 			);
@@ -153,11 +219,190 @@
 			path = "Target Support Files/Pods-DramAds_Example";
 			sourceTree = "<group>";
 		};
+		A070E5892AB8FB6200875E5E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A070E58A2AB8FB6200875E5E /* Moduls */,
+				A070E58E2AB8FB6200875E5E /* Storyboard.storyboard */,
+			);
+			name = UI;
+			path = DramAds/Classes/UI;
+			sourceTree = "<group>";
+		};
+		A070E58A2AB8FB6200875E5E /* Moduls */ = {
+			isa = PBXGroup;
+			children = (
+				A070E58B2AB8FB6200875E5E /* DMNavigationController.swift */,
+				A070E58C2AB8FB6200875E5E /* Rewarded */,
+			);
+			path = Moduls;
+			sourceTree = "<group>";
+		};
+		A070E58C2AB8FB6200875E5E /* Rewarded */ = {
+			isa = PBXGroup;
+			children = (
+				A070E58D2AB8FB6200875E5E /* DMRewardedAdViewController.swift */,
+			);
+			path = Rewarded;
+			sourceTree = "<group>";
+		};
+		A070E58F2AB8FB6200875E5E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A070E5902AB8FB6200875E5E /* Operation */,
+				A070E5952AB8FB6200875E5E /* UI */,
+				A070E5992AB8FB6200875E5E /* AD */,
+				A070E5A22AB8FB6200875E5E /* Network */,
+				A070E5AB2AB8FB6200875E5E /* Services */,
+				A070E5AF2AB8FB6200875E5E /* Player */,
+				A070E5B22AB8FB6200875E5E /* Utility */,
+			);
+			name = Common;
+			path = DramAds/Classes/Common;
+			sourceTree = "<group>";
+		};
+		A070E5902AB8FB6200875E5E /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				A070E5912AB8FB6200875E5E /* OperationQueue.swift */,
+				A070E5922AB8FB6200875E5E /* OperationManager.swift */,
+				A070E5932AB8FB6200875E5E /* OperationBase.swift */,
+				A070E5942AB8FB6200875E5E /* Operation.swift */,
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
+		A070E5952AB8FB6200875E5E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A070E5962AB8FB6200875E5E /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A070E5962AB8FB6200875E5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A070E5972AB8FB6200875E5E /* DMImageView.swift */,
+				A070E5982AB8FB6200875E5E /* DMPlayerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A070E5992AB8FB6200875E5E /* AD */ = {
+			isa = PBXGroup;
+			children = (
+				A070E59A2AB8FB6200875E5E /* ADService+NativeAd.swift */,
+				A070E59B2AB8FB6200875E5E /* Ads */,
+				A070E59F2AB8FB6200875E5E /* UiAds */,
+				A070E5A12AB8FB6200875E5E /* ADService.swift */,
+			);
+			path = AD;
+			sourceTree = "<group>";
+		};
+		A070E59B2AB8FB6200875E5E /* Ads */ = {
+			isa = PBXGroup;
+			children = (
+				A070E59C2AB8FB6200875E5E /* EpomNativeAd.swift */,
+				A070E59D2AB8FB6200875E5E /* Ad.swift */,
+				A070E59E2AB8FB6200875E5E /* EpomAd.swift */,
+			);
+			path = Ads;
+			sourceTree = "<group>";
+		};
+		A070E59F2AB8FB6200875E5E /* UiAds */ = {
+			isa = PBXGroup;
+			children = (
+				A070E5A02AB8FB6200875E5E /* RewardedAd.swift */,
+			);
+			path = UiAds;
+			sourceTree = "<group>";
+		};
+		A070E5A22AB8FB6200875E5E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A070E5A32AB8FB6200875E5E /* Operations */,
+				A070E5A72AB8FB6200875E5E /* Request */,
+				A070E5AA2AB8FB6200875E5E /* NetworkDispatcher.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A070E5A32AB8FB6200875E5E /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				A070E5A42AB8FB6200875E5E /* NetworkOperation.swift */,
+				A070E5A52AB8FB6200875E5E /* NetworkDownloadOperation.swift */,
+				A070E5A62AB8FB6200875E5E /* NetworkDataOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		A070E5A72AB8FB6200875E5E /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				A070E5A82AB8FB6200875E5E /* EpomAdRequest.swift */,
+				A070E5A92AB8FB6200875E5E /* IDMRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		A070E5AB2AB8FB6200875E5E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A070E5AC2AB8FB6200875E5E /* DMImageService.swift */,
+				A070E5AD2AB8FB6200875E5E /* Operations */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A070E5AD2AB8FB6200875E5E /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				A070E5AE2AB8FB6200875E5E /* DMImageServiceOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		A070E5AF2AB8FB6200875E5E /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				A070E5B02AB8FB6200875E5E /* DMPlayerTimeObserver.swift */,
+				A070E5B12AB8FB6200875E5E /* DMPLayer.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		A070E5B22AB8FB6200875E5E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A070E5B32AB8FB6200875E5E /* DMLocker.swift */,
+				A070E5B42AB8FB6200875E5E /* Decoder.swift */,
+				A070E5B52AB8FB6200875E5E /* WeakArray.swift */,
+				A070E5B62AB8FB6200875E5E /* Error.swift */,
+				A070E5B72AB8FB6200875E5E /* DmAudioSession.swift */,
+				A070E5B82AB8FB6200875E5E /* Extensions */,
+				A070E5BC2AB8FB6200875E5E /* Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		A070E5B82AB8FB6200875E5E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A070E5B92AB8FB6200875E5E /* Decoding+Operation.swift */,
+				A070E5BA2AB8FB6200875E5E /* Dictionary+Operation.swift */,
+				A070E5BB2AB8FB6200875E5E /* String+Operation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A08400E6BC57C84ABB7F397DAC77BE66 /* DramAds */ = {
 			isa = PBXGroup;
 			children = (
-				A7B2C07CD289A3546A60974EAA2B7AA2 /* File.swift */,
-				ED3FEC762D45E13B111F30A1B098A2B2 /* ReplaceMe.swift */,
+				A070E5BD2AB8FB6200875E5E /* Dram.swift */,
+				A070E58F2AB8FB6200875E5E /* Common */,
+				A070E5892AB8FB6200875E5E /* UI */,
 				E34033BBE39A25967DD490830BB5C683 /* Pod */,
 				BCFF8A5359857EF7F1371F9FEBDA294D /* Support Files */,
 			);
@@ -309,7 +554,7 @@
 			);
 			name = DramAds;
 			productName = DramAds;
-			productReference = 1DC4260E79EF69FA32DDB67FE81A5DA3 /* DramAds */;
+			productReference = 1DC4260E79EF69FA32DDB67FE81A5DA3 /* DramAds.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -320,6 +565,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					80F48A4A9FE6297BA8C56CC0671F5306 = {
+						LastSwiftMigration = 1500;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 11.4";
@@ -360,6 +610,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A070E5C02AB8FB6200875E5E /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,9 +629,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A070E5BE2AB8FB6200875E5E /* DMNavigationController.swift in Sources */,
+				A070E5C42AB8FB6200875E5E /* Operation.swift in Sources */,
+				A070E5CC2AB8FB6200875E5E /* ADService.swift in Sources */,
+				A070E5D22AB8FB6200875E5E /* NetworkDispatcher.swift in Sources */,
+				A070E5C12AB8FB6200875E5E /* OperationQueue.swift in Sources */,
+				A070E5D62AB8FB6200875E5E /* DMPLayer.swift in Sources */,
+				A070E5DE2AB8FB6200875E5E /* String+Operation.swift in Sources */,
+				A070E5D72AB8FB6200875E5E /* DMLocker.swift in Sources */,
+				A070E5DD2AB8FB6200875E5E /* Dictionary+Operation.swift in Sources */,
+				A070E5E02AB8FB6200875E5E /* Dram.swift in Sources */,
+				A070E5C62AB8FB6200875E5E /* DMPlayerView.swift in Sources */,
+				A070E5CA2AB8FB6200875E5E /* EpomAd.swift in Sources */,
+				A070E5D92AB8FB6200875E5E /* WeakArray.swift in Sources */,
+				A070E5C52AB8FB6200875E5E /* DMImageView.swift in Sources */,
+				A070E5CE2AB8FB6200875E5E /* NetworkDownloadOperation.swift in Sources */,
+				A070E5CB2AB8FB6200875E5E /* RewardedAd.swift in Sources */,
+				A070E5D42AB8FB6200875E5E /* DMImageServiceOperation.swift in Sources */,
+				A070E5DF2AB8FB6200875E5E /* Utility.swift in Sources */,
+				A070E5D32AB8FB6200875E5E /* DMImageService.swift in Sources */,
 				9EC8024864EFCF326629164A0A590F73 /* DramAds-dummy.m in Sources */,
-				77FD41DAEAC333EB36A4A38D8220D647 /* File.swift in Sources */,
-				754629D4140AF2ECDC92FB06C90EA194 /* ReplaceMe.swift in Sources */,
+				A070E5CF2AB8FB6200875E5E /* NetworkDataOperation.swift in Sources */,
+				A070E5C22AB8FB6200875E5E /* OperationManager.swift in Sources */,
+				A070E5C82AB8FB6200875E5E /* EpomNativeAd.swift in Sources */,
+				A070E5C92AB8FB6200875E5E /* Ad.swift in Sources */,
+				A070E5DC2AB8FB6200875E5E /* Decoding+Operation.swift in Sources */,
+				A070E5D12AB8FB6200875E5E /* IDMRequest.swift in Sources */,
+				A070E5DA2AB8FB6200875E5E /* Error.swift in Sources */,
+				A070E5D52AB8FB6200875E5E /* DMPlayerTimeObserver.swift in Sources */,
+				A070E5CD2AB8FB6200875E5E /* NetworkOperation.swift in Sources */,
+				A070E5D82AB8FB6200875E5E /* Decoder.swift in Sources */,
+				A070E5D02AB8FB6200875E5E /* EpomAdRequest.swift in Sources */,
+				A070E5DB2AB8FB6200875E5E /* DmAudioSession.swift in Sources */,
+				A070E5C32AB8FB6200875E5E /* OperationBase.swift in Sources */,
+				A070E5C72AB8FB6200875E5E /* ADService+NativeAd.swift in Sources */,
+				A070E5BF2AB8FB6200875E5E /* DMRewardedAdViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,6 +909,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F6ED9A8133A00AE2728C422864EFD6BC /* DramAds.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -728,6 +1012,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 49CF654B2A08227B9687C0EA3D5CA826 /* DramAds.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -752,6 +1037,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
