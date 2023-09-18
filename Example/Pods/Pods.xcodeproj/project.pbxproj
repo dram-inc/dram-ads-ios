@@ -72,7 +72,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0470707CDB9FAA7DA2A74FEEB61F1EB1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0470707CDB9FAA7DA2A74FEEB61F1EB1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0F5BB136FB57C827C7CB72389715C97A /* DmAudioSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DmAudioSession.swift; sourceTree = "<group>"; };
 		113B78B0748841E780704D260F583847 /* NetworkDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
 		13443A47E3D050A5D8B5F1BFFDB6087E /* Pods-DramAds_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DramAds_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -80,8 +80,8 @@
 		178B8C5F57B8B41C4DDCFD89543FA114 /* Pods-DramAds_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DramAds_Example-frameworks.sh"; sourceTree = "<group>"; };
 		1B097BEBC946F447A8F2CF8FD299A399 /* IDMRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IDMRequest.swift; sourceTree = "<group>"; };
 		1C2562605DF1D34B4874ACA917F57DB2 /* Pods-DramAds_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DramAds_Example-umbrella.h"; sourceTree = "<group>"; };
-		1D24DE87569EC6AF7107737000896EC2 /* Pods-DramAds_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DramAds_Tests"; path = Pods_DramAds_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DC4260E79EF69FA32DDB67FE81A5DA3 /* DramAds */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DramAds; path = DramAds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D24DE87569EC6AF7107737000896EC2 /* Pods_DramAds_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DramAds_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DC4260E79EF69FA32DDB67FE81A5DA3 /* DramAds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DramAds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F7B750277138E490B2D7C8F1B84F17D /* DMImageService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMImageService.swift; sourceTree = "<group>"; };
 		2B285C3A62E0F89D874E3D6F43095D08 /* DMLocker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMLocker.swift; sourceTree = "<group>"; };
 		2BB50CB45754A65DAD83EE53F02C1917 /* DramAds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DramAds.debug.xcconfig; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 		6A77BACC90D570223AB18CD94D299782 /* DramAds-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DramAds-umbrella.h"; sourceTree = "<group>"; };
 		6B0E8C97DE95F7997A52811A2084E0F5 /* EpomNativeAd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EpomNativeAd.swift; sourceTree = "<group>"; };
 		7EEE0BD4F0CBC43E9879A3D87F00CFAC /* Pods-DramAds_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DramAds_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8215E0538956C7F20A44B25FF3DF304F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		8215E0538956C7F20A44B25FF3DF304F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		8295E6C6D48F5795A6A4DB407E7EA487 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		876233ECF8282CC0741FA6CEBBF6E34A /* Storyboard.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		87E4FA26EE6E5BC2B5C4A8B8A7BE3EBE /* Pods-DramAds_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DramAds_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 		93A7760CB30C96C4AA434F53DAC35872 /* DramAds-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DramAds-Info.plist"; sourceTree = "<group>"; };
 		973E4C24D65DB2864EAED13920E5458B /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
 		99B76D95B96B2FED56A0FA78933EF0BA /* Pods-DramAds_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DramAds_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A3FF58AB8649A34A5CA8CD4861785757 /* DramAds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DramAds.release.xcconfig; sourceTree = "<group>"; };
 		A945A6AECF935D114B32DC5CA058B316 /* DMRewardedAdViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMRewardedAdViewController.swift; sourceTree = "<group>"; };
 		B7AA6D0BAB9D40D9D72FDCF734866059 /* NetworkDataOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkDataOperation.swift; sourceTree = "<group>"; };
@@ -137,8 +137,8 @@
 		E86897CAC91315BB3F17549DB201B021 /* DramAds-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DramAds-dummy.m"; sourceTree = "<group>"; };
 		EA60FB283E9E60B79F9C37E9B5CC9C02 /* Pods-DramAds_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DramAds_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		EBF9E8EF279D38F302CA2724789DCE1E /* Pods-DramAds_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DramAds_Example"; path = Pods_DramAds_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EEBB3AF645FDD4E00D9E0E0C70739894 /* DramAds.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DramAds.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EBF9E8EF279D38F302CA2724789DCE1E /* Pods_DramAds_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DramAds_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEBB3AF645FDD4E00D9E0E0C70739894 /* DramAds.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DramAds.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F25BF6F8A484E1E049E26741954D2A71 /* DMNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,7 +177,6 @@
 				1F7B750277138E490B2D7C8F1B84F17D /* DMImageService.swift */,
 				25A46F6724BE1F008EC2EDA77D8AC633 /* Operations */,
 			);
-			name = Services;
 			path = Services;
 			sourceTree = "<group>";
 		};
@@ -207,7 +206,6 @@
 			children = (
 				4E31C8490FECB18CBF4F1A5F1868F505 /* DMImageServiceOperation.swift */,
 			);
-			name = Operations;
 			path = Operations;
 			sourceTree = "<group>";
 		};
@@ -218,7 +216,6 @@
 				62E302B43D9C1DE9CC0A4988885D3BB0 /* EpomAd.swift */,
 				6B0E8C97DE95F7997A52811A2084E0F5 /* EpomNativeAd.swift */,
 			);
-			name = Ads;
 			path = Ads;
 			sourceTree = "<group>";
 		};
@@ -230,7 +227,6 @@
 				BCFB0DBBE70300382DF4BEA511CF0C2B /* OperationManager.swift */,
 				88FC9562E32EBBA42BF251134EEB6653 /* OperationQueue.swift */,
 			);
-			name = Operation;
 			path = Operation;
 			sourceTree = "<group>";
 		};
@@ -245,7 +241,6 @@
 				8E1C14822B01A225DF2EE23C8B9BD573 /* WeakArray.swift */,
 				D71923E976DC2AA37A236A79FA6B2074 /* Extensions */,
 			);
-			name = Utility;
 			path = Utility;
 			sourceTree = "<group>";
 		};
@@ -255,7 +250,6 @@
 				5F927833BAE8499B69521CE13F36F1EC /* DMPLayer.swift */,
 				55A81316139BC59E6749C7FAF664059F /* DMPlayerTimeObserver.swift */,
 			);
-			name = Player;
 			path = Player;
 			sourceTree = "<group>";
 		};
@@ -267,7 +261,6 @@
 				3636BC3F91AF355006B1EE647439A870 /* Ads */,
 				8B6F8C8E706E917224AA1199E9CCDAE3 /* UiAds */,
 			);
-			name = AD;
 			path = AD;
 			sourceTree = "<group>";
 		};
@@ -276,7 +269,6 @@
 			children = (
 				A945A6AECF935D114B32DC5CA058B316 /* DMRewardedAdViewController.swift */,
 			);
-			name = Rewarded;
 			path = Rewarded;
 			sourceTree = "<group>";
 		};
@@ -318,9 +310,9 @@
 		6A32FFEB1C16663E2A79C745721200AD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1DC4260E79EF69FA32DDB67FE81A5DA3 /* DramAds */,
-				EBF9E8EF279D38F302CA2724789DCE1E /* Pods-DramAds_Example */,
-				1D24DE87569EC6AF7107737000896EC2 /* Pods-DramAds_Tests */,
+				1DC4260E79EF69FA32DDB67FE81A5DA3 /* DramAds.framework */,
+				EBF9E8EF279D38F302CA2724789DCE1E /* Pods_DramAds_Example.framework */,
+				1D24DE87569EC6AF7107737000896EC2 /* Pods_DramAds_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -345,7 +337,6 @@
 			children = (
 				15727BA054323D1909BE3C399AC273CF /* RewardedAd.swift */,
 			);
-			name = UiAds;
 			path = UiAds;
 			sourceTree = "<group>";
 		};
@@ -386,7 +377,6 @@
 			children = (
 				B68C1A56D9AC895D2FC12878626669AF /* View */,
 			);
-			name = UI;
 			path = UI;
 			sourceTree = "<group>";
 		};
@@ -396,7 +386,6 @@
 				40E3D36F50DA39F8DCDF4106870D402D /* EpomAdRequest.swift */,
 				1B097BEBC946F447A8F2CF8FD299A399 /* IDMRequest.swift */,
 			);
-			name = Request;
 			path = Request;
 			sourceTree = "<group>";
 		};
@@ -406,7 +395,6 @@
 				F25BF6F8A484E1E049E26741954D2A71 /* DMNavigationController.swift */,
 				58B38743749564F51858108E3F59A3E1 /* Rewarded */,
 			);
-			name = Moduls;
 			path = Moduls;
 			sourceTree = "<group>";
 		};
@@ -416,7 +404,6 @@
 				C5D47A016E9B6580C4FCC6EB0D2FD0B0 /* DMImageView.swift */,
 				37B80A68EFC09487FA640E213382A409 /* DMPlayerView.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -427,7 +414,6 @@
 				538911F98E67515297C1B67DB53526F6 /* NetworkDownloadOperation.swift */,
 				DDCD649657289624B1123AE33709007E /* NetworkOperation.swift */,
 			);
-			name = Operations;
 			path = Operations;
 			sourceTree = "<group>";
 		};
@@ -447,7 +433,6 @@
 				BAD4DDDBD05E768124690F0AE4EAED82 /* Operations */,
 				AEF76E9F9FD4311D1DCCC55F8C96AD6D /* Request */,
 			);
-			name = Network;
 			path = Network;
 			sourceTree = "<group>";
 		};
@@ -469,7 +454,6 @@
 				36179D7817E20664EA7226D5396BD372 /* Dictionary+Operation.swift */,
 				8FF203CD69C742F2C1183815488391C1 /* String+Operation.swift */,
 			);
-			name = Extensions;
 			path = Extensions;
 			sourceTree = "<group>";
 		};
@@ -537,7 +521,7 @@
 			);
 			name = "Pods-DramAds_Tests";
 			productName = Pods_DramAds_Tests;
-			productReference = 1D24DE87569EC6AF7107737000896EC2 /* Pods-DramAds_Tests */;
+			productReference = 1D24DE87569EC6AF7107737000896EC2 /* Pods_DramAds_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		631407DD4C0C2BB4D637732B8911D121 /* Pods-DramAds_Example */ = {
@@ -556,7 +540,7 @@
 			);
 			name = "Pods-DramAds_Example";
 			productName = Pods_DramAds_Example;
-			productReference = EBF9E8EF279D38F302CA2724789DCE1E /* Pods-DramAds_Example */;
+			productReference = EBF9E8EF279D38F302CA2724789DCE1E /* Pods_DramAds_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		80F48A4A9FE6297BA8C56CC0671F5306 /* DramAds */ = {
@@ -574,7 +558,7 @@
 			);
 			name = DramAds;
 			productName = DramAds;
-			productReference = 1DC4260E79EF69FA32DDB67FE81A5DA3 /* DramAds */;
+			productReference = 1DC4260E79EF69FA32DDB67FE81A5DA3 /* DramAds.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -583,8 +567,9 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1500;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 12.0";
@@ -714,14 +699,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-DramAds_Tests/Pods-DramAds_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -732,6 +716,8 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-DramAds_Tests/Pods-DramAds_Tests.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -752,14 +738,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-DramAds_Tests/Pods-DramAds_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -770,6 +755,8 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-DramAds_Tests/Pods-DramAds_Tests.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -789,14 +776,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-DramAds_Example/Pods-DramAds_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -807,6 +793,8 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-DramAds_Example/Pods-DramAds_Example.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -856,9 +844,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -879,7 +869,6 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -922,9 +911,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -941,7 +932,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
@@ -954,14 +944,13 @@
 			baseConfigurationReference = A3FF58AB8649A34A5CA8CD4861785757 /* DramAds.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/DramAds/DramAds-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/DramAds/DramAds-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -972,6 +961,8 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "Target Support Files/DramAds/DramAds.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_MODULE_NAME = DramAds;
 				PRODUCT_NAME = DramAds;
 				SDKROOT = iphoneos;
@@ -990,14 +981,13 @@
 			baseConfigurationReference = 2BB50CB45754A65DAD83EE53F02C1917 /* DramAds.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/DramAds/DramAds-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/DramAds/DramAds-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1008,6 +998,8 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "Target Support Files/DramAds/DramAds.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_MODULE_NAME = DramAds;
 				PRODUCT_NAME = DramAds;
 				SDKROOT = iphoneos;
@@ -1026,14 +1018,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-DramAds_Example/Pods-DramAds_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1044,6 +1035,8 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-DramAds_Example/Pods-DramAds_Example.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";

@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		A0111FFA2AB90F7800FC9869 /* DramAdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0111FF92AB90F7800FC9869 /* DramAdsViewController.swift */; };
+		A0111FFD2AB910E600FC9869 /* RewardedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0111FFC2AB910E600FC9869 /* RewardedViewController.swift */; };
 		A070E5E22AB9017200875E5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A070E5E12AB9017200875E5E /* Main.storyboard */; };
 		C6F88DA798D09D3D4079EAD0 /* Pods_DramAds_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B455B73AD75E0983CA07CB45 /* Pods_DramAds_Tests.framework */; };
 		F6570C7EB76C6FE4EEF222A2 /* Pods_DramAds_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99E7E94014474B944778D8E /* Pods_DramAds_Example.framework */; };
@@ -33,13 +34,14 @@
 		607FACD01AFB9204008FA782 /* DramAds_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DramAds_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* DramAds_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DramAds_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6D880E924645BA230D75AA7B /* Pods-DramAds_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DramAds_Example.debug.xcconfig"; path = "Target Support Files/Pods-DramAds_Example/Pods-DramAds_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A0111FF92AB90F7800FC9869 /* DramAdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DramAdsViewController.swift; sourceTree = "<group>"; };
+		A0111FFC2AB910E600FC9869 /* RewardedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardedViewController.swift; sourceTree = "<group>"; };
 		A070E5E12AB9017200875E5E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A89E2AC2825410E6CACBED0B /* Pods-DramAds_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DramAds_Example.release.xcconfig"; path = "Target Support Files/Pods-DramAds_Example/Pods-DramAds_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B455B73AD75E0983CA07CB45 /* Pods_DramAds_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DramAds_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,8 +104,9 @@
 		607FACD21AFB9204008FA782 /* Example for DramAds */ = {
 			isa = PBXGroup;
 			children = (
+				A0111FFB2AB910E600FC9869 /* Ads */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				A0111FF92AB90F7800FC9869 /* DramAdsViewController.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -157,6 +160,14 @@
 				EEA9503599F95DC7DFDFA62D /* Pods-DramAds_Tests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A0111FFB2AB910E600FC9869 /* Ads */ = {
+			isa = PBXGroup;
+			children = (
+				A0111FFC2AB910E600FC9869 /* RewardedViewController.swift */,
+			);
+			path = Ads;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,8 +342,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				A0111FFA2AB90F7800FC9869 /* DramAdsViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				A0111FFD2AB910E600FC9869 /* RewardedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
