@@ -21,7 +21,7 @@ extension DM {
 
 public extension DM {
     
-    struct Enviorment {
+    @frozen struct Enviorment {
         
         /// Base Url for epom
         public let baseUrl: String

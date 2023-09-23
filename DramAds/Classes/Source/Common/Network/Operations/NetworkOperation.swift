@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol IDMNetworkOperation: AnyObject {
+@objc public protocol IDMNetworkOperation: AnyObject {
     var taskIdentifier: Int { get }
     func cancel()
 }

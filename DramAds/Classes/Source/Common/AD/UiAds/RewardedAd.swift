@@ -8,75 +8,54 @@
 import UIKit
 
 /// RewardedAdDelegate
-public protocol DMRewardedAdDelegate: AnyObject {
+@objc public protocol DMRewardedAdDelegate: NSObjectProtocol {
     
     /// Is called when ad starting playing
     /// - Parameters:
     ///     - ad: RewardedAd
-    func rewardedAd(didStartPlaying ad: DM.RewardedAd)
+    @objc(rewardedAdDidStartPlaying:) optional func rewardedAd(didStartPlaying ad: DM.RewardedAd)
     
     /// Is called when sended impression for ad
     /// - Parameters:
     ///     - ad: RewardedAd
     ///     - error: Request error
-    func rewardedAd(didSendImpression ad: DM.RewardedAd, error: IDMError?)
+    @objc(rewardedAdDidSendImpression:error:) optional func rewardedAd(didSendImpression ad: DM.RewardedAd, error: DM.ADService.AdError?)
     
     /// Is called when clicked ad
     /// - Parameters:
     ///     - ad: RewardedAd
-    func rewardedAd(didClicked ad: DM.RewardedAd)
+    @objc(rewardedAdDidClicked:) optional func rewardedAd(didClicked ad: DM.RewardedAd)
     
     /// Is called when  ad did completed
     /// - Parameters:
     ///     - ad: RewardedAd
     ///     - error: Request error
-    func rewardedAd(didCompleted ad: DM.RewardedAd, error: IDMError?)
+    @objc(rewardedAdDidCompleted:error:) optional func rewardedAd(didCompleted ad: DM.RewardedAd, error: DM.ADService.AdError?)
 }
 
-public extension DMRewardedAdDelegate {
-    func rewardedAd(didStartPlaying ad: DM.RewardedAd) {}
-    func rewardedAd(didSendImpression ad: DM.RewardedAd, error: IDMError?) {}
-    func rewardedAd(didClicked ad: DM.RewardedAd) {}
-    func rewardedAd(didCompleted ad: DM.RewardedAd, error: IDMError?) {}
-}
-
-public protocol DMRewardedAdUIDataSource: AnyObject {
-    func rewardedAd(shouldAutorotate ad: DM.RewardedAd) -> Bool?
-    func rewardedAd(supportedInterfaceOrientations ad: DM.RewardedAd) -> UIInterfaceOrientationMask?
-    func rewardedAd(preferredInterfaceOrientationForPresentation ad: DM.RewardedAd) -> UIInterfaceOrientation?
-}
-
-public extension DMRewardedAdUIDataSource {
-    
-    func rewardedAd(shouldAutorotate ad: DM.RewardedAd) -> Bool? {
-        return nil
-    }
-    
-    func rewardedAd(supportedInterfaceOrientations ad: DM.RewardedAd) -> UIInterfaceOrientationMask? {
-        return nil
-    }
-    
-    func rewardedAd(preferredInterfaceOrientationForPresentation ad: DM.RewardedAd) -> UIInterfaceOrientation? {
-        return nil
-    }
-    
+@objc public protocol DMRewardedAdUIDataSource: AnyObject {
+    @objc(rewardedAdShouldAutorotate:) optional func rewardedAd(shouldAutorotate ad: DM.RewardedAd) -> Bool
+    @objc(rewardedAdSupportedInterfaceOrientations:) optional func rewardedAd(supportedInterfaceOrientations ad: DM.RewardedAd) -> UIInterfaceOrientationMask
+    @objc(rewardedAdPreferredInterfaceOrientationForPresentation:) optional func rewardedAd(preferredInterfaceOrientationForPresentation ad: DM.RewardedAd) -> UIInterfaceOrientation
 }
 
 public extension DM {
     
-    class RewardedAd {
+    @objc(DMRewardedAd)
+    class RewardedAd: NSObject {
         
         let image: DM.EpomAd.Image?
         let video: DM.EpomAd.Video
         private let impressionUrl: URL?
         private let clickUrl: URL?
         private var isSendedImpression: Bool = false
-        public let bannerId: Int
-        public let placementId: Int
-        public let placementKey: String?
         
-        public weak var delegate: DMRewardedAdDelegate?
-        public weak var uiDataSource: DMRewardedAdUIDataSource?
+        @objc public let bannerId: Int
+        @objc public let placementId: Int
+        @objc public let placementKey: String?
+        
+        @objc public weak var delegate: DMRewardedAdDelegate?
+        @objc public weak var uiDataSource: DMRewardedAdUIDataSource?
 
         init(ad: DM.EpomNativeAd, placementKey: String?) throws {
             guard let video = ad.videos?.first, let bannerId = ad.bannerId, let placementId = ad.placementId else {
@@ -115,7 +94,8 @@ public extension DM {
                         guard let self = self else {
                             return
                         }
-                        self.delegate?.rewardedAd(didSendImpression: self, error: nil)
+                        self.delegate?.rewardedAd?(didSendImpression: self, error: nil)
+                        
                     }
                 case .failure(let error):
                     DispatchQueue.main.async {
@@ -125,7 +105,7 @@ public extension DM {
                         guard let self = self else {
                             return
                         }
-                        self.delegate?.rewardedAd(didSendImpression: self, error: error)
+                        self.delegate?.rewardedAd?(didSendImpression: self, error: DM.ADService.AdError(error: error))
                     }
                 }
             }
@@ -147,17 +127,21 @@ public extension DM {
                 guard let self = self else {
                     return
                 }
-                self.delegate?.rewardedAd(didClicked: self)
+                self.delegate?.rewardedAd?(didClicked: self)
             }
             
         }
         
         func addDidCompleted(error: IDMError?) {
-            self.delegate?.rewardedAd(didCompleted: self, error: error)
+            var myError: DM.ADService.AdError?
+            if let error = error {
+                myError = .init(error: error)
+            }
+            self.delegate?.rewardedAd?(didCompleted: self, error: myError)
         }
         
         func didStartPlaying() {
-            self.delegate?.rewardedAd(didStartPlaying: self)
+            self.delegate?.rewardedAd?(didStartPlaying: self)
         }
         
     }
@@ -172,7 +156,7 @@ public extension DM.RewardedAd {
     ///   - response: have 2 case success with RewardedAd and failure with IDMError
     /// - Returns: IDMNetworkOperation? for  cancel request any time
     @discardableResult
-    class func load(config: DM.EpomAdRequest.Configuration, response: @escaping (DM.Result<DM.RewardedAd>) -> Void) -> IDMNetworkOperation? {
+    class func load(config: DM.AdRequest.Configuration, response: @escaping (DM.Result<DM.RewardedAd>) -> Void) -> IDMNetworkOperation? {
        
         DM.shared.adService.load(nativeAd: config) { result in
             switch result {
@@ -196,13 +180,46 @@ public extension DM.RewardedAd {
     /// - Returns: IDMNetworkOperation? for  cancel request any time
     @discardableResult
     class func load(placementKey: String, response: @escaping (DM.Result<DM.RewardedAd>) -> Void) -> IDMNetworkOperation? {
-        let config = DM.EpomAdRequest.Configuration(default: placementKey)
+        let config = DM.AdRequest.Configuration(default: placementKey)
         return self.load(config: config, response: response)
     }
 
+    @objc
     func show(in viewController: UIViewController) {
         let vc = DMRewardedAdViewController.create(ad: self)
         viewController.showDetailViewController(vc, sender: nil)
+    }
+    
+}
+
+@available (swift, obsoleted: 1)
+public extension DM.RewardedAd {
+    
+    ///Load and return ad give placementKey
+    @discardableResult
+    @objc class func loadAd(placementKey: String, success: @escaping (DM.RewardedAd) -> Void, failure: @escaping (DM.ADService.AdError) -> Void) -> IDMNetworkOperation? {
+        return self.load(placementKey: placementKey) { result in
+            switch result {
+            case .success(let ad):
+                success(ad)
+            case .failure(let error):
+                failure(DM.ADService.AdError(error: error))
+            }
+        }
+    }
+    
+    ///Load and return ad give config
+    @discardableResult
+    @objc class func loadAd(config: DM.AdRequest.Configuration, success: @escaping (DM.RewardedAd) -> Void, failure: @escaping (DM.ADService.AdError) -> Void) -> IDMNetworkOperation? {
+        return self.load(config: config) { result in
+            switch result {
+            case .success(let ad):
+                success(ad)
+            case .failure(let error):
+                failure(DM.ADService.AdError(error: error))
+            }
+        }
+     
     }
     
 }

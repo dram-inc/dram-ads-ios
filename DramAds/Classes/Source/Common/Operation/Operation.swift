@@ -45,7 +45,7 @@ extension DM {
 }
 
 extension DM.Operation {
-    typealias CallBack<T> = (_ result: T) -> Void
+    typealias CallBack<Result> = (_ result: Result) -> Void
     typealias Result = DM.Result
 }
 

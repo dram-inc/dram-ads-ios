@@ -1,0 +1,16 @@
+PODS:
+  - DramAds (0.1.1)
+
+DEPENDENCIES:
+  - DramAds (from `../../`)
+
+EXTERNAL SOURCES:
+  DramAds:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  DramAds: 47e1cb0633f4dc3ee5e992d354af41e81021b046
+
+PODFILE CHECKSUM: 54e3b477bcc720b2cc063058af7305277b55cc89
+
+COCOAPODS: 1.12.1

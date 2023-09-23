@@ -8,10 +8,11 @@
 import Foundation
 
 /// DM is root class in sdk
-///
-public class DM {
+@objc(DMDram)
+public class DM: NSObject {
     
     /// Return class instance
+    @objc(sharedManager)
     static public let shared: DM = DM(queue: DM.queue, responseQueue: DM.responseQueue)
     
     static private let queue = DispatchQueue(label: "Dram")
@@ -32,6 +33,12 @@ public class DM {
     
     public func configure(enviorment: Enviorment) {
         self.adService.configure(enviorment: enviorment)
+    }
+    
+    @objc
+    public func configure() {
+        let enviorment = DM.Enviorment(baseUrl: "https://ads.epomtestsite.com")
+        self.configure(enviorment: enviorment)
     }
     
 }

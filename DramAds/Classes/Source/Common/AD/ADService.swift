@@ -27,7 +27,7 @@ extension DM {
         }
         
         @discardableResult
-        public func loadAd(request: EpomAdRequest, response: @escaping (DM.Result<Any>) -> Void) -> IDMNetworkOperation? {
+        public func loadAd(request: AdRequest, response: @escaping (DM.Result<Any>) -> Void) -> IDMNetworkOperation? {
             return self.network.request(json: request) { [weak self] result in
                 self?.responseQueue.async {
                     response(result)
@@ -39,14 +39,14 @@ extension DM {
     
 }
 
-public extension DM.ADService {
+public extension DM.ADService.AdError {
     
-    enum AdError: IDMError {
+    enum ErrorType: IDMError {
         
         case configurationError
         case error(error: Error)
         
-        public var code: Int? {
+        public var code: Int {
             switch self {
             case .configurationError:
                 return -1
@@ -69,6 +69,78 @@ public extension DM.ADService {
                 return (error as NSError).localizedDescription
             }
         }
+        
+        public var isCanceled: Bool {
+            switch self {
+            case .configurationError:
+                return false
+            case .error(let error):
+                if let error = error as? IDMError {
+                    return error.isCanceled
+                }
+                return (error as NSError).code == -999
+            }
+        }
+    }
+    
+}
+
+public extension DM.ADService {
+    
+    @objc(DMServiceAdError)
+    class AdError: NSObject {
+        
+        static var configurationError: AdError {
+            return AdError(errorType: .configurationError)
+        }
+        
+        let errorType: ErrorType
+        
+        public override var description: String {
+            return "code: \(self.code), message: \(self.message ?? "")"
+        }
+        
+        init(errorType: ErrorType) {
+            self.errorType = errorType
+            super.init()
+        }
+        
+        convenience init(error: Error) {
+            self.init(errorType: .error(error: error))
+        }
+        
+    }
+    
+}
+
+extension DM.ADService.AdError: IDMError {
+    
+    public var code: Int {
+        return self.errorType.code
+    }
+    
+    @objc public var message: String? {
+        return self.errorType.message
+    }
+    
+    @objc public var isCanceled: Bool {
+        return self.errorType.isCanceled
+    }
+    
+}
+
+@objc extension DM.ADService.AdError: CustomNSError {
+    
+    @objc public static var errorDomain: String {
+        return "DramAds.io"
+    }
+    
+    @objc public var errorCode: Int {
+        return self.code
+    }
+    
+    @objc public var errorUserInfo: [String : Any] {
+        return ["message": self.message ?? "", "code": self.code]
     }
     
 }
