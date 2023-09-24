@@ -10,7 +10,8 @@ import UIKit
 
 @objc extension DM {
     
-    @objcMembers public class AdRequest: DM.Request {
+    @objc(DMAdRequest)
+    public class AdRequest: DM.Request {
         
         public init(configuration: AdRequest.Configuration, env: Environment, placementType: DM.EpomAd.AdPlacementType) throws {
             let urlStr = env.baseUrl + "/" + placementType.path

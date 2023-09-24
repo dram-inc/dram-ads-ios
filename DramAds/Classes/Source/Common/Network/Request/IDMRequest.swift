@@ -13,6 +13,7 @@ protocol IDMRequest {
 
 extension DM {
     
+    @objc(DMRequest)
     public class Request: NSObject, IDMRequest {
         
         public let url: URL
