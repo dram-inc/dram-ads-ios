@@ -15,15 +15,15 @@ extension DM {
         
         let network: NetworkDispatcher
         let responseQueue: DispatchQueue
-        private(set) var enviorment: Enviorment?
+        private(set) var environment: Environment?
         
         init(network: NetworkDispatcher, responseQueue: DispatchQueue) {
             self.network = network
             self.responseQueue = responseQueue
         }
         
-        func configure(enviorment: Enviorment) {
-            self.enviorment = enviorment
+        func configure(environment: Environment) {
+            self.environment = environment
         }
         
         @discardableResult

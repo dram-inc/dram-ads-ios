@@ -19,17 +19,44 @@ extension DM {
     
 }
 
-public extension DM {
+@objc public extension DM {
     
-    @frozen struct Enviorment {
+    @objc(DMEnvironment) class Environment: NSObject {
         
         /// Base Url for epom
         public let baseUrl: String
+        public let type: `Type`
         
-        public init(baseUrl: String) {
+        @objc public init(baseUrl: String, type: Type) {
             self.baseUrl = baseUrl
+            self.type = type
+        }
+                
+        @objc public init(type: `Type`) {
+            self.type = type
+            
+            var url: String {
+                switch type {
+                case .demo:
+                    return "https://ads.epomtestsite.com"
+                case .live:
+                    return "https://ads.epomtestsite.com"
+                }
+            }
+            
+            self.baseUrl = url
         }
         
+    }
+    
+}
+
+public extension DM.Environment {
+    
+    @objc(DMEnvironmentType)
+    enum `Type`: Int {
+        case demo
+        case live
     }
     
 }

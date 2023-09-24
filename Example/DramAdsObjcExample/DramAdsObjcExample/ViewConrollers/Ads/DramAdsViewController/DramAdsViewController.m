@@ -17,8 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [DMDram.sharedManager configure];
-    
+    DMEnvironment *enviorment = [[DMEnvironment alloc] initWithType: DMEnvironmentTypeDemo];
+    [DMDram.sharedManager configureWithEnvironment:enviorment];
 }
 
 

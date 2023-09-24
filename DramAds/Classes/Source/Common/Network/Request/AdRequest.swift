@@ -12,7 +12,7 @@ import UIKit
     
     @objcMembers public class AdRequest: DM.Request {
         
-        public init(configuration: AdRequest.Configuration, env: Enviorment, placementType: DM.EpomAd.AdPlacementType) throws {
+        public init(configuration: AdRequest.Configuration, env: Environment, placementType: DM.EpomAd.AdPlacementType) throws {
             let urlStr = env.baseUrl + "/" + placementType.path
             guard let url = URL(string: urlStr) else {
                 throw DMError.incorrectUrl

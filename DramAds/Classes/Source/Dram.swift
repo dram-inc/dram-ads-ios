@@ -31,14 +31,9 @@ public class DM: NSObject {
         self.adService = ADService(network: self.network, responseQueue: responseQueue)
     }
     
-    public func configure(enviorment: Enviorment) {
-        self.adService.configure(enviorment: enviorment)
-    }
-    
     @objc
-    public func configure() {
-        let enviorment = DM.Enviorment(baseUrl: "https://ads.epomtestsite.com")
-        self.configure(enviorment: enviorment)
+    public func configure(environment: Environment) {
+        self.adService.configure(environment: environment)
     }
     
 }
