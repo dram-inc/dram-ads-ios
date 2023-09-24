@@ -1,0 +1,1097 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0634732DD76D61E3987A97B19A99E6B8 /* DMPlayerTimeObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9695CBB93B216962CBE9314906357FB0 /* DMPlayerTimeObserver.swift */; };
+		07012D29E76BEBEC0597F27CF4B287D8 /* Pods-DramAds_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DDB6DE49F38E8FA042E35088390D0B /* Pods-DramAds_Example-dummy.m */; };
+		0968BF753D27129868D843C80D58180B /* OperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E1527681173994E2F7F9F67E556B2 /* OperationQueue.swift */; };
+		09E5D2C4DE4970813708E1B29067346D /* DMPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0ACE89A1BBDBC4E9163F9F4C2C9BA7 /* DMPlayerView.swift */; };
+		1088F2EEEBE0CDD9CAA1327105E0732E /* DMImageServiceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1DAFB23900F141AB571E947B52D53F /* DMImageServiceOperation.swift */; };
+		13299B403B1016F6B1B48BC0737C0504 /* DramAds-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C953ED278F51A07D5B63C1BDF6E77AB /* DramAds-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13D2FE240A59F53D8CD6C6628AF71451 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		13D5FB73B7CDD1E611153A087A57D49F /* EpomAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDA387ADE8CEDB26095FD928AF98A22 /* EpomAd.swift */; };
+		14285BD24A2C4FBAE05584271D7C5896 /* DMLocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554DAE8B1898C424AC16F12CD5746DF8 /* DMLocker.swift */; };
+		2104AF30D3BCF5C0BAB9FF236FB4DC8C /* IDMRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C422ADCD23EBC444A90D90C1208DEB3 /* IDMRequest.swift */; };
+		21427692749E9D9785A593DEA4FB88D6 /* Pods-DramAds_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F0894B8CE403E02F7D2D04509B6589 /* Pods-DramAds_Tests-dummy.m */; };
+		23D7EE1723ED3D2C692DA8D47641F517 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC049B2DED7E0AE7D68079A0F756E58 /* Utility.swift */; };
+		273BF0D98794A498760A7541DC53CC25 /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2A0F36C64140FBF1C5CE2F51C87D8 /* Ad.swift */; };
+		2ADB9DA786F0847251C1DF4DD56DCC72 /* EpomNativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2B911CD9E93885C77043CC8BD0DF40 /* EpomNativeAd.swift */; };
+		2FDA33386FE7FA31FC4ADBDF1B1D058A /* DMImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8D8788C4B703E3504E9E7D8983D2D /* DMImageView.swift */; };
+		3AAF760103FD0E5C766E98B519E2E342 /* String+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0147E3D7552C4FD6F2C5058D4D8D8B8D /* String+Operation.swift */; };
+		3B30221D7F2477ED7899D295871A4C7D /* RewardedAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B6385FA53DAE01AF820A182B5C587C /* RewardedAd.swift */; };
+		412BB8C659BA3E9F59071A3FFB91A961 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		46463718291C853EFEC664C12DC3C17C /* DMRewardedAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC1DE630C80726BEB64D8FC087F789D /* DMRewardedAdViewController.swift */; };
+		490B351556601C34B490531441C079FB /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2044796863CC8E71ACBB0AE9775F5 /* Decoder.swift */; };
+		4FE882122986755B69D0E131852E7816 /* Decoding+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D997FA79B840BE65079D19EABF1FF1B /* Decoding+Operation.swift */; };
+		501A8A054A5B93C1837DAE21FC9C35E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		51C2B91B975AE60A8B1EAA3DA97AEADB /* WeakArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91820ED59446573D038C874541D90C8 /* WeakArray.swift */; };
+		52F29C72447C2CED1095885116565F10 /* DMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C419EBE318D0373E11614CBF5B9E6A2 /* DMNavigationController.swift */; };
+		64403D1CC030C326C824E4542CF0EAE7 /* Pods-DramAds_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA7BD6464D32331AE4AB7B94405560AE /* Pods-DramAds_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69C3A4CB16905623F84D387D39BD2BE5 /* OperationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6309C16432763865F04F5CB4CBB486 /* OperationManager.swift */; };
+		771E0260971C05805D31FD8D7FDE295B /* DramAds-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8480AB9B088E9FBB75082748F7A1690 /* DramAds-dummy.m */; };
+		78C6FE24BA1037AD04F80EE216583B9D /* AdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FCACE9C2D31E876E71A6BD74701F94 /* AdRequest.swift */; };
+		8206AEA4B0D52A22CBF8C50714042913 /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A75F3FDBAF95A7A6AD793262C13F81 /* NetworkDispatcher.swift */; };
+		8D742553E073B3E1CD8421E7CFFE6024 /* DMPLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716FD846A8E8FF601304FA1DE7D14A6 /* DMPLayer.swift */; };
+		8D8EFB7CFD22BB756E4492B435E753C4 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FE2A5FCA26267540FADCE6DC79730 /* Error.swift */; };
+		8F48D5CDDA9BB5B1E7906455A99FFA78 /* NetworkDataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993450FCE9B0C8FA231EC7DA4AAD3284 /* NetworkDataOperation.swift */; };
+		9100548CA40C3BFA665E77AF5F28EBA0 /* Pods-DramAds_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2562605DF1D34B4874ACA917F57DB2 /* Pods-DramAds_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		943964A5C091D0904F58B0E75A079326 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		947C304D0DD61627814B31547BB3C359 /* Dictionary+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127F16FF4C81634BFBBCBD059DD27F20 /* Dictionary+Operation.swift */; };
+		989A64FCF9346DD8C96902D8C2213F98 /* OperationBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37443DF298BFB6BA83CA7322FA1EE250 /* OperationBase.swift */; };
+		99ED247917FA249CE84C8B768E3B988F /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFAF59DF1BD038AE1DD5E1076B90DD5 /* NetworkOperation.swift */; };
+		A1594B29E87257326D8FDDDB6AD732A1 /* DMImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A367B7C16A21E9EC2A801B305414FB /* DMImageService.swift */; };
+		ACB9C54EF4747A94BFE0DF9A11E8CBCD /* ADService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B7A4452603CD66402893CF1C202985 /* ADService.swift */; };
+		B60D4CC50FF5FEBE45DABB7A0B33A647 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B93D7CD148AE56A3D14306D4A2F0FE /* Operation.swift */; };
+		C2B68878085DD5D5282505650209CE11 /* DmAudioSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30863FAB6E368817278B6118F9FB2E1D /* DmAudioSession.swift */; };
+		D604F6BBA81F745062BD9D30FC0536E9 /* Storyboard.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = B597C9BD89DEE2AF65BC79630E6BC8EF /* Storyboard.storyboard */; };
+		D6E72AEF61436BF6608386F8C22C3930 /* ADService+NativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95389C96C5F9A50672FD63F69838DD44 /* ADService+NativeAd.swift */; };
+		DA9D3B621557AD1070499B504F53F8EA /* Dram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BEAD370DEAA5ACA827005E6864B4E8 /* Dram.swift */; };
+		F0C6C1BD34F2BDBB73BE7B4529D40680 /* NetworkDownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A030C43ACA8E079D24ADD6A8B2A7383 /* NetworkDownloadOperation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06D25DE3743566CBF08A9F070950C29A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80F48A4A9FE6297BA8C56CC0671F5306;
+			remoteInfo = DramAds;
+		};
+		40F07A7F46F3EF821AC4EB134DFBB11F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 631407DD4C0C2BB4D637732B8911D121;
+			remoteInfo = "Pods-DramAds_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0147E3D7552C4FD6F2C5058D4D8D8B8D /* String+Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Operation.swift"; sourceTree = "<group>"; };
+		0C953ED278F51A07D5B63C1BDF6E77AB /* DramAds-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DramAds-umbrella.h"; sourceTree = "<group>"; };
+		127F16FF4C81634BFBBCBD059DD27F20 /* Dictionary+Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Dictionary+Operation.swift"; sourceTree = "<group>"; };
+		13443A47E3D050A5D8B5F1BFFDB6087E /* Pods-DramAds_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DramAds_Tests-Info.plist"; sourceTree = "<group>"; };
+		178B8C5F57B8B41C4DDCFD89543FA114 /* Pods-DramAds_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DramAds_Example-frameworks.sh"; sourceTree = "<group>"; };
+		1A030C43ACA8E079D24ADD6A8B2A7383 /* NetworkDownloadOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkDownloadOperation.swift; sourceTree = "<group>"; };
+		1C2562605DF1D34B4874ACA917F57DB2 /* Pods-DramAds_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DramAds_Example-umbrella.h"; sourceTree = "<group>"; };
+		1D24DE87569EC6AF7107737000896EC2 /* Pods_DramAds_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DramAds_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D997FA79B840BE65079D19EABF1FF1B /* Decoding+Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Decoding+Operation.swift"; sourceTree = "<group>"; };
+		1DC4260E79EF69FA32DDB67FE81A5DA3 /* DramAds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DramAds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E2B911CD9E93885C77043CC8BD0DF40 /* EpomNativeAd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EpomNativeAd.swift; sourceTree = "<group>"; };
+		26B7A4452603CD66402893CF1C202985 /* ADService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ADService.swift; sourceTree = "<group>"; };
+		2E2D750843B9DF683B4F8860DE246259 /* Pods-DramAds_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DramAds_Tests.modulemap"; sourceTree = "<group>"; };
+		30863FAB6E368817278B6118F9FB2E1D /* DmAudioSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DmAudioSession.swift; sourceTree = "<group>"; };
+		30A75F3FDBAF95A7A6AD793262C13F81 /* NetworkDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		319BF391EB295107D9AFED37D00AFC47 /* Pods-DramAds_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DramAds_Example-Info.plist"; sourceTree = "<group>"; };
+		326AE2A094785CFF2DEE43AB1D3A502B /* Pods-DramAds_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DramAds_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3716FD846A8E8FF601304FA1DE7D14A6 /* DMPLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMPLayer.swift; sourceTree = "<group>"; };
+		37443DF298BFB6BA83CA7322FA1EE250 /* OperationBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OperationBase.swift; sourceTree = "<group>"; };
+		39BEAD370DEAA5ACA827005E6864B4E8 /* Dram.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dram.swift; path = DramAds/Classes/Source/Dram.swift; sourceTree = "<group>"; };
+		3C422ADCD23EBC444A90D90C1208DEB3 /* IDMRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IDMRequest.swift; sourceTree = "<group>"; };
+		3E899100BDC34FDECAD321CCDD772A1D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4FA297C5DB68426F221CDB3276F829CC /* Pods-DramAds_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DramAds_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4FC1DE630C80726BEB64D8FC087F789D /* DMRewardedAdViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMRewardedAdViewController.swift; sourceTree = "<group>"; };
+		554DAE8B1898C424AC16F12CD5746DF8 /* DMLocker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMLocker.swift; sourceTree = "<group>"; };
+		555F3E5B0FB429F23F9D003EF802FC7D /* DramAds.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DramAds.modulemap; sourceTree = "<group>"; };
+		577E1527681173994E2F7F9F67E556B2 /* OperationQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OperationQueue.swift; sourceTree = "<group>"; };
+		617A9BE61451E69296C096179942B4A0 /* Pods-DramAds_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DramAds_Example.release.xcconfig"; sourceTree = "<group>"; };
+		61F0894B8CE403E02F7D2D04509B6589 /* Pods-DramAds_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DramAds_Tests-dummy.m"; sourceTree = "<group>"; };
+		68A367B7C16A21E9EC2A801B305414FB /* DMImageService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMImageService.swift; sourceTree = "<group>"; };
+		7EEE0BD4F0CBC43E9879A3D87F00CFAC /* Pods-DramAds_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DramAds_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		82A27F3641B855EFD71C675A18E78E35 /* DramAds-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DramAds-prefix.pch"; sourceTree = "<group>"; };
+		84B613558B0D9FE3FA37CADE4D1862B0 /* DramAds.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DramAds.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		87E4FA26EE6E5BC2B5C4A8B8A7BE3EBE /* Pods-DramAds_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DramAds_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		895FE2A5FCA26267540FADCE6DC79730 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		8A6309C16432763865F04F5CB4CBB486 /* OperationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OperationManager.swift; sourceTree = "<group>"; };
+		8CC1F7F4ECD0EDB79AC2FE16A8AFC62E /* DramAds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DramAds.debug.xcconfig; sourceTree = "<group>"; };
+		95389C96C5F9A50672FD63F69838DD44 /* ADService+NativeAd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ADService+NativeAd.swift"; sourceTree = "<group>"; };
+		9695CBB93B216962CBE9314906357FB0 /* DMPlayerTimeObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMPlayerTimeObserver.swift; sourceTree = "<group>"; };
+		993450FCE9B0C8FA231EC7DA4AAD3284 /* NetworkDataOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkDataOperation.swift; sourceTree = "<group>"; };
+		99B76D95B96B2FED56A0FA78933EF0BA /* Pods-DramAds_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DramAds_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9AB2A0F36C64140FBF1C5CE2F51C87D8 /* Ad.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
+		9C419EBE318D0373E11614CBF5B9E6A2 /* DMNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMNavigationController.swift; sourceTree = "<group>"; };
+		9CA8D8788C4B703E3504E9E7D8983D2D /* DMImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMImageView.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A7FCACE9C2D31E876E71A6BD74701F94 /* AdRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdRequest.swift; sourceTree = "<group>"; };
+		B597C9BD89DEE2AF65BC79630E6BC8EF /* Storyboard.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		B8A11D771179A0FF59F54178B0B1219B /* Pods-DramAds_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DramAds_Example.modulemap"; sourceTree = "<group>"; };
+		BA7BD6464D32331AE4AB7B94405560AE /* Pods-DramAds_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DramAds_Tests-umbrella.h"; sourceTree = "<group>"; };
+		BC0ACE89A1BBDBC4E9163F9F4C2C9BA7 /* DMPlayerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMPlayerView.swift; sourceTree = "<group>"; };
+		C2DDB6DE49F38E8FA042E35088390D0B /* Pods-DramAds_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DramAds_Example-dummy.m"; sourceTree = "<group>"; };
+		CDC049B2DED7E0AE7D68079A0F756E58 /* Utility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E0B6385FA53DAE01AF820A182B5C587C /* RewardedAd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RewardedAd.swift; sourceTree = "<group>"; };
+		E1A2044796863CC8E71ACBB0AE9775F5 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		E1B93D7CD148AE56A3D14306D4A2F0FE /* Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		E263A0D5391F7D56FD0AAE7603E0A22D /* DramAds-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DramAds-Info.plist"; sourceTree = "<group>"; };
+		E2C679334304F5E312FF89B3611698C5 /* DramAds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DramAds.release.xcconfig; sourceTree = "<group>"; };
+		E4BA177718E1C48C0EDB531992C53AC6 /* Pods-DramAds_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DramAds_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E8480AB9B088E9FBB75082748F7A1690 /* DramAds-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DramAds-dummy.m"; sourceTree = "<group>"; };
+		EA60FB283E9E60B79F9C37E9B5CC9C02 /* Pods-DramAds_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DramAds_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EAFAF59DF1BD038AE1DD5E1076B90DD5 /* NetworkOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		EBF9E8EF279D38F302CA2724789DCE1E /* Pods_DramAds_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DramAds_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC1DAFB23900F141AB571E947B52D53F /* DMImageServiceOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMImageServiceOperation.swift; sourceTree = "<group>"; };
+		EFDA387ADE8CEDB26095FD928AF98A22 /* EpomAd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EpomAd.swift; sourceTree = "<group>"; };
+		F91820ED59446573D038C874541D90C8 /* WeakArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeakArray.swift; sourceTree = "<group>"; };
+		FF98952EE0349C4EF576B3246602E2BE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71E5BE2D44C68C3E7C55BC237128EBC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				412BB8C659BA3E9F59071A3FFB91A961 /* Foundation.framework in Frameworks */,
+				501A8A054A5B93C1837DAE21FC9C35E0 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFFDD7C85827CBEC53EA513D2D01BC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13D2FE240A59F53D8CD6C6628AF71451 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C708D08B0953E9FB5D30C2C9A568932B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				943964A5C091D0904F58B0E75A079326 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B803DC7072DF1AB20BFE547CF977483 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				68A367B7C16A21E9EC2A801B305414FB /* DMImageService.swift */,
+				A7CF72E796B96AB39E387205E1349516 /* Operations */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25537690687854D259950F47CDB6F65E /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				993450FCE9B0C8FA231EC7DA4AAD3284 /* NetworkDataOperation.swift */,
+				1A030C43ACA8E079D24ADD6A8B2A7383 /* NetworkDownloadOperation.swift */,
+				EAFAF59DF1BD038AE1DD5E1076B90DD5 /* NetworkOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		28539F2C76A9818B7722CCC7D9D6A2F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9CA8D8788C4B703E3504E9E7D8983D2D /* DMImageView.swift */,
+				BC0ACE89A1BBDBC4E9163F9F4C2C9BA7 /* DMPlayerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B124D3708A69E40B07DEAC51774A11F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA6C76783C9019D71466713621697603 /* DramAds */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2B9CE002AD7AB385B934EC1225E529A1 /* Moduls */ = {
+			isa = PBXGroup;
+			children = (
+				9C419EBE318D0373E11614CBF5B9E6A2 /* DMNavigationController.swift */,
+				FB11DA45374E87331BB96BEA3E7C3365 /* Rewarded */,
+			);
+			path = Moduls;
+			sourceTree = "<group>";
+		};
+		2D35A1049A38CAB502203D1379246E87 /* UiAds */ = {
+			isa = PBXGroup;
+			children = (
+				E0B6385FA53DAE01AF820A182B5C587C /* RewardedAd.swift */,
+			);
+			path = UiAds;
+			sourceTree = "<group>";
+		};
+		323734D0ADB7076F55440D39AEB8AFED /* Ads */ = {
+			isa = PBXGroup;
+			children = (
+				9AB2A0F36C64140FBF1C5CE2F51C87D8 /* Ad.swift */,
+				EFDA387ADE8CEDB26095FD928AF98A22 /* EpomAd.swift */,
+				1E2B911CD9E93885C77043CC8BD0DF40 /* EpomNativeAd.swift */,
+			);
+			path = Ads;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6340BD2822A53A5CC53AEE29903AF524 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E739E085A6C2C04896731BE8C58D8C72 /* AD */,
+				D2647B3BD4381783EB66AD2EBA1F0BD7 /* Network */,
+				FE41E32F33F0380D2610F3D282EBBD7B /* Operation */,
+				EF2FE773CE4407F88ED035F15B95E10D /* Player */,
+				0B803DC7072DF1AB20BFE547CF977483 /* Services */,
+				9BFCE3C2C3C4F0DFACB56E3DAE72C227 /* UI */,
+				8F59F3C439270BFDD969F60D08B49D4F /* Utility */,
+			);
+			name = Common;
+			path = DramAds/Classes/Source/Common;
+			sourceTree = "<group>";
+		};
+		641DC0F892269479CF89900EFCCDB9E3 /* Pods-DramAds_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2E2D750843B9DF683B4F8860DE246259 /* Pods-DramAds_Tests.modulemap */,
+				326AE2A094785CFF2DEE43AB1D3A502B /* Pods-DramAds_Tests-acknowledgements.markdown */,
+				7EEE0BD4F0CBC43E9879A3D87F00CFAC /* Pods-DramAds_Tests-acknowledgements.plist */,
+				61F0894B8CE403E02F7D2D04509B6589 /* Pods-DramAds_Tests-dummy.m */,
+				13443A47E3D050A5D8B5F1BFFDB6087E /* Pods-DramAds_Tests-Info.plist */,
+				BA7BD6464D32331AE4AB7B94405560AE /* Pods-DramAds_Tests-umbrella.h */,
+				4FA297C5DB68426F221CDB3276F829CC /* Pods-DramAds_Tests.debug.xcconfig */,
+				E4BA177718E1C48C0EDB531992C53AC6 /* Pods-DramAds_Tests.release.xcconfig */,
+			);
+			name = "Pods-DramAds_Tests";
+			path = "Target Support Files/Pods-DramAds_Tests";
+			sourceTree = "<group>";
+		};
+		6A32FFEB1C16663E2A79C745721200AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DC4260E79EF69FA32DDB67FE81A5DA3 /* DramAds.framework */,
+				EBF9E8EF279D38F302CA2724789DCE1E /* Pods_DramAds_Example.framework */,
+				1D24DE87569EC6AF7107737000896EC2 /* Pods_DramAds_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75A966DC000B304D8CA6658DE40ADEA6 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				A7FCACE9C2D31E876E71A6BD74701F94 /* AdRequest.swift */,
+				3C422ADCD23EBC444A90D90C1208DEB3 /* IDMRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		8F59F3C439270BFDD969F60D08B49D4F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E1A2044796863CC8E71ACBB0AE9775F5 /* Decoder.swift */,
+				30863FAB6E368817278B6118F9FB2E1D /* DmAudioSession.swift */,
+				554DAE8B1898C424AC16F12CD5746DF8 /* DMLocker.swift */,
+				895FE2A5FCA26267540FADCE6DC79730 /* Error.swift */,
+				CDC049B2DED7E0AE7D68079A0F756E58 /* Utility.swift */,
+				F91820ED59446573D038C874541D90C8 /* WeakArray.swift */,
+				9DC11C0B526DE807BBA5147BB24D661A /* Extensions */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		8F8C2B4B718B97D0A4F37566BE26E8EA /* Pods-DramAds_Example */ = {
+			isa = PBXGroup;
+			children = (
+				B8A11D771179A0FF59F54178B0B1219B /* Pods-DramAds_Example.modulemap */,
+				EA60FB283E9E60B79F9C37E9B5CC9C02 /* Pods-DramAds_Example-acknowledgements.markdown */,
+				99B76D95B96B2FED56A0FA78933EF0BA /* Pods-DramAds_Example-acknowledgements.plist */,
+				C2DDB6DE49F38E8FA042E35088390D0B /* Pods-DramAds_Example-dummy.m */,
+				178B8C5F57B8B41C4DDCFD89543FA114 /* Pods-DramAds_Example-frameworks.sh */,
+				319BF391EB295107D9AFED37D00AFC47 /* Pods-DramAds_Example-Info.plist */,
+				1C2562605DF1D34B4874ACA917F57DB2 /* Pods-DramAds_Example-umbrella.h */,
+				87E4FA26EE6E5BC2B5C4A8B8A7BE3EBE /* Pods-DramAds_Example.debug.xcconfig */,
+				617A9BE61451E69296C096179942B4A0 /* Pods-DramAds_Example.release.xcconfig */,
+			);
+			name = "Pods-DramAds_Example";
+			path = "Target Support Files/Pods-DramAds_Example";
+			sourceTree = "<group>";
+		};
+		9BFCE3C2C3C4F0DFACB56E3DAE72C227 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				28539F2C76A9818B7722CCC7D9D6A2F9 /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9DC11C0B526DE807BBA5147BB24D661A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1D997FA79B840BE65079D19EABF1FF1B /* Decoding+Operation.swift */,
+				127F16FF4C81634BFBBCBD059DD27F20 /* Dictionary+Operation.swift */,
+				0147E3D7552C4FD6F2C5058D4D8D8B8D /* String+Operation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9DEE7E6D628D7E4A2CB555328E88CCB6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B597C9BD89DEE2AF65BC79630E6BC8EF /* Storyboard.storyboard */,
+				2B9CE002AD7AB385B934EC1225E529A1 /* Moduls */,
+			);
+			name = UI;
+			path = DramAds/Classes/Source/UI;
+			sourceTree = "<group>";
+		};
+		A7CF72E796B96AB39E387205E1349516 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				EC1DAFB23900F141AB571E947B52D53F /* DMImageServiceOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		AA6C76783C9019D71466713621697603 /* DramAds */ = {
+			isa = PBXGroup;
+			children = (
+				39BEAD370DEAA5ACA827005E6864B4E8 /* Dram.swift */,
+				6340BD2822A53A5CC53AEE29903AF524 /* Common */,
+				F8FD0C5834C5E12AD21CF3D9873D5122 /* Pod */,
+				FED66E93656D6BB062E8D58B303E0777 /* Support Files */,
+				9DEE7E6D628D7E4A2CB555328E88CCB6 /* UI */,
+			);
+			name = DramAds;
+			path = ../../..;
+			sourceTree = "<group>";
+		};
+		C4C4CFD6DCF336715AC509C9391F6CEF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F8C2B4B718B97D0A4F37566BE26E8EA /* Pods-DramAds_Example */,
+				641DC0F892269479CF89900EFCCDB9E3 /* Pods-DramAds_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				2B124D3708A69E40B07DEAC51774A11F /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				6A32FFEB1C16663E2A79C745721200AD /* Products */,
+				C4C4CFD6DCF336715AC509C9391F6CEF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D2647B3BD4381783EB66AD2EBA1F0BD7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				30A75F3FDBAF95A7A6AD793262C13F81 /* NetworkDispatcher.swift */,
+				25537690687854D259950F47CDB6F65E /* Operations */,
+				75A966DC000B304D8CA6658DE40ADEA6 /* Request */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E739E085A6C2C04896731BE8C58D8C72 /* AD */ = {
+			isa = PBXGroup;
+			children = (
+				26B7A4452603CD66402893CF1C202985 /* ADService.swift */,
+				95389C96C5F9A50672FD63F69838DD44 /* ADService+NativeAd.swift */,
+				323734D0ADB7076F55440D39AEB8AFED /* Ads */,
+				2D35A1049A38CAB502203D1379246E87 /* UiAds */,
+			);
+			path = AD;
+			sourceTree = "<group>";
+		};
+		EF2FE773CE4407F88ED035F15B95E10D /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				3716FD846A8E8FF601304FA1DE7D14A6 /* DMPLayer.swift */,
+				9695CBB93B216962CBE9314906357FB0 /* DMPlayerTimeObserver.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		F8FD0C5834C5E12AD21CF3D9873D5122 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				84B613558B0D9FE3FA37CADE4D1862B0 /* DramAds.podspec */,
+				FF98952EE0349C4EF576B3246602E2BE /* LICENSE */,
+				3E899100BDC34FDECAD321CCDD772A1D /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		FB11DA45374E87331BB96BEA3E7C3365 /* Rewarded */ = {
+			isa = PBXGroup;
+			children = (
+				4FC1DE630C80726BEB64D8FC087F789D /* DMRewardedAdViewController.swift */,
+			);
+			path = Rewarded;
+			sourceTree = "<group>";
+		};
+		FE41E32F33F0380D2610F3D282EBBD7B /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				E1B93D7CD148AE56A3D14306D4A2F0FE /* Operation.swift */,
+				37443DF298BFB6BA83CA7322FA1EE250 /* OperationBase.swift */,
+				8A6309C16432763865F04F5CB4CBB486 /* OperationManager.swift */,
+				577E1527681173994E2F7F9F67E556B2 /* OperationQueue.swift */,
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
+		FED66E93656D6BB062E8D58B303E0777 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				555F3E5B0FB429F23F9D003EF802FC7D /* DramAds.modulemap */,
+				E8480AB9B088E9FBB75082748F7A1690 /* DramAds-dummy.m */,
+				E263A0D5391F7D56FD0AAE7603E0A22D /* DramAds-Info.plist */,
+				82A27F3641B855EFD71C675A18E78E35 /* DramAds-prefix.pch */,
+				0C953ED278F51A07D5B63C1BDF6E77AB /* DramAds-umbrella.h */,
+				8CC1F7F4ECD0EDB79AC2FE16A8AFC62E /* DramAds.debug.xcconfig */,
+				E2C679334304F5E312FF89B3611698C5 /* DramAds.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/DramAdsSwiftExample/Pods/Target Support Files/DramAds";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		15AB42D256B79CE6AC043D4BEF782DD5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9100548CA40C3BFA665E77AF5F28EBA0 /* Pods-DramAds_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49A3DB9D20E95543E2AB09BD85604E83 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64403D1CC030C326C824E4542CF0EAE7 /* Pods-DramAds_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		879880A57B211D2BEDD22FF724F3AE02 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13299B403B1016F6B1B48BC0737C0504 /* DramAds-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0B5113713361E4F79E730B591113A5EB /* Pods-DramAds_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06680720C5DBB9136FC051CA9AEBDE02 /* Build configuration list for PBXNativeTarget "Pods-DramAds_Tests" */;
+			buildPhases = (
+				49A3DB9D20E95543E2AB09BD85604E83 /* Headers */,
+				D20B6C44283D986F058B2E3259A0FAF5 /* Sources */,
+				C708D08B0953E9FB5D30C2C9A568932B /* Frameworks */,
+				B0D4427594CC95394BFD03731614EF30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D228E79F354674A3908C12FF9F14CE46 /* PBXTargetDependency */,
+			);
+			name = "Pods-DramAds_Tests";
+			productName = Pods_DramAds_Tests;
+			productReference = 1D24DE87569EC6AF7107737000896EC2 /* Pods_DramAds_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		631407DD4C0C2BB4D637732B8911D121 /* Pods-DramAds_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68354C53A014AC8F41E9BB99123DC41F /* Build configuration list for PBXNativeTarget "Pods-DramAds_Example" */;
+			buildPhases = (
+				15AB42D256B79CE6AC043D4BEF782DD5 /* Headers */,
+				11506FF6800E74BB079DE5D6EB9EEAFD /* Sources */,
+				9EFFDD7C85827CBEC53EA513D2D01BC1 /* Frameworks */,
+				C10984EDFAAAA4AF99316012370FE1A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				123BC3B680CB987F4FEBC57882652874 /* PBXTargetDependency */,
+			);
+			name = "Pods-DramAds_Example";
+			productName = Pods_DramAds_Example;
+			productReference = EBF9E8EF279D38F302CA2724789DCE1E /* Pods_DramAds_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		80F48A4A9FE6297BA8C56CC0671F5306 /* DramAds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27647889583E8915E50AD7CAFC4BFA92 /* Build configuration list for PBXNativeTarget "DramAds" */;
+			buildPhases = (
+				879880A57B211D2BEDD22FF724F3AE02 /* Headers */,
+				5B6686B8C3E24A63E1E836B700511494 /* Sources */,
+				71E5BE2D44C68C3E7C55BC237128EBC2 /* Frameworks */,
+				A2EDB6ABDFE9246725F35E8AF7DC890F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DramAds;
+			productName = DramAds;
+			productReference = 1DC4260E79EF69FA32DDB67FE81A5DA3 /* DramAds.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 6A32FFEB1C16663E2A79C745721200AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80F48A4A9FE6297BA8C56CC0671F5306 /* DramAds */,
+				631407DD4C0C2BB4D637732B8911D121 /* Pods-DramAds_Example */,
+				0B5113713361E4F79E730B591113A5EB /* Pods-DramAds_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2EDB6ABDFE9246725F35E8AF7DC890F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0D4427594CC95394BFD03731614EF30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10984EDFAAAA4AF99316012370FE1A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11506FF6800E74BB079DE5D6EB9EEAFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07012D29E76BEBEC0597F27CF4B287D8 /* Pods-DramAds_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B6686B8C3E24A63E1E836B700511494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				273BF0D98794A498760A7541DC53CC25 /* Ad.swift in Sources */,
+				ACB9C54EF4747A94BFE0DF9A11E8CBCD /* ADService.swift in Sources */,
+				D6E72AEF61436BF6608386F8C22C3930 /* ADService+NativeAd.swift in Sources */,
+				490B351556601C34B490531441C079FB /* Decoder.swift in Sources */,
+				4FE882122986755B69D0E131852E7816 /* Decoding+Operation.swift in Sources */,
+				947C304D0DD61627814B31547BB3C359 /* Dictionary+Operation.swift in Sources */,
+				C2B68878085DD5D5282505650209CE11 /* DmAudioSession.swift in Sources */,
+				A1594B29E87257326D8FDDDB6AD732A1 /* DMImageService.swift in Sources */,
+				1088F2EEEBE0CDD9CAA1327105E0732E /* DMImageServiceOperation.swift in Sources */,
+				2FDA33386FE7FA31FC4ADBDF1B1D058A /* DMImageView.swift in Sources */,
+				14285BD24A2C4FBAE05584271D7C5896 /* DMLocker.swift in Sources */,
+				52F29C72447C2CED1095885116565F10 /* DMNavigationController.swift in Sources */,
+				8D742553E073B3E1CD8421E7CFFE6024 /* DMPLayer.swift in Sources */,
+				0634732DD76D61E3987A97B19A99E6B8 /* DMPlayerTimeObserver.swift in Sources */,
+				09E5D2C4DE4970813708E1B29067346D /* DMPlayerView.swift in Sources */,
+				46463718291C853EFEC664C12DC3C17C /* DMRewardedAdViewController.swift in Sources */,
+				DA9D3B621557AD1070499B504F53F8EA /* Dram.swift in Sources */,
+				771E0260971C05805D31FD8D7FDE295B /* DramAds-dummy.m in Sources */,
+				13D5FB73B7CDD1E611153A087A57D49F /* EpomAd.swift in Sources */,
+				78C6FE24BA1037AD04F80EE216583B9D /* AdRequest.swift in Sources */,
+				2ADB9DA786F0847251C1DF4DD56DCC72 /* EpomNativeAd.swift in Sources */,
+				8D8EFB7CFD22BB756E4492B435E753C4 /* Error.swift in Sources */,
+				2104AF30D3BCF5C0BAB9FF236FB4DC8C /* IDMRequest.swift in Sources */,
+				8F48D5CDDA9BB5B1E7906455A99FFA78 /* NetworkDataOperation.swift in Sources */,
+				8206AEA4B0D52A22CBF8C50714042913 /* NetworkDispatcher.swift in Sources */,
+				F0C6C1BD34F2BDBB73BE7B4529D40680 /* NetworkDownloadOperation.swift in Sources */,
+				99ED247917FA249CE84C8B768E3B988F /* NetworkOperation.swift in Sources */,
+				B60D4CC50FF5FEBE45DABB7A0B33A647 /* Operation.swift in Sources */,
+				989A64FCF9346DD8C96902D8C2213F98 /* OperationBase.swift in Sources */,
+				69C3A4CB16905623F84D387D39BD2BE5 /* OperationManager.swift in Sources */,
+				0968BF753D27129868D843C80D58180B /* OperationQueue.swift in Sources */,
+				3B30221D7F2477ED7899D295871A4C7D /* RewardedAd.swift in Sources */,
+				D604F6BBA81F745062BD9D30FC0536E9 /* Storyboard.storyboard in Sources */,
+				3AAF760103FD0E5C766E98B519E2E342 /* String+Operation.swift in Sources */,
+				23D7EE1723ED3D2C692DA8D47641F517 /* Utility.swift in Sources */,
+				51C2B91B975AE60A8B1EAA3DA97AEADB /* WeakArray.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20B6C44283D986F058B2E3259A0FAF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21427692749E9D9785A593DEA4FB88D6 /* Pods-DramAds_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		123BC3B680CB987F4FEBC57882652874 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DramAds;
+			target = 80F48A4A9FE6297BA8C56CC0671F5306 /* DramAds */;
+			targetProxy = 06D25DE3743566CBF08A9F070950C29A /* PBXContainerItemProxy */;
+		};
+		D228E79F354674A3908C12FF9F14CE46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DramAds_Example";
+			target = 631407DD4C0C2BB4D637732B8911D121 /* Pods-DramAds_Example */;
+			targetProxy = 40F07A7F46F3EF821AC4EB134DFBB11F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		29DA674CFF275EFEB33B7A371A1BBDB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4BA177718E1C48C0EDB531992C53AC6 /* Pods-DramAds_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DramAds_Tests/Pods-DramAds_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DramAds_Tests/Pods-DramAds_Tests.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		38EDDAA53015ADE397237DC15DC945C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FA297C5DB68426F221CDB3276F829CC /* Pods-DramAds_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DramAds_Tests/Pods-DramAds_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DramAds_Tests/Pods-DramAds_Tests.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		561DEDAC7133475106B0B6B2311017AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 617A9BE61451E69296C096179942B4A0 /* Pods-DramAds_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DramAds_Example/Pods-DramAds_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DramAds_Example/Pods-DramAds_Example.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		DC070C3DE33D6DDE0111EC2B10B4962E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2C679334304F5E312FF89B3611698C5 /* DramAds.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DramAds/DramAds-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DramAds/DramAds-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DramAds/DramAds.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				PRODUCT_MODULE_NAME = DramAds;
+				PRODUCT_NAME = DramAds;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EE0067AA7F34A033995E5B3242D248AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CC1F7F4ECD0EDB79AC2FE16A8AFC62E /* DramAds.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DramAds/DramAds-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DramAds/DramAds-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DramAds/DramAds.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				PRODUCT_MODULE_NAME = DramAds;
+				PRODUCT_NAME = DramAds;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F5BBE3CA596F39638D49AD87A6930678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87E4FA26EE6E5BC2B5C4A8B8A7BE3EBE /* Pods-DramAds_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DramAds_Example/Pods-DramAds_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DramAds_Example/Pods-DramAds_Example.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06680720C5DBB9136FC051CA9AEBDE02 /* Build configuration list for PBXNativeTarget "Pods-DramAds_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38EDDAA53015ADE397237DC15DC945C1 /* Debug */,
+				29DA674CFF275EFEB33B7A371A1BBDB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27647889583E8915E50AD7CAFC4BFA92 /* Build configuration list for PBXNativeTarget "DramAds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0067AA7F34A033995E5B3242D248AC /* Debug */,
+				DC070C3DE33D6DDE0111EC2B10B4962E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68354C53A014AC8F41E9BB99123DC41F /* Build configuration list for PBXNativeTarget "Pods-DramAds_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5BBE3CA596F39638D49AD87A6930678 /* Debug */,
+				561DEDAC7133475106B0B6B2311017AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

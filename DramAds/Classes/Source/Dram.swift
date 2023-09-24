@@ -8,10 +8,11 @@
 import Foundation
 
 /// DM is root class in sdk
-///
-public class DM {
+@objc(DMDram)
+public class DM: NSObject {
     
     /// Return class instance
+    @objc(sharedManager)
     static public let shared: DM = DM(queue: DM.queue, responseQueue: DM.responseQueue)
     
     static private let queue = DispatchQueue(label: "Dram")
@@ -30,8 +31,9 @@ public class DM {
         self.adService = ADService(network: self.network, responseQueue: responseQueue)
     }
     
-    public func configure(enviorment: Enviorment) {
-        self.adService.configure(enviorment: enviorment)
+    @objc
+    public func configure(environment: Environment) {
+        self.adService.configure(environment: environment)
     }
     
 }

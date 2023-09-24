@@ -1,0 +1,6 @@
+framework module Pods_DramAdsObjcExample {
+  umbrella header "Pods-DramAdsObjcExample-umbrella.h"
+
+  export *
+  module * { export * }
+}

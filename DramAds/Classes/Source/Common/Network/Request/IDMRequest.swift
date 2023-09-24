@@ -13,7 +13,8 @@ protocol IDMRequest {
 
 extension DM {
     
-    public class Request: IDMRequest {
+    @objc(DMRequest)
+    public class Request: NSObject, IDMRequest {
         
         public let url: URL
         public let method: HTTPMethod?
@@ -29,6 +30,7 @@ extension DM {
             self.headers = headers
             self.queryParams = queryParams
             self.timeoutInterval = timeoutInterval
+            super.init()
         }
         
         public init(urlStr: String, method: HTTPMethod? = nil, params: [String : Any?]? = nil, headers: [String : String?]? = nil, queryParams: [String : String?]? = nil, timeoutInterval: TimeInterval = 60.0) throws {
@@ -43,6 +45,7 @@ extension DM {
             self.headers = headers
             self.queryParams = queryParams
             self.timeoutInterval = timeoutInterval
+            super.init()
         }
         
         func asRequest() throws -> URLRequest {
@@ -87,7 +90,7 @@ extension DM.Request {
         
         case requestNotValid(url: String)
         
-        var code: Int? {
+        var code: Int {
             switch self {
             case .requestNotValid:
                 return -10

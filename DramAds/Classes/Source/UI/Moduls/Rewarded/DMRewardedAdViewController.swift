@@ -19,15 +19,15 @@ class DMRewardedAdViewController: UIViewController {
     private var ad: DM.RewardedAd!
     
     override var shouldAutorotate: Bool {
-        return self.ad.uiDataSource?.rewardedAd(shouldAutorotate: self.ad) ?? super.shouldAutorotate
+        return self.ad.uiDataSource?.rewardedAd?(shouldAutorotate: self.ad) ?? super.shouldAutorotate
     }
 
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return self.ad.uiDataSource?.rewardedAd(supportedInterfaceOrientations: self.ad) ?? super.supportedInterfaceOrientations
+        return self.ad.uiDataSource?.rewardedAd?(supportedInterfaceOrientations: self.ad) ?? super.supportedInterfaceOrientations
     }
 
     override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
-        return self.ad.uiDataSource?.rewardedAd(preferredInterfaceOrientationForPresentation: self.ad) ?? super.preferredInterfaceOrientationForPresentation
+        return self.ad.uiDataSource?.rewardedAd?(preferredInterfaceOrientationForPresentation: self.ad) ?? super.preferredInterfaceOrientationForPresentation
     }
     
     override func viewDidLoad() {

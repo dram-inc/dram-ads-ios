@@ -8,7 +8,7 @@
 import Foundation
 
 public protocol IDMError: Error {
-    var code: Int? { get }
+    var code: Int { get }
     var message: String? { get }
     var isCanceled: Bool { get }
 }
@@ -18,7 +18,7 @@ public extension IDMError {
     var isCanceled: Bool {
         return false
     }
-    
+        
 }
 
 extension DM {
@@ -31,7 +31,7 @@ extension DM {
         case notFound
         case incorrectParsing(message: String, code: Int)
         
-        var code: Int? {
+        var code: Int {
             switch self {
             case .error(let error):
                 if let error = error as? IDMError {
@@ -77,7 +77,6 @@ extension DM {
                 return false
             }
         }
-        
     }
     
 }
