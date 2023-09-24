@@ -11,7 +11,7 @@ public extension DM.ADService {
     
     @discardableResult
     func load(nativeAd configuration: DM.AdRequest.Configuration, response: @escaping (DM.Result<DM.EpomNativeAd>) -> Void) -> IDMNetworkOperation? {
-        guard let enviorment = self.enviorment else {
+        guard let enviorment = self.environment else {
             self.responseQueue.async {
                 response(.failure(AdError.configurationError))
             }
@@ -36,7 +36,7 @@ public extension DM.ADService {
     ///Use for test
     @discardableResult
     func load(nativeAd placementKey: String, response: @escaping (DM.Result<Any>) -> Void) -> IDMNetworkOperation? {
-        guard let enviorment = self.enviorment else {
+        guard let enviorment = self.environment else {
             self.responseQueue.async {
                 response(.failure(AdError.configurationError))
             }
