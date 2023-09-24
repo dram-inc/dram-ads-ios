@@ -10,8 +10,8 @@ import Foundation
 extension DM {
         
     public enum Result<T> {
-        case success(_ t: T)
-        case failure(_ error: IDMError)
+        case success(result: T)
+        case failure(error: IDMError)
     }
     
     typealias CallBack<T> = (_ result: T) -> Void

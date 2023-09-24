@@ -27,7 +27,7 @@ extension DM {
         override func response(error: IDMError) {
             self.tokens.forEach { token in
                 DispatchQueue.main.async {
-                    token.imageHandler(.failure(error))
+                    token.imageHandler(.failure(error: error))
                 }
             }
             super.response(error: error)
@@ -42,17 +42,17 @@ extension DM {
             if let image = self.getImageFromMemoryCache() {
                 self.tokens.forEach { token in
                     DispatchQueue.main.async {
-                        token.imageHandler(.success(image))
+                        token.imageHandler(.success(result: image))
                     }
                 }
-                super.response(.success(URL(fileURLWithPath: "")))
+                super.response(.success(result: URL(fileURLWithPath: "")))
             } else if let image = self.getImageFromDeckCache() {
                
                 try? self.memoryCache.write(identifier: image.identifier, image: image.data)
                 
                 self.tokens.forEach { token in
                     DispatchQueue.main.async {
-                        token.imageHandler(.success(image.image))
+                        token.imageHandler(.success(result: image.image))
                     }
                 }
             } else {
@@ -81,14 +81,14 @@ extension DM {
                             super.response(error: DMError.incorrectUrl)
                             self.tokens.forEach { token in
                                 DispatchQueue.main.async {
-                                    token.imageHandler(.failure(error))
+                                    token.imageHandler(.failure(error: error))
                                 }
                             }
                             return
                         }
                         self.tokens.forEach { token in
                             DispatchQueue.main.async {
-                                token.imageHandler(.success(image))
+                                token.imageHandler(.success(result: image))
                             }
                         }
                     } catch {
@@ -96,7 +96,7 @@ extension DM {
                         super.response(error: error)
                         self.tokens.forEach { token in
                             DispatchQueue.main.async {
-                                token.imageHandler(.failure(error))
+                                token.imageHandler(.failure(error: error))
                             }
                         }
                         return

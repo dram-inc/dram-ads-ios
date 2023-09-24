@@ -9,6 +9,6 @@ import Foundation
 
 public extension DM {
     
-    class Ad {}
+    class AdBase: NSObject {}
     
 }

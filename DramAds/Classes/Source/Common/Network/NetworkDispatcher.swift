@@ -66,7 +66,7 @@ extension DM.NetworkDispatcher {
         } catch {
             let error = DM.DMError.error(error: error)
             self.dispatchQueue.async {
-                callBack(.failure(error))
+                callBack(.failure(error: error))
             }
         }
         return nil
@@ -98,7 +98,7 @@ extension DM.NetworkDispatcher {
         } catch {
             let error = DM.DMError.error(error: error)
             self.dispatchQueue.async {
-                callBack(.failure(error))
+                callBack(.failure(error: error))
             }
         }
         return nil

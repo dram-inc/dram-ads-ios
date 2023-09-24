@@ -9,19 +9,20 @@ import Foundation
 
 public extension DM {
     
-    class EpomAd: Ad {
+    class Ad: AdBase {
                 
         public let placementType: AdPlacementType
         
         init(placementType: AdPlacementType) {
             self.placementType = placementType
+            super.init()
         }
         
     }
     
 }
 
-public extension DM.EpomAd {
+public extension DM.Ad {
     
     enum BeaconType: Decodable, Equatable {
         
@@ -64,7 +65,7 @@ public extension DM.EpomAd {
     
 }
 
-public extension DM.EpomAd {
+public extension DM.Ad {
     
     enum AdPlacementType {
         

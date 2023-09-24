@@ -44,6 +44,8 @@
 		947C304D0DD61627814B31547BB3C359 /* Dictionary+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127F16FF4C81634BFBBCBD059DD27F20 /* Dictionary+Operation.swift */; };
 		989A64FCF9346DD8C96902D8C2213F98 /* OperationBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37443DF298BFB6BA83CA7322FA1EE250 /* OperationBase.swift */; };
 		99ED247917FA249CE84C8B768E3B988F /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFAF59DF1BD038AE1DD5E1076B90DD5 /* NetworkOperation.swift */; };
+		A09000422AC0942500EAEAE2 /* InterstitialAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09000412AC0942500EAEAE2 /* InterstitialAD.swift */; };
+		A09000452AC09E0B00EAEAE2 /* DMInterstitialAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09000442AC09E0B00EAEAE2 /* DMInterstitialAdViewController.swift */; };
 		A1594B29E87257326D8FDDDB6AD732A1 /* DMImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A367B7C16A21E9EC2A801B305414FB /* DMImageService.swift */; };
 		ACB9C54EF4747A94BFE0DF9A11E8CBCD /* ADService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B7A4452603CD66402893CF1C202985 /* ADService.swift */; };
 		B60D4CC50FF5FEBE45DABB7A0B33A647 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B93D7CD148AE56A3D14306D4A2F0FE /* Operation.swift */; };
@@ -117,6 +119,8 @@
 		9C419EBE318D0373E11614CBF5B9E6A2 /* DMNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMNavigationController.swift; sourceTree = "<group>"; };
 		9CA8D8788C4B703E3504E9E7D8983D2D /* DMImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMImageView.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A09000412AC0942500EAEAE2 /* InterstitialAD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAD.swift; sourceTree = "<group>"; };
+		A09000442AC09E0B00EAEAE2 /* DMInterstitialAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMInterstitialAdViewController.swift; sourceTree = "<group>"; };
 		A7FCACE9C2D31E876E71A6BD74701F94 /* AdRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdRequest.swift; sourceTree = "<group>"; };
 		B597C9BD89DEE2AF65BC79630E6BC8EF /* Storyboard.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		B8A11D771179A0FF59F54178B0B1219B /* Pods-DramAds_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DramAds_Example.modulemap"; sourceTree = "<group>"; };
@@ -219,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				9C419EBE318D0373E11614CBF5B9E6A2 /* DMNavigationController.swift */,
+				A09000432AC09DFE00EAEAE2 /* Interstitial */,
 				FB11DA45374E87331BB96BEA3E7C3365 /* Rewarded */,
 			);
 			path = Moduls;
@@ -228,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				E0B6385FA53DAE01AF820A182B5C587C /* RewardedAd.swift */,
+				A09000412AC0942500EAEAE2 /* InterstitialAD.swift */,
 			);
 			path = UiAds;
 			sourceTree = "<group>";
@@ -358,6 +364,14 @@
 			);
 			name = UI;
 			path = DramAds/Classes/Source/UI;
+			sourceTree = "<group>";
+		};
+		A09000432AC09DFE00EAEAE2 /* Interstitial */ = {
+			isa = PBXGroup;
+			children = (
+				A09000442AC09E0B00EAEAE2 /* DMInterstitialAdViewController.swift */,
+			);
+			path = Interstitial;
 			sourceTree = "<group>";
 		};
 		A7CF72E796B96AB39E387205E1349516 /* Operations */ = {
@@ -636,6 +650,7 @@
 				947C304D0DD61627814B31547BB3C359 /* Dictionary+Operation.swift in Sources */,
 				C2B68878085DD5D5282505650209CE11 /* DmAudioSession.swift in Sources */,
 				A1594B29E87257326D8FDDDB6AD732A1 /* DMImageService.swift in Sources */,
+				A09000452AC09E0B00EAEAE2 /* DMInterstitialAdViewController.swift in Sources */,
 				1088F2EEEBE0CDD9CAA1327105E0732E /* DMImageServiceOperation.swift in Sources */,
 				2FDA33386FE7FA31FC4ADBDF1B1D058A /* DMImageView.swift in Sources */,
 				14285BD24A2C4FBAE05584271D7C5896 /* DMLocker.swift in Sources */,
@@ -659,6 +674,7 @@
 				989A64FCF9346DD8C96902D8C2213F98 /* OperationBase.swift in Sources */,
 				69C3A4CB16905623F84D387D39BD2BE5 /* OperationManager.swift in Sources */,
 				0968BF753D27129868D843C80D58180B /* OperationQueue.swift in Sources */,
+				A09000422AC0942500EAEAE2 /* InterstitialAD.swift in Sources */,
 				3B30221D7F2477ED7899D295871A4C7D /* RewardedAd.swift in Sources */,
 				D604F6BBA81F745062BD9D30FC0536E9 /* Storyboard.storyboard in Sources */,
 				3AAF760103FD0E5C766E98B519E2E342 /* String+Operation.swift in Sources */,

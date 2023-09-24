@@ -58,7 +58,7 @@ extension DM {
                 let request = try request.asRequest()
                 return self.downloadImage(request: request, imageHandler: imageHandler, progress: progress)
             } catch {
-                imageHandler(.failure(DMError.error(error: error)))
+                imageHandler(.failure(error: DMError.error(error: error)))
                 return nil
             }
         }
