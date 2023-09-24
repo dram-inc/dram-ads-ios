@@ -13,9 +13,7 @@ class DramAdsViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let enviorment = DM.Enviorment(baseUrl: "https://ads.epomtestsite.com")
-        DM.shared.configure(enviorment: enviorment)
+        DM.shared.configure(environment: DM.Environment(type: .demo))
     }
-    
     
 }
