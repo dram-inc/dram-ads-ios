@@ -107,3 +107,23 @@ public extension DM {
     }
     
 }
+
+extension TimeInterval {
+    
+    func timeFormat(useMilliseconds: Bool = false) -> String {
+        let ti = Int(useMilliseconds ? self / 1000 : self)
+        let seconds = ti % 60
+        let minutes = (ti / 60) % 60
+        let hours = (ti / 3600)
+        
+        if hours == 0 {
+            if minutes == 0 {
+                return String(format: "%d",seconds)
+            }
+            return String(format: "%0.2d:%0.2d%",minutes,seconds)
+        }
+        
+        return String(format: "%0.2d:%0.2d:%0.2d%",hours,minutes,seconds)
+    }
+    
+}

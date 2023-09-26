@@ -31,6 +31,8 @@ class DMPlayer {
     private var timeObserver: TimeObserver?
     weak var delegate: DMPlayerDelegate?
     
+    private let timeObservers = DM.WeakArray<DMPlayerDelegate>()
+    
     init() {
         self.setup()
     }
@@ -77,6 +79,14 @@ class DMPlayer {
         })
     }
     
+    func add(time observer: DMPlayerDelegate) {
+        self.timeObservers.addObject(observer)
+    }
+    
+    func remove(time observer: DMPlayerDelegate) {
+        self.timeObservers.removeObject(observer)
+    }
+    
     //MARK: Private func
         
     private func setup() {
@@ -94,26 +104,32 @@ extension DMPlayer: DMPlayerTimeObserverDelegate {
     
     func timeObserver(didChangeTime timeObserver: DMPlayer.TimeObserver, time: TimeInterval) {
         self.delegate?.player(didChangeTime: self, time: time)
+        self.timeObservers.forEach({ $0.player(didChangeTime: self, time: time) })
     }
     
     func timeObserver(didChangeStatus timeObserver: DMPlayer.TimeObserver, status: DMPlayer.Status) {
         self.delegate?.player(didChangeStatus: self, status: status)
+        self.timeObservers.forEach({ $0.player(didChangeStatus: self, status: status) })
     }
     
     func timeObserver(didChangeReadyToPlay timeObserver: TimeObserver, isReadyToPlay: Bool) {
         self.delegate?.player(didChangeReadyToPlay: self, isReadyToPlay: isReadyToPlay)
+        self.timeObservers.forEach({ $0.player(didChangeReadyToPlay: self, isReadyToPlay: isReadyToPlay )})
     }
     
     func timeObserver(didChangeLoading timeObserver: DMPlayer.TimeObserver, isLoading: Bool) {
         self.delegate?.player(didChangeLoading: self, isLoading: isLoading)
+        self.timeObservers.forEach({ $0.player(didChangeLoading: self, isLoading: isLoading )})
     }
     
     func timeObserver(didFinishPlaying timeObserver: DMPlayer.TimeObserver) {
         self.delegate?.player(didFinishPlaying: self)
+        self.timeObservers.forEach({ $0.player(didFinishPlaying: self )})
     }
     
     func timeObserver(didReceiveError timeObserver: DMPlayer.TimeObserver, error: IDMError) {
         self.delegate?.player(didReceiveError: self, error: error)
+        self.timeObservers.forEach({ $0.player(didReceiveError: self, error: error )})
     }
     
 }
@@ -150,6 +166,10 @@ extension DMPlayer {
             return .zero
         }
         return self.player.currentItem?.currentTime().seconds ?? .zero
+    }
+    
+    var currentAvItem: AVPlayerItem? {
+        return self.player.currentItem
     }
         
 }

@@ -135,7 +135,7 @@
                                     <color key="titleColor" systemColor="separatorColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="didSelectLoadAdButton:" destination="q73-xT-S1Y" eventType="touchUpInside" id="2KW-TZ-glR"/>
+                                    <action selector="didLoadAd:" destination="q73-xT-S1Y" eventType="touchUpInside" id="p53-W9-u3b"/>
                                 </connections>
                             </button>
                         </subviews>

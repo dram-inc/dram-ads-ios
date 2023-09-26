@@ -36,10 +36,10 @@ class DMRewardedAdViewController: UIViewController {
         self.playerView.player = self.player.player
         self.player.delegate = self
         self.drawAd()
-        self.addSubscribers()
+        self.addNotifications()
     }
     
-    private func addSubscribers() {
+    private func addNotifications() {
         NotificationCenter.default.addObserver(self, selector: #selector(willEnterForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
     }
     

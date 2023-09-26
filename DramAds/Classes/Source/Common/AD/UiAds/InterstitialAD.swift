@@ -39,7 +39,8 @@ public extension DM {
     class InterstitialAD: NSObject {
         
         let image: DM.Ad.Image?
-        let video: DM.Ad.Video
+        let video: DM.Ad.Video?
+        let skipTime: TimeInterval?
         private let impressionUrl: URL?
         private let clickUrl: URL?
         private var isSendedImpression: Bool = false
@@ -49,16 +50,21 @@ public extension DM {
         @objc public let placementKey: String?
         
         init(ad: DM.NativeAd, placementKey: String?) throws {
-            guard let video = ad.videos?.first, let bannerId = ad.bannerId, let placementId = ad.placementId else {
+            guard let bannerId = ad.bannerId, let placementId = ad.placementId else {
                 throw DM.ADService.AdError.configurationError
             }
             self.impressionUrl = ad.beacons?.first(where: { $0.type == .impression })?.url
             self.clickUrl = ad.clickUrl
             self.image = ad.images?.first
-            self.video = video
+            self.video = ad.videos?.first
             self.placementId = placementId
             self.bannerId = bannerId
             self.placementKey = placementKey
+            if let time = ad.customization?["skip_time"] as? String {
+                self.skipTime = TimeInterval(time)
+            } else {
+                self.skipTime = nil
+            }
         }
         
         func sendImpression(callBack: @escaping DM.ResultCallBack<Void>) {

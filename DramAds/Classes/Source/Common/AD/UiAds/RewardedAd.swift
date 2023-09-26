@@ -81,7 +81,6 @@ public extension DM {
                 return
             }
             
-            
             self.isSendedImpression = true
             let request = DM.Request(url: impressionUrl)
             DM.shared.network.request(string: request) { [weak self] result in
