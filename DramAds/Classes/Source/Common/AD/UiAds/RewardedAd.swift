@@ -218,7 +218,6 @@ public extension DM.RewardedAd {
                 failure(DM.ADService.AdError(error: error))
             }
         }
-     
     }
     
 }

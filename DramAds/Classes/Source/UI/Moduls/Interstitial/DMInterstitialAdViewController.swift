@@ -14,7 +14,7 @@ class DMInterstitialAdViewController: UIViewController {
     @IBOutlet weak private var closeButton: UIButton!
     @IBOutlet weak private var contentView: UIView!
     
-    private var ad: DM.InterstitialAD!
+    private var ad: DM.InterstitialAd!
     private var isFinishedAd: Bool = false
     private var timeCalculator: DMPlayer.TimeCalculator?
     private var player = DMPlayer()
@@ -30,9 +30,21 @@ class DMInterstitialAdViewController: UIViewController {
     //MARK: - User action
     
     @IBAction private func didSelectCloseButton(_ sender: Any) {
-        
-        self.dismiss(animated: true)
-        
+        self.dismiss(animated: true) {
+            if self.ad.video != nil {
+                if self.isFinishedAd {
+                    self.ad.addDidCompleted(error: nil)
+                } else {
+                    self.ad.didSkiped()
+                }
+            } else {
+                self.ad.addDidCompleted(error: nil)
+            }
+        }
+    }
+    
+    @IBAction private func didSelectAd(_ sender: Any) {
+        self.ad.adClick(callBack: {_ in})
     }
     
     //MARK: - Private func
@@ -76,9 +88,14 @@ class DMInterstitialAdViewController: UIViewController {
     private func didChangeTime(_ time: TimeInterval) {
         let timeValue =  TimeInterval(Int(time))
         let time = TimeInterval(Int(max(.zero, (self.ad.skipTime ?? .zero) - timeValue)))
-        let title = time > .zero ? time.timeFormat() : nil
+        let isEndTimeSkip = !(time > .zero)
+        let title = !isEndTimeSkip ? time.timeFormat() : nil
         self.closeButton.setTitle(title, for: .disabled)
         self.closeButton.isEnabled = time.isZero
+        
+        if isEndTimeSkip && self.ad.isSendedImpression == false {
+            self.ad.sendImpression(callBack: { _ in })
+        }
     }
     
     private func addNotifications() {
@@ -91,7 +108,11 @@ class DMInterstitialAdViewController: UIViewController {
         }
         self.player.play()
     }
-        
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
 }
 
 extension DMInterstitialAdViewController: DMPlayerDelegate {
@@ -101,14 +122,21 @@ extension DMInterstitialAdViewController: DMPlayerDelegate {
         self.updateImageView()
     }
     
+    func player(didChangeReadyToPlay player: DMPlayer, isReadyToPlay: Bool) {
+        self.ad.didStartPlaying()
+    }
+        
     func player(didReceiveError player: DMPlayer, error: IDMError) {
         self.updateImageView()
+        self.dismiss(animated: true) {
+            self.ad.addDidCompleted(error: error)
+        }
     }
 }
 
 extension DMInterstitialAdViewController {
     
-    class func create(ad: DM.InterstitialAD) -> UIViewController {
+    class func create(ad: DM.InterstitialAd) -> UIViewController {
         let storyboard = UIStoryboard(name: "Storyboard", bundle: DM.bundle)
         let result = storyboard.instantiateViewController(withIdentifier: "DMInterstitialAdViewControllerID") as! DMInterstitialAdViewController
         result.ad = ad

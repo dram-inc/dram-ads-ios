@@ -147,6 +147,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wiZ-kK-inR"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="bbM-BW-K5n" firstAttribute="leading" secondItem="AjF-Dv-zps" secondAttribute="leading" id="0zF-4j-APR"/>
                             <constraint firstItem="6dy-hV-760" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="wiZ-kK-inR" secondAttribute="trailing" id="69r-Pu-v3s"/>
@@ -165,6 +166,9 @@
                             <constraint firstItem="rSW-hw-KOc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AjF-Dv-zps" secondAttribute="leading" id="tFf-u4-NXr"/>
                             <constraint firstAttribute="bottom" secondItem="bbM-BW-K5n" secondAttribute="bottom" id="vxW-aE-YBf"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="oIR-QP-oqk" appends="YES" id="LnS-di-N02"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="closeButton" destination="6dy-hV-760" id="ZEX-L6-phA"/>
@@ -174,6 +178,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vrj-Wb-TfT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="oIR-QP-oqk">
+                    <connections>
+                        <action selector="didSelectAd:" destination="0qd-W0-ATq" id="2Lq-Yl-nD6"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-915.26717557251902" y="705.63380281690149"/>
         </scene>
@@ -181,7 +190,7 @@
     <resources>
         <image name="xmark.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemGray4Color">
-            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

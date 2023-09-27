@@ -19,69 +19,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "AB0DF349-883D-49E8-97EE-C26852660704"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DramAds/ViewController/Ads/InterstitialViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "didSelectLoadAd(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "AB0DF349-883D-49E8-97EE-C26852660704 - 46f4017410552ed0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (DramAds.DM.Result&lt;DramAds.DM.InterstitialAD&gt;) -&gt; () in DramAds_Example.InterstitialViewController.didLoadAd(Any) -&gt; ()"
-                  moduleName = "DramAds_Example"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/khorenasatryan/Documents/Work/Apps/Github/HarutAm/DramAds/dram-ads-ios/Example/DramAdsSwiftExample/DramAds/ViewController/Ads/InterstitialViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "308">
-               </Location>
-               <Location
-                  uuid = "AB0DF349-883D-49E8-97EE-C26852660704 - 29d07a87f77f6daf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (DramAds.DM.Result&lt;DramAds.DM.InterstitialAD&gt;) -&gt; () in DramAds_Example.InterstitialViewController.didSelectLoadAd(Any) -&gt; ()"
-                  moduleName = "DramAds_Example"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/khorenasatryan/Documents/Work/Apps/Github/HarutAm/DramAds/dram-ads-ios/Example/DramAdsSwiftExample/DramAds/ViewController/Ads/InterstitialViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "308">
-               </Location>
-               <Location
-                  uuid = "AB0DF349-883D-49E8-97EE-C26852660704 - 29d07a87f77f6daf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (DramAds.DM.Result&lt;DramAds.DM.InterstitialAD&gt;) -&gt; () in DramAds_Example.InterstitialViewController.didSelectLoadAd(Any) -&gt; ()"
-                  moduleName = "DramAds_Example"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/khorenasatryan/Documents/Work/Apps/Github/HarutAm/DramAds/dram-ads-ios/Example/DramAdsSwiftExample/DramAds/ViewController/Ads/InterstitialViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "172">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "806B0D41-B8CB-415A-A625-1D53223D303D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"

@@ -46,7 +46,7 @@
 		99ED247917FA249CE84C8B768E3B988F /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFAF59DF1BD038AE1DD5E1076B90DD5 /* NetworkOperation.swift */; };
 		A03D7B582AC3699A006E4F04 /* DMPlayerTimeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03D7B572AC3699A006E4F04 /* DMPlayerTimeCalculator.swift */; };
 		A03D7B5A2AC38437006E4F04 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03D7B592AC38437006E4F04 /* Timer.swift */; };
-		A09000422AC0942500EAEAE2 /* InterstitialAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09000412AC0942500EAEAE2 /* InterstitialAD.swift */; };
+		A09000422AC0942500EAEAE2 /* InterstitialAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09000412AC0942500EAEAE2 /* InterstitialAd.swift */; };
 		A09000452AC09E0B00EAEAE2 /* DMInterstitialAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09000442AC09E0B00EAEAE2 /* DMInterstitialAdViewController.swift */; };
 		A1594B29E87257326D8FDDDB6AD732A1 /* DMImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A367B7C16A21E9EC2A801B305414FB /* DMImageService.swift */; };
 		ACB9C54EF4747A94BFE0DF9A11E8CBCD /* ADService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B7A4452603CD66402893CF1C202985 /* ADService.swift */; };
@@ -123,7 +123,7 @@
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A03D7B572AC3699A006E4F04 /* DMPlayerTimeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMPlayerTimeCalculator.swift; sourceTree = "<group>"; };
 		A03D7B592AC38437006E4F04 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
-		A09000412AC0942500EAEAE2 /* InterstitialAD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAD.swift; sourceTree = "<group>"; };
+		A09000412AC0942500EAEAE2 /* InterstitialAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAd.swift; sourceTree = "<group>"; };
 		A09000442AC09E0B00EAEAE2 /* DMInterstitialAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMInterstitialAdViewController.swift; sourceTree = "<group>"; };
 		A7FCACE9C2D31E876E71A6BD74701F94 /* AdRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdRequest.swift; sourceTree = "<group>"; };
 		B597C9BD89DEE2AF65BC79630E6BC8EF /* Storyboard.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
@@ -237,7 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				E0B6385FA53DAE01AF820A182B5C587C /* RewardedAd.swift */,
-				A09000412AC0942500EAEAE2 /* InterstitialAD.swift */,
+				A09000412AC0942500EAEAE2 /* InterstitialAd.swift */,
 			);
 			path = UiAds;
 			sourceTree = "<group>";
@@ -682,7 +682,7 @@
 				989A64FCF9346DD8C96902D8C2213F98 /* OperationBase.swift in Sources */,
 				69C3A4CB16905623F84D387D39BD2BE5 /* OperationManager.swift in Sources */,
 				0968BF753D27129868D843C80D58180B /* OperationQueue.swift in Sources */,
-				A09000422AC0942500EAEAE2 /* InterstitialAD.swift in Sources */,
+				A09000422AC0942500EAEAE2 /* InterstitialAd.swift in Sources */,
 				3B30221D7F2477ED7899D295871A4C7D /* RewardedAd.swift in Sources */,
 				D604F6BBA81F745062BD9D30FC0536E9 /* Storyboard.storyboard in Sources */,
 				3AAF760103FD0E5C766E98B519E2E342 /* String+Operation.swift in Sources */,

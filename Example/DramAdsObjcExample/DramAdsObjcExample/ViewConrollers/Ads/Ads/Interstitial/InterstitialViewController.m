@@ -6,8 +6,9 @@
 //
 
 #import "InterstitialViewController.h"
+#import <DramAds/DramAds-Swift.h>
 
-@interface InterstitialViewController ()
+@interface InterstitialViewController ()<DMInterstitialAdDelegate>
 
 @end
 
@@ -20,21 +21,40 @@
 
 - (IBAction)didSelectLoadAdButton:(id)sender {
     
-    //a23c4147ab4d03ecdb937b15a3c3dc60 2
-    //c418065bb67183661a1249cbdebdf071 1
-    
-//    __weak RewardedViewController *weakSelf = self;
-//    [DMRewardedAd loadAdWithPlacementKey:@"c418065bb67183661a1249cbdebdf071" success:^(DMRewardedAd * ad) {
-//        
-//        ad.delegate = weakSelf;
-//        ad.uiDataSource = weakSelf;
-//        [ad showIn:self];
-//        
-//    } failure:^(DMServiceAdError * error) {
-//        NSLog(@"%@", error.message);
-//    }];
+    __weak InterstitialViewController *weakSelf = self;
+    [DMInterstitialAd loadAdWithPlacementKey:@"a1d76e5f0ed9bc739e711e9fd2382954" success:^(DMInterstitialAd * ad) {
+        [weakSelf showAd:ad];
+    } failure:^(DMServiceAdError * error) {
+        NSLog(@"%@", error.message);
+    }];
  
 }
 
+-(void)showAd:(DMInterstitialAd *)ad {
+    ad.delegate = self;
+    [ad showIn: self];
+}
+
+#pragma mark - DMInterstitialAdDelegate
+
+- (void)interstitialAdDidStartPlaying:(DMInterstitialAd *)ad {
+    NSLog(@"interstitial AdDidStartPlaying %@", ad.placementKey);
+}
+
+- (void)interstitialAdDidSkiped:(DMInterstitialAd *)ad {
+    NSLog(@"interstitial AdDidSkiped %@", ad.placementKey);
+}
+
+- (void)interstitialAdDidClicked:(DMInterstitialAd *)ad {
+    NSLog(@"interstitial AdDidClicked %@", ad.placementKey);
+}
+
+- (void)interstitialAdDidSendImpression:(DMInterstitialAd *)ad error:(DMServiceAdError *)error {
+    NSLog(@"interstitial AdDidSendImpression %@ %@", ad.placementKey, error.message);
+}
+
+- (void)interstitialAdDidCompleted:(DMInterstitialAd *)ad error:(DMServiceAdError *)error {
+    NSLog(@"interstitial AdDidCompleted %@ %@", ad.placementKey, error.message);
+}
 
 @end
