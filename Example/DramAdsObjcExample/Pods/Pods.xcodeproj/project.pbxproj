@@ -36,6 +36,7 @@
 		81FC337A8D58BFA6B4CDA49B5F168372 /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E4676255E605CEF590FD34C99A401 /* NetworkDispatcher.swift */; };
 		8DDC4513DF86D1B120E1598C4ECEDA15 /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2268A2802205755BBB88BCF696F3BEB9 /* Ad.swift */; };
 		92C4E2F28AEBD49D476BD7A0A23541C1 /* Dictionary+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905E5F686BDAE49DB50DE7080AA8740E /* Dictionary+Operation.swift */; };
+		A0C897D42AC49ABA004F2132 /* DMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C897D32AC49ABA004F2132 /* DMButton.swift */; };
 		A4D2EFF1EE2B1F0B715B67FA95D9756D /* Dram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45593F96E2B24859FCD73A8B4957026F /* Dram.swift */; };
 		AB66B899D0E4A510814A17DFDBE23AA9 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1E46A9849EA87022A642E62F73771F /* Decoder.swift */; };
 		AC1F63B71D9AA48413F598460EA721EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
@@ -84,7 +85,7 @@
 		2B1EDEA655C77FEC67420668AAE7A947 /* DMNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMNavigationController.swift; sourceTree = "<group>"; };
 		301AD8E8E15065F9C62EF7970AFE2A25 /* Pods-DramAdsObjcExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DramAdsObjcExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		366B0F67B92F913B43DA2494B0D6358E /* WeakArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeakArray.swift; sourceTree = "<group>"; };
-		3CC6D6032E08FFA0903AEC2B03009448 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3CC6D6032E08FFA0903AEC2B03009448 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3D65D937250566B49EB54BC05E64A1E9 /* IDMRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IDMRequest.swift; sourceTree = "<group>"; };
 		45593F96E2B24859FCD73A8B4957026F /* Dram.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dram.swift; path = DramAds/Classes/Source/Dram.swift; sourceTree = "<group>"; };
 		467671A2390A64847FB72431999A43A0 /* Utility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
@@ -96,21 +97,22 @@
 		5539319F309C948AE4FA3883CB39D09C /* Storyboard.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		5DC18026C8D35D59E86C9391A6F9BD8E /* DramAds-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DramAds-umbrella.h"; sourceTree = "<group>"; };
 		60EA28EDFA85BDAB859FDC870181C5CC /* Pods-DramAdsObjcExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DramAdsObjcExample-dummy.m"; sourceTree = "<group>"; };
-		671D421C7F577C14DE345C7600482289 /* DramAds.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DramAds.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		671D421C7F577C14DE345C7600482289 /* DramAds.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DramAds.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		677FC0BFC1D1342A4A80ED10B0F2CA86 /* DMInterstitialAdViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMInterstitialAdViewController.swift; sourceTree = "<group>"; };
 		6832B0814DCA24CEADAA424E55430A22 /* ADService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ADService.swift; sourceTree = "<group>"; };
 		6973B333A95FD80A45F7ACCE03EF1031 /* DramAds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DramAds.release.xcconfig; sourceTree = "<group>"; };
 		69E82CF1B238757947AE46DAFC84E97B /* Pods-DramAdsObjcExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DramAdsObjcExample-umbrella.h"; sourceTree = "<group>"; };
 		6C0C8701B3F896651FC1C9C78F9EA927 /* Timer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		736A19025A54AA488E1D7C7F521120DD /* DramAds.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DramAds.modulemap; sourceTree = "<group>"; };
-		75B7B871B9135A9C4FDB11490F722900 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		75B7B871B9135A9C4FDB11490F722900 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7DAA24CCA8E6D5486176C274B904444F /* Pods-DramAdsObjcExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DramAdsObjcExample-Info.plist"; sourceTree = "<group>"; };
 		88267B272A6FEBC847CD2DE8592E36CC /* Pods-DramAdsObjcExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DramAdsObjcExample-acknowledgements.plist"; sourceTree = "<group>"; };
 		8E0BDF345DA5CAC66033BDC6DF1A7BAB /* DMImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMImageView.swift; sourceTree = "<group>"; };
 		905E5F686BDAE49DB50DE7080AA8740E /* Dictionary+Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Dictionary+Operation.swift"; sourceTree = "<group>"; };
 		94C2AC3059D950AB2BBAF988E7FBC469 /* InterstitialAd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterstitialAd.swift; sourceTree = "<group>"; };
 		99E4199D7F86903346BC557F17015FCF /* EpomNativeAd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EpomNativeAd.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0C897D32AC49ABA004F2132 /* DMButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMButton.swift; sourceTree = "<group>"; };
 		A1CA32F50AA37286A412912641DC720B /* Pods-DramAdsObjcExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DramAdsObjcExample-frameworks.sh"; sourceTree = "<group>"; };
 		A443D2EE75C14E30D7125D688265172D /* Decoding+Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Decoding+Operation.swift"; sourceTree = "<group>"; };
 		A72E38A01D2A60F73DEC6A2DA893FEAE /* EpomAd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EpomAd.swift; sourceTree = "<group>"; };
@@ -167,7 +169,6 @@
 				A72E38A01D2A60F73DEC6A2DA893FEAE /* EpomAd.swift */,
 				99E4199D7F86903346BC557F17015FCF /* EpomNativeAd.swift */,
 			);
-			name = Ads;
 			path = Ads;
 			sourceTree = "<group>";
 		};
@@ -185,7 +186,6 @@
 				1B87ECEB456178AC2D6E6AC46A295ADD /* DMImageService.swift */,
 				5944F2AE41F1B0250C4E9006A9208584 /* Operations */,
 			);
-			name = Services;
 			path = Services;
 			sourceTree = "<group>";
 		};
@@ -213,7 +213,6 @@
 			children = (
 				23F9007DDE6282679B3CE39AF878FB9B /* DMRewardedAdViewController.swift */,
 			);
-			name = Rewarded;
 			path = Rewarded;
 			sourceTree = "<group>";
 		};
@@ -222,8 +221,8 @@
 			children = (
 				8E0BDF345DA5CAC66033BDC6DF1A7BAB /* DMImageView.swift */,
 				50D381F5E3FB540F91A583437A38985A /* DMPlayerView.swift */,
+				A0C897D32AC49ABA004F2132 /* DMButton.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -234,7 +233,6 @@
 				905E5F686BDAE49DB50DE7080AA8740E /* Dictionary+Operation.swift */,
 				EB67F24F93497F6D49851C2CCCFDD291 /* String+Operation.swift */,
 			);
-			name = Extensions;
 			path = Extensions;
 			sourceTree = "<group>";
 		};
@@ -243,7 +241,6 @@
 			children = (
 				F9C2368DE590EDC67378F47F502A2A87 /* DMImageServiceOperation.swift */,
 			);
-			name = Operations;
 			path = Operations;
 			sourceTree = "<group>";
 		};
@@ -261,7 +258,6 @@
 			children = (
 				4A7EF9513C8261CB595C0D5254B895D0 /* View */,
 			);
-			name = UI;
 			path = UI;
 			sourceTree = "<group>";
 		};
@@ -273,7 +269,6 @@
 				061D55963C6F0061E8DB08EDF45124AF /* OperationManager.swift */,
 				ABD3B95DCEF2A02F3BFAA5C0059E131F /* OperationQueue.swift */,
 			);
-			name = Operation;
 			path = Operation;
 			sourceTree = "<group>";
 		};
@@ -284,7 +279,6 @@
 				0B352853459EC97A677915974EA75209 /* NetworkDownloadOperation.swift */,
 				238DC437E957B4E808C61FB92B8773F0 /* NetworkOperation.swift */,
 			);
-			name = Operations;
 			path = Operations;
 			sourceTree = "<group>";
 		};
@@ -293,7 +287,6 @@
 			children = (
 				677FC0BFC1D1342A4A80ED10B0F2CA86 /* DMInterstitialAdViewController.swift */,
 			);
-			name = Interstitial;
 			path = Interstitial;
 			sourceTree = "<group>";
 		};
@@ -305,7 +298,6 @@
 				182CB89CE1D064E3EEEEA67D8166F1B3 /* Ads */,
 				A70FA91C545480A2F4F72A7D25A32FC1 /* UiAds */,
 			);
-			name = AD;
 			path = AD;
 			sourceTree = "<group>";
 		};
@@ -316,7 +308,6 @@
 				8EFFAC8C262DF50B3F59F84EC9538C4B /* Operations */,
 				E1AAE6B0B0A721CEEB31879F71FAD46D /* Request */,
 			);
-			name = Network;
 			path = Network;
 			sourceTree = "<group>";
 		};
@@ -326,7 +317,6 @@
 				94C2AC3059D950AB2BBAF988E7FBC469 /* InterstitialAd.swift */,
 				196FFB115494BE42391C525CAD0E571D /* RewardedAd.swift */,
 			);
-			name = UiAds;
 			path = UiAds;
 			sourceTree = "<group>";
 		};
@@ -403,7 +393,6 @@
 				ADAFD0C7E714C424A314B58C355C38A0 /* DMPlayerTimeCalculator.swift */,
 				B6DEA437F0EEE006F33F9632793C66FF /* DMPlayerTimeObserver.swift */,
 			);
-			name = Player;
 			path = Player;
 			sourceTree = "<group>";
 		};
@@ -413,7 +402,6 @@
 				C09E298D16C9AA822F3772F5B8D28903 /* AdRequest.swift */,
 				3D65D937250566B49EB54BC05E64A1E9 /* IDMRequest.swift */,
 			);
-			name = Request;
 			path = Request;
 			sourceTree = "<group>";
 		};
@@ -429,7 +417,6 @@
 				366B0F67B92F913B43DA2494B0D6358E /* WeakArray.swift */,
 				506EF14806E6D6977635D410ED8ED639 /* Extensions */,
 			);
-			name = Utility;
 			path = Utility;
 			sourceTree = "<group>";
 		};
@@ -450,7 +437,6 @@
 				954141B4375F3D737F5BE6CCBA308D1F /* Interstitial */,
 				47405107ABE37F40CBE3694D019932AC /* Rewarded */,
 			);
-			name = Moduls;
 			path = Moduls;
 			sourceTree = "<group>";
 		};
@@ -599,6 +585,7 @@
 				10E3568B69C6ED1E3936EDA5429CF516 /* DramAds-dummy.m in Sources */,
 				2D6A35CE1FDBBACF3867F21C73226E39 /* EpomAd.swift in Sources */,
 				D38F67D6E076E115D4D33796F5062603 /* EpomNativeAd.swift in Sources */,
+				A0C897D42AC49ABA004F2132 /* DMButton.swift in Sources */,
 				233B2B4FDEAC20B36DB4917648D45266 /* Error.swift in Sources */,
 				D343CE55C1F3AE807C23C13429A0033A /* IDMRequest.swift in Sources */,
 				722173540E2BB7A546F3DFC675C82177 /* InterstitialAd.swift in Sources */,
