@@ -108,7 +108,7 @@
 		68A367B7C16A21E9EC2A801B305414FB /* DMImageService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMImageService.swift; sourceTree = "<group>"; };
 		7EEE0BD4F0CBC43E9879A3D87F00CFAC /* Pods-DramAds_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DramAds_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		82A27F3641B855EFD71C675A18E78E35 /* DramAds-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DramAds-prefix.pch"; sourceTree = "<group>"; };
-		84B613558B0D9FE3FA37CADE4D1862B0 /* DramAds.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DramAds.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		84B613558B0D9FE3FA37CADE4D1862B0 /* DramAds.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DramAds.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		87E4FA26EE6E5BC2B5C4A8B8A7BE3EBE /* Pods-DramAds_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DramAds_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		895FE2A5FCA26267540FADCE6DC79730 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		8A6309C16432763865F04F5CB4CBB486 /* OperationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OperationManager.swift; sourceTree = "<group>"; };
