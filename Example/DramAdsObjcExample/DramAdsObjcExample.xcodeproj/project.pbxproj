@@ -10,6 +10,7 @@
 		5AF5A20556C3C8C01A854218 /* Pods_DramAdsObjcExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434F275AB7249B4D9F4B1388 /* Pods_DramAdsObjcExample.framework */; };
 		A02A89FC2ABF503100231772 /* DramAdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A02A89FB2ABF503100231772 /* DramAdsViewController.m */; };
 		A02A8A022ABF50A700231772 /* RewardedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A02A8A012ABF50A700231772 /* RewardedViewController.m */; };
+		A090003D2AC092E800EAEAE2 /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A090003C2AC092E800EAEAE2 /* InterstitialViewController.m */; };
 		A0F966B42ABCB22B00D80D3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F966B32ABCB22B00D80D3D /* AppDelegate.m */; };
 		A0F966B72ABCB22B00D80D3D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F966B62ABCB22B00D80D3D /* SceneDelegate.m */; };
 		A0F966BD2ABCB22B00D80D3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0F966BB2ABCB22B00D80D3D /* Main.storyboard */; };
@@ -25,6 +26,8 @@
 		A02A89FB2ABF503100231772 /* DramAdsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DramAdsViewController.m; sourceTree = "<group>"; };
 		A02A8A002ABF50A700231772 /* RewardedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardedViewController.h; sourceTree = "<group>"; };
 		A02A8A012ABF50A700231772 /* RewardedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RewardedViewController.m; sourceTree = "<group>"; };
+		A090003B2AC092E800EAEAE2 /* InterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
+		A090003C2AC092E800EAEAE2 /* InterstitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterstitialViewController.m; sourceTree = "<group>"; };
 		A0F966AF2ABCB22B00D80D3D /* DramAdsObjcExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DramAdsObjcExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0F966B22ABCB22B00D80D3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A0F966B32ABCB22B00D80D3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -96,18 +99,28 @@
 		A02A89FD2ABF508F00231772 /* Ads */ = {
 			isa = PBXGroup;
 			children = (
-				A02A89FE2ABF509600231772 /* RewardedViewController */,
+				A090003A2AC092D600EAEAE2 /* Interstitial */,
+				A02A89FE2ABF509600231772 /* Rewarded */,
 			);
 			path = Ads;
 			sourceTree = "<group>";
 		};
-		A02A89FE2ABF509600231772 /* RewardedViewController */ = {
+		A02A89FE2ABF509600231772 /* Rewarded */ = {
 			isa = PBXGroup;
 			children = (
 				A02A8A002ABF50A700231772 /* RewardedViewController.h */,
 				A02A8A012ABF50A700231772 /* RewardedViewController.m */,
 			);
-			path = RewardedViewController;
+			path = Rewarded;
+			sourceTree = "<group>";
+		};
+		A090003A2AC092D600EAEAE2 /* Interstitial */ = {
+			isa = PBXGroup;
+			children = (
+				A090003B2AC092E800EAEAE2 /* InterstitialViewController.h */,
+				A090003C2AC092E800EAEAE2 /* InterstitialViewController.m */,
+			);
+			path = Interstitial;
 			sourceTree = "<group>";
 		};
 		A0F966A62ABCB22B00D80D3D = {
@@ -263,6 +276,7 @@
 				A02A8A022ABF50A700231772 /* RewardedViewController.m in Sources */,
 				A02A89FC2ABF503100231772 /* DramAdsViewController.m in Sources */,
 				A0F966C52ABCB22C00D80D3D /* main.m in Sources */,
+				A090003D2AC092E800EAEAE2 /* InterstitialViewController.m in Sources */,
 				A0F966B72ABCB22B00D80D3D /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

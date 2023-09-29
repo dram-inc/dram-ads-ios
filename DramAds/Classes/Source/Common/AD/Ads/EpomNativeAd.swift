@@ -9,7 +9,7 @@ import Foundation
 
 public extension DM {
     
-    class EpomNativeAd: EpomAd, Decodable {
+    class NativeAd: Ad, Decodable {
         
         private enum CodingKeys: String, CodingKey {
             case advertiser = "advertiser"
@@ -29,6 +29,7 @@ public extension DM {
             case placementId = "placementId"
             case rating = "rating"
             case refreshInterval = "refreshInterval"
+            case type = "type"
         }
         
         let advertiser: String?
@@ -38,7 +39,7 @@ public extension DM {
         let ctaText: String?
         let customization: [String: Any]?
         
-        let description: String?
+        let descriptionAd: String?
         let title: String?
         let subtitle: String?
         let version: String?
@@ -50,6 +51,7 @@ public extension DM {
         let placementId: Int?
         let rating: Int?
         let refreshInterval: String?
+        let type: String
 
         required public init(from decoder: Decoder) throws {
             let values = try decoder.container(keyedBy: CodingKeys.self)
@@ -61,7 +63,7 @@ public extension DM {
             self.ctaText = try values.decodeIfPresent(String.self, forKey: .ctaText)
             self.customization = try values.decodeIfPresent([String: Any].self, forKey: .customization)
             
-            self.description = try values.decodeIfPresent(String.self, forKey: .description)
+            self.descriptionAd = try values.decodeIfPresent(String.self, forKey: .description)
             self.title = try values.decodeIfPresent(String.self, forKey: .title)
             self.subtitle = try values.decodeIfPresent(String.self, forKey: .subtitle)
             
@@ -72,6 +74,7 @@ public extension DM {
             self.placementId = try values.decodeIfPresent(Int.self, forKey: .placementId)
             self.rating = try values.decodeIfPresent(Int.self, forKey: .rating)
             self.refreshInterval = try values.decodeIfPresent(String.self, forKey: .refreshInterval)
+            self.type =  try values.decode(String.self, forKey: .type)
             
             super.init(placementType: .native)
         }

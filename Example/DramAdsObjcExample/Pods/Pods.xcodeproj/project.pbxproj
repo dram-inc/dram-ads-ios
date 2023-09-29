@@ -7,52 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		053E5EE0F781CCDFAF161A3754124DB3 /* DMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EBCE39DDFAFB6027083CEA26FBE9E8 /* DMNavigationController.swift */; };
-		069AB5B95DFC95E13B5641A0A709B343 /* Decoding+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100BEB44AD8195F41D20FB24E99137CD /* Decoding+Operation.swift */; };
+		03A1ACCD0017B2A601EBAA1F58EB5E32 /* OperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3B95DCEF2A02F3BFAA5C0059E131F /* OperationQueue.swift */; };
+		08D93D60C7BBE0465A7A27C6FB1440FD /* Decoding+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A443D2EE75C14E30D7125D688265172D /* Decoding+Operation.swift */; };
+		10E3568B69C6ED1E3936EDA5429CF516 /* DramAds-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D98E44E036D4F0E0770D816A08E3D94E /* DramAds-dummy.m */; };
 		11D21E7930A7684F7B3B342BD0DE69FC /* Pods-DramAdsObjcExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60EA28EDFA85BDAB859FDC870181C5CC /* Pods-DramAdsObjcExample-dummy.m */; };
-		13299B403B1016F6B1B48BC0737C0504 /* DramAds-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC18026C8D35D59E86C9391A6F9BD8E /* DramAds-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		19DAB2422FD27C9182ECC320F6524336 /* Dram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45593F96E2B24859FCD73A8B4957026F /* Dram.swift */; };
-		1B78A59661511E52BA14EA6CE76537F3 /* Storyboard.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 070660D250DC30C0EA3F4C16094BB5FF /* Storyboard.storyboard */; };
-		1FB6D42D16CADC5D9AED585B674DE685 /* DMPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3943649FD4BCA5E04F355A9854F482F /* DMPlayerView.swift */; };
-		2E35EDF06D33798FBEDBDEB079E5AE8B /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FE333CEAA792C0B4E5FF9777754491 /* Operation.swift */; };
-		311DBEA1A27A23F7F2DB0E5F68DAE319 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C657347707ECE5B47A6D717543F777 /* Decoder.swift */; };
-		31EFF948E54202ED8E638A43552E27A3 /* DMPlayerTimeObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5654B013DB0B79CFC85CED2D682150F1 /* DMPlayerTimeObserver.swift */; };
-		373F159C6C5B7A8BB91392FB29D22669 /* WeakArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F3D9011284C9B5471B0EB2E8A3ED42 /* WeakArray.swift */; };
-		412BB8C659BA3E9F59071A3FFB91A961 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		47589D58CB6C37F4815026344B1DA2AE /* DramAds-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D98E44E036D4F0E0770D816A08E3D94E /* DramAds-dummy.m */; };
-		481A78C7A12B54A744C69F50556A1888 /* DMLocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3901E2482F5C473E51E72718D33E9F /* DMLocker.swift */; };
-		4A44099DFF5E61FDCD00A5F6C2E35F9D /* OperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FD121AFBCF4FAC585E3B30E77B23B /* OperationQueue.swift */; };
-		501A8A054A5B93C1837DAE21FC9C35E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		1F6C8E4853F5E1961EDD4B234EF2CA40 /* DMPLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2493D307EB56640AFBD1F05BDAFD4034 /* DMPLayer.swift */; };
+		233B2B4FDEAC20B36DB4917648D45266 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB6AD8E648354526338A67CD8F6D2E9 /* Error.swift */; };
+		2D6A35CE1FDBBACF3867F21C73226E39 /* EpomAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72E38A01D2A60F73DEC6A2DA893FEAE /* EpomAd.swift */; };
+		2EC6972C5331C6534B9340EB86A19A2A /* DMImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87ECEB456178AC2D6E6AC46A295ADD /* DMImageService.swift */; };
+		310FF7410B6226A44BB2480D08A5EE5F /* NetworkDataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6CAD74BF5CEB037028F31B48582C7D /* NetworkDataOperation.swift */; };
+		32EBDE9EFD286A929B626455FE96A3A8 /* DMImageServiceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C2368DE590EDC67378F47F502A2A87 /* DMImageServiceOperation.swift */; };
+		36916AA258D88D09C3D4B24B54C6E49E /* NetworkDownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B352853459EC97A677915974EA75209 /* NetworkDownloadOperation.swift */; };
+		41397B1A2A8ED39F3CA687CD8329B354 /* DMPlayerTimeObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DEA437F0EEE006F33F9632793C66FF /* DMPlayerTimeObserver.swift */; };
+		4D817826585361CC2E08650CED0DC97D /* DMInterstitialAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677FC0BFC1D1342A4A80ED10B0F2CA86 /* DMInterstitialAdViewController.swift */; };
+		4E20B2D31A607BDF9DA4DF2558BECF72 /* DMRewardedAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F9007DDE6282679B3CE39AF878FB9B /* DMRewardedAdViewController.swift */; };
+		4FDF55A94153602FF90C7631E8C229D2 /* DMImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BDF345DA5CAC66033BDC6DF1A7BAB /* DMImageView.swift */; };
+		541E75E65371217A9451A7C0B4F99C46 /* WeakArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366B0F67B92F913B43DA2494B0D6358E /* WeakArray.swift */; };
+		55BDAC941CF8BD9AF855A934CF370183 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		5682B80ABD6A21FE7FD50EA4F1CD655A /* Storyboard.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 5539319F309C948AE4FA3883CB39D09C /* Storyboard.storyboard */; };
+		56914E1FD4E855B812B3B4E796DDC6BC /* OperationBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E908CD94CA7118EC964E41EC68F7DC /* OperationBase.swift */; };
+		5A909DE505C980CC0B7E7394901C244A /* String+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB67F24F93497F6D49851C2CCCFDD291 /* String+Operation.swift */; };
 		5F7802252279F27C8D9A47EFBB032646 /* Pods-DramAdsObjcExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E82CF1B238757947AE46DAFC84E97B /* Pods-DramAdsObjcExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		60104ED6B0A8FE73FED8AD38B4FFBD55 /* DMImageServiceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949874ACA9C977940D65188BF23DE865 /* DMImageServiceOperation.swift */; };
-		7318BAFC547CA34FBA29C577A160CFBD /* OperationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB520370E38510FC12748016ADBF25F /* OperationManager.swift */; };
-		75B667B08B047F7A459011330F78CBA8 /* DMImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE187749A2C2450666A3487A9AF4928B /* DMImageService.swift */; };
-		7938EBC8818F2028BD86F542FE857F87 /* Dictionary+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5EA23045FBE459AF65213D08C9349D /* Dictionary+Operation.swift */; };
+		722173540E2BB7A546F3DFC675C82177 /* InterstitialAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2AC3059D950AB2BBAF988E7FBC469 /* InterstitialAd.swift */; };
+		777A627C5B45C2DAA1133B80FCCEC16D /* DmAudioSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157AF5FBA0D92EA5D25BE0D544C5204 /* DmAudioSession.swift */; };
 		7AE34EF8653234E3684AC24E882A6615 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		7C84B89729B1A43E841F661B12F53D84 /* AdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD270B3A753ED306A0027FF2694EA6D9 /* AdRequest.swift */; };
-		7E73C728B92F56C282D2208626D45818 /* DmAudioSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01376AB3BE1857373D3E62070C3E0101 /* DmAudioSession.swift */; };
-		7E800B6550B4DB5A706293619479E66A /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8C4DF7D785790546CB4CDE6D066EF1 /* Ad.swift */; };
-		83D09CCD69087B6DE9C3BF0EF448BA03 /* RewardedAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA305B5F19D0AB3D5EF06748C0AA732 /* RewardedAd.swift */; };
-		8DD1CD9B31BFB43A060DF266C7AB8951 /* NetworkDataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFCFC61237AB52979A01927703ECA0C /* NetworkDataOperation.swift */; };
-		96CE1A2576C64F329B285BEB1B4B83ED /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547E542632E018906A5BCE5EDBCEEABE /* NetworkOperation.swift */; };
-		988896585A4D6293BAF15013DCF158B4 /* ADService+NativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B1C8A0E916C50722650F784AD66765 /* ADService+NativeAd.swift */; };
-		98E75EDE33F1FE36447610E8532044C7 /* ADService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5CBADB42091C1C80697F64BCDDC636 /* ADService.swift */; };
-		A95AD30A0DA356F68B6F3609D78E4BA5 /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A2132056428A2A376598A0B5062E1 /* NetworkDispatcher.swift */; };
-		A98DEB3CBB8F0EF514234762929EBB06 /* OperationBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4F88C9BD11D57EB3B684DEA4DD4769 /* OperationBase.swift */; };
-		AB43472109F3D0BD2420056F56473D2F /* DMRewardedAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9020915689B512E078F452A449479E /* DMRewardedAdViewController.swift */; };
-		BC16A11F675F444981C909D4EB421F4B /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAD01BB63855F792104AE9BDB6632FE /* Utility.swift */; };
-		BC510089F9AA46BECBCF4D0AA7368442 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CB4261AE11E6FE0FF4B64B7E7EBA0D /* Error.swift */; };
-		C8BBDF288884980DE1C92522E3080416 /* EpomNativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AA95387EA3C09BA1DCAD67C5DC5B5 /* EpomNativeAd.swift */; };
-		DF60DC81FAB7908AFBCB498C0DEE75DB /* String+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109D20D99F2F821138EA9C84DF68AECC /* String+Operation.swift */; };
-		E8AED945D961B7D6AB9FFFBA4B077E83 /* DMPLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0E80929EA0666AD3FE2E6E59BC77AA /* DMPLayer.swift */; };
-		ECEEED24809E922787EB582E2FA80B85 /* DMImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A688788124E9F76CE6ED6E78E1095 /* DMImageView.swift */; };
-		F1ECFB460090E47167121166C668251F /* EpomAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3705C16B631467C16AD60277332F29FA /* EpomAd.swift */; };
-		F21953C5D4B791DBF6A0C81B14035343 /* IDMRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05B608779BA8EC8A904DD1F633ABC97 /* IDMRequest.swift */; };
-		FED1F7D612CBCDAE87A0EFB6CD1CF0F5 /* NetworkDownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E77E8626F53894B73E2BEDAC16A12B /* NetworkDownloadOperation.swift */; };
+		7DB649FDF72F7BC7EE8E3CE8CECAC221 /* OperationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061D55963C6F0061E8DB08EDF45124AF /* OperationManager.swift */; };
+		800EA276BA13F5561835F5828CDDF536 /* DMPlayerTimeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAFD0C7E714C424A314B58C355C38A0 /* DMPlayerTimeCalculator.swift */; };
+		81FC337A8D58BFA6B4CDA49B5F168372 /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E4676255E605CEF590FD34C99A401 /* NetworkDispatcher.swift */; };
+		8DDC4513DF86D1B120E1598C4ECEDA15 /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2268A2802205755BBB88BCF696F3BEB9 /* Ad.swift */; };
+		92C4E2F28AEBD49D476BD7A0A23541C1 /* Dictionary+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905E5F686BDAE49DB50DE7080AA8740E /* Dictionary+Operation.swift */; };
+		A0C897D42AC49ABA004F2132 /* DMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C897D32AC49ABA004F2132 /* DMButton.swift */; };
+		A4D2EFF1EE2B1F0B715B67FA95D9756D /* Dram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45593F96E2B24859FCD73A8B4957026F /* Dram.swift */; };
+		AB66B899D0E4A510814A17DFDBE23AA9 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1E46A9849EA87022A642E62F73771F /* Decoder.swift */; };
+		AC1F63B71D9AA48413F598460EA721EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		AD81783A171312937940A46337AE1EFA /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0C8701B3F896651FC1C9C78F9EA927 /* Timer.swift */; };
+		ADDB877F4F23CA06C4CAC3DDB84E5310 /* DMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1EDEA655C77FEC67420668AAE7A947 /* DMNavigationController.swift */; };
+		B1E490DA22602BF10B5F626133A2ADD7 /* ADService+NativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E41DAFB44FB172147CD058486D9703 /* ADService+NativeAd.swift */; };
+		CEE5A1288343CDFB8698BB322658CB69 /* DMPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D381F5E3FB540F91A583437A38985A /* DMPlayerView.swift */; };
+		D343CE55C1F3AE807C23C13429A0033A /* IDMRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D65D937250566B49EB54BC05E64A1E9 /* IDMRequest.swift */; };
+		D38F67D6E076E115D4D33796F5062603 /* EpomNativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E4199D7F86903346BC557F17015FCF /* EpomNativeAd.swift */; };
+		D61AD98F28A6354F4BCB239EE4C9A2F6 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467671A2390A64847FB72431999A43A0 /* Utility.swift */; };
+		D8B9D43B716D8BAD99E645E8036C50C8 /* AdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E298D16C9AA822F3772F5B8D28903 /* AdRequest.swift */; };
+		DCCB913A69E31E022B23F6FEA7FB4C29 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96F25B369FA946F15EEE8BD91C811F7 /* Operation.swift */; };
+		DD763803A8F50DD471EAC6B51656D807 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238DC437E957B4E808C61FB92B8773F0 /* NetworkOperation.swift */; };
+		ED9608BE3AB31131D91AF222BF315BC7 /* ADService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832B0814DCA24CEADAA424E55430A22 /* ADService.swift */; };
+		F86CCE7B996828B99622693EF0B3B943 /* DMLocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF207D0DC4C24C0B57D82765A64A052 /* DMLocker.swift */; };
+		FE16DC3FA8AC3C5864103AAE4E2047CC /* DramAds-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC18026C8D35D59E86C9391A6F9BD8E /* DramAds-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF4300F77D90C108F9B563C863E6A8C9 /* RewardedAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196FFB115494BE42391C525CAD0E571D /* RewardedAd.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		201B551499FA3DEC890ED077A8EAA385 /* PBXContainerItemProxy */ = {
+		BE6EB6BC1E104FA2F8DC49ABA59FD652 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -62,65 +67,70 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01376AB3BE1857373D3E62070C3E0101 /* DmAudioSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DmAudioSession.swift; sourceTree = "<group>"; };
 		02805095A2493263F64A1651C3550AEF /* DramAds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DramAds.debug.xcconfig; sourceTree = "<group>"; };
-		070660D250DC30C0EA3F4C16094BB5FF /* Storyboard.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		061D55963C6F0061E8DB08EDF45124AF /* OperationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OperationManager.swift; sourceTree = "<group>"; };
 		0818D607637B3FA168560EBC1CE55E51 /* DramAds-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DramAds-prefix.pch"; sourceTree = "<group>"; };
-		100BEB44AD8195F41D20FB24E99137CD /* Decoding+Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Decoding+Operation.swift"; sourceTree = "<group>"; };
-		109D20D99F2F821138EA9C84DF68AECC /* String+Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Operation.swift"; sourceTree = "<group>"; };
+		0B352853459EC97A677915974EA75209 /* NetworkDownloadOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkDownloadOperation.swift; sourceTree = "<group>"; };
+		0BF207D0DC4C24C0B57D82765A64A052 /* DMLocker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMLocker.swift; sourceTree = "<group>"; };
 		110905A747B218D16A33D6946E4A021C /* DramAds-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DramAds-Info.plist"; sourceTree = "<group>"; };
+		1157AF5FBA0D92EA5D25BE0D544C5204 /* DmAudioSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DmAudioSession.swift; sourceTree = "<group>"; };
 		1731BBB682E94ACFAB278CF1673B03D9 /* Pods-DramAdsObjcExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DramAdsObjcExample.modulemap"; sourceTree = "<group>"; };
-		1B8C4DF7D785790546CB4CDE6D066EF1 /* Ad.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
-		1DC4260E79EF69FA32DDB67FE81A5DA3 /* DramAds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DramAds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		20FE333CEAA792C0B4E5FF9777754491 /* Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		196FFB115494BE42391C525CAD0E571D /* RewardedAd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RewardedAd.swift; sourceTree = "<group>"; };
+		1B87ECEB456178AC2D6E6AC46A295ADD /* DMImageService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMImageService.swift; sourceTree = "<group>"; };
+		1DC4260E79EF69FA32DDB67FE81A5DA3 /* DramAds */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DramAds; path = DramAds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2268A2802205755BBB88BCF696F3BEB9 /* Ad.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
+		238DC437E957B4E808C61FB92B8773F0 /* NetworkOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		23F9007DDE6282679B3CE39AF878FB9B /* DMRewardedAdViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMRewardedAdViewController.swift; sourceTree = "<group>"; };
+		2493D307EB56640AFBD1F05BDAFD4034 /* DMPLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMPLayer.swift; sourceTree = "<group>"; };
+		2B1EDEA655C77FEC67420668AAE7A947 /* DMNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMNavigationController.swift; sourceTree = "<group>"; };
 		301AD8E8E15065F9C62EF7970AFE2A25 /* Pods-DramAdsObjcExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DramAdsObjcExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3705C16B631467C16AD60277332F29FA /* EpomAd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EpomAd.swift; sourceTree = "<group>"; };
-		39C657347707ECE5B47A6D717543F777 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		366B0F67B92F913B43DA2494B0D6358E /* WeakArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeakArray.swift; sourceTree = "<group>"; };
 		3CC6D6032E08FFA0903AEC2B03009448 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		3EB520370E38510FC12748016ADBF25F /* OperationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OperationManager.swift; sourceTree = "<group>"; };
+		3D65D937250566B49EB54BC05E64A1E9 /* IDMRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IDMRequest.swift; sourceTree = "<group>"; };
 		45593F96E2B24859FCD73A8B4957026F /* Dram.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dram.swift; path = DramAds/Classes/Source/Dram.swift; sourceTree = "<group>"; };
+		467671A2390A64847FB72431999A43A0 /* Utility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		46E41DAFB44FB172147CD058486D9703 /* ADService+NativeAd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ADService+NativeAd.swift"; sourceTree = "<group>"; };
 		472A3EA474374B4AB8A357EF591E5962 /* Pods-DramAdsObjcExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DramAdsObjcExample.release.xcconfig"; sourceTree = "<group>"; };
-		547E542632E018906A5BCE5EDBCEEABE /* NetworkOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
-		5654B013DB0B79CFC85CED2D682150F1 /* DMPlayerTimeObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMPlayerTimeObserver.swift; sourceTree = "<group>"; };
-		59B1C8A0E916C50722650F784AD66765 /* ADService+NativeAd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ADService+NativeAd.swift"; sourceTree = "<group>"; };
+		50D381F5E3FB540F91A583437A38985A /* DMPlayerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMPlayerView.swift; sourceTree = "<group>"; };
+		51E908CD94CA7118EC964E41EC68F7DC /* OperationBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OperationBase.swift; sourceTree = "<group>"; };
+		535E4676255E605CEF590FD34C99A401 /* NetworkDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		5539319F309C948AE4FA3883CB39D09C /* Storyboard.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		5DC18026C8D35D59E86C9391A6F9BD8E /* DramAds-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DramAds-umbrella.h"; sourceTree = "<group>"; };
-		5F9020915689B512E078F452A449479E /* DMRewardedAdViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMRewardedAdViewController.swift; sourceTree = "<group>"; };
 		60EA28EDFA85BDAB859FDC870181C5CC /* Pods-DramAdsObjcExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DramAdsObjcExample-dummy.m"; sourceTree = "<group>"; };
 		671D421C7F577C14DE345C7600482289 /* DramAds.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DramAds.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		677FC0BFC1D1342A4A80ED10B0F2CA86 /* DMInterstitialAdViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMInterstitialAdViewController.swift; sourceTree = "<group>"; };
+		6832B0814DCA24CEADAA424E55430A22 /* ADService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ADService.swift; sourceTree = "<group>"; };
 		6973B333A95FD80A45F7ACCE03EF1031 /* DramAds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DramAds.release.xcconfig; sourceTree = "<group>"; };
 		69E82CF1B238757947AE46DAFC84E97B /* Pods-DramAdsObjcExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DramAdsObjcExample-umbrella.h"; sourceTree = "<group>"; };
-		6EFCFC61237AB52979A01927703ECA0C /* NetworkDataOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkDataOperation.swift; sourceTree = "<group>"; };
+		6C0C8701B3F896651FC1C9C78F9EA927 /* Timer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		736A19025A54AA488E1D7C7F521120DD /* DramAds.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DramAds.modulemap; sourceTree = "<group>"; };
 		75B7B871B9135A9C4FDB11490F722900 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		7A0E80929EA0666AD3FE2E6E59BC77AA /* DMPLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMPLayer.swift; sourceTree = "<group>"; };
 		7DAA24CCA8E6D5486176C274B904444F /* Pods-DramAdsObjcExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DramAdsObjcExample-Info.plist"; sourceTree = "<group>"; };
 		88267B272A6FEBC847CD2DE8592E36CC /* Pods-DramAdsObjcExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DramAdsObjcExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		921A2132056428A2A376598A0B5062E1 /* NetworkDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
-		924AA95387EA3C09BA1DCAD67C5DC5B5 /* EpomNativeAd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EpomNativeAd.swift; sourceTree = "<group>"; };
-		949874ACA9C977940D65188BF23DE865 /* DMImageServiceOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMImageServiceOperation.swift; sourceTree = "<group>"; };
-		94EBCE39DDFAFB6027083CEA26FBE9E8 /* DMNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMNavigationController.swift; sourceTree = "<group>"; };
-		9D4F88C9BD11D57EB3B684DEA4DD4769 /* OperationBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OperationBase.swift; sourceTree = "<group>"; };
+		8E0BDF345DA5CAC66033BDC6DF1A7BAB /* DMImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMImageView.swift; sourceTree = "<group>"; };
+		905E5F686BDAE49DB50DE7080AA8740E /* Dictionary+Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Dictionary+Operation.swift"; sourceTree = "<group>"; };
+		94C2AC3059D950AB2BBAF988E7FBC469 /* InterstitialAd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterstitialAd.swift; sourceTree = "<group>"; };
+		99E4199D7F86903346BC557F17015FCF /* EpomNativeAd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EpomNativeAd.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0C897D32AC49ABA004F2132 /* DMButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMButton.swift; sourceTree = "<group>"; };
 		A1CA32F50AA37286A412912641DC720B /* Pods-DramAdsObjcExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DramAdsObjcExample-frameworks.sh"; sourceTree = "<group>"; };
-		A8F3D9011284C9B5471B0EB2E8A3ED42 /* WeakArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeakArray.swift; sourceTree = "<group>"; };
-		AD270B3A753ED306A0027FF2694EA6D9 /* AdRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdRequest.swift; sourceTree = "<group>"; };
-		CE3901E2482F5C473E51E72718D33E9F /* DMLocker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMLocker.swift; sourceTree = "<group>"; };
+		A443D2EE75C14E30D7125D688265172D /* Decoding+Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Decoding+Operation.swift"; sourceTree = "<group>"; };
+		A72E38A01D2A60F73DEC6A2DA893FEAE /* EpomAd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EpomAd.swift; sourceTree = "<group>"; };
+		ABD3B95DCEF2A02F3BFAA5C0059E131F /* OperationQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OperationQueue.swift; sourceTree = "<group>"; };
+		ADAFD0C7E714C424A314B58C355C38A0 /* DMPlayerTimeCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMPlayerTimeCalculator.swift; sourceTree = "<group>"; };
+		B6DEA437F0EEE006F33F9632793C66FF /* DMPlayerTimeObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMPlayerTimeObserver.swift; sourceTree = "<group>"; };
+		C09E298D16C9AA822F3772F5B8D28903 /* AdRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdRequest.swift; sourceTree = "<group>"; };
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		D2CB4261AE11E6FE0FF4B64B7E7EBA0D /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
-		D5E77E8626F53894B73E2BEDAC16A12B /* NetworkDownloadOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkDownloadOperation.swift; sourceTree = "<group>"; };
 		D98E44E036D4F0E0770D816A08E3D94E /* DramAds-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DramAds-dummy.m"; sourceTree = "<group>"; };
-		DE8A688788124E9F76CE6ED6E78E1095 /* DMImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMImageView.swift; sourceTree = "<group>"; };
-		E05B608779BA8EC8A904DD1F633ABC97 /* IDMRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IDMRequest.swift; sourceTree = "<group>"; };
-		E3943649FD4BCA5E04F355A9854F482F /* DMPlayerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMPlayerView.swift; sourceTree = "<group>"; };
+		DCB6AD8E648354526338A67CD8F6D2E9 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		EBAD01BB63855F792104AE9BDB6632FE /* Utility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
-		EDCAA414CC8DAB2FB89B838A7E82F46B /* Pods_DramAdsObjcExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DramAdsObjcExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF5EA23045FBE459AF65213D08C9349D /* Dictionary+Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Dictionary+Operation.swift"; sourceTree = "<group>"; };
-		F59FD121AFBCF4FAC585E3B30E77B23B /* OperationQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OperationQueue.swift; sourceTree = "<group>"; };
+		EB67F24F93497F6D49851C2CCCFDD291 /* String+Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Operation.swift"; sourceTree = "<group>"; };
+		EDCAA414CC8DAB2FB89B838A7E82F46B /* Pods-DramAdsObjcExample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DramAdsObjcExample"; path = Pods_DramAdsObjcExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F96F25B369FA946F15EEE8BD91C811F7 /* Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		F9C2368DE590EDC67378F47F502A2A87 /* DMImageServiceOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMImageServiceOperation.swift; sourceTree = "<group>"; };
 		FBFAF53EF5D9A7F7E41BCE05473A7486 /* Pods-DramAdsObjcExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DramAdsObjcExample.debug.xcconfig"; sourceTree = "<group>"; };
-		FC5CBADB42091C1C80697F64BCDDC636 /* ADService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ADService.swift; sourceTree = "<group>"; };
-		FE187749A2C2450666A3487A9AF4928B /* DMImageService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DMImageService.swift; sourceTree = "<group>"; };
-		FFA305B5F19D0AB3D5EF06748C0AA732 /* RewardedAd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RewardedAd.swift; sourceTree = "<group>"; };
+		FE6CAD74BF5CEB037028F31B48582C7D /* NetworkDataOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkDataOperation.swift; sourceTree = "<group>"; };
+		FF1E46A9849EA87022A642E62F73771F /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,61 +142,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		71E5BE2D44C68C3E7C55BC237128EBC2 /* Frameworks */ = {
+		BDD5BBAF10A900642DFE74B4AA90D347 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				412BB8C659BA3E9F59071A3FFB91A961 /* Foundation.framework in Frameworks */,
-				501A8A054A5B93C1837DAE21FC9C35E0 /* UIKit.framework in Frameworks */,
+				55BDAC941CF8BD9AF855A934CF370183 /* Foundation.framework in Frameworks */,
+				AC1F63B71D9AA48413F598460EA721EE /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03A9081056BFCBF5E06090EC8369B06C /* Rewarded */ = {
-			isa = PBXGroup;
-			children = (
-				5F9020915689B512E078F452A449479E /* DMRewardedAdViewController.swift */,
-			);
-			path = Rewarded;
-			sourceTree = "<group>";
-		};
-		04B8A19153CCAF33B4E0CCA4C368FAA6 /* Operation */ = {
-			isa = PBXGroup;
-			children = (
-				20FE333CEAA792C0B4E5FF9777754491 /* Operation.swift */,
-				9D4F88C9BD11D57EB3B684DEA4DD4769 /* OperationBase.swift */,
-				3EB520370E38510FC12748016ADBF25F /* OperationManager.swift */,
-				F59FD121AFBCF4FAC585E3B30E77B23B /* OperationQueue.swift */,
-			);
-			path = Operation;
-			sourceTree = "<group>";
-		};
-		09A54780E2CA82D3C7A93C88DD0564EC /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				39C657347707ECE5B47A6D717543F777 /* Decoder.swift */,
-				01376AB3BE1857373D3E62070C3E0101 /* DmAudioSession.swift */,
-				CE3901E2482F5C473E51E72718D33E9F /* DMLocker.swift */,
-				D2CB4261AE11E6FE0FF4B64B7E7EBA0D /* Error.swift */,
-				EBAD01BB63855F792104AE9BDB6632FE /* Utility.swift */,
-				A8F3D9011284C9B5471B0EB2E8A3ED42 /* WeakArray.swift */,
-				4B5DDEC6F9EC4B573AFA58E405884C67 /* Extensions */,
-			);
-			path = Utility;
-			sourceTree = "<group>";
-		};
-		15C4A82F3CC73EFE80BAEDA329F8DFBF /* Ads */ = {
-			isa = PBXGroup;
-			children = (
-				1B8C4DF7D785790546CB4CDE6D066EF1 /* Ad.swift */,
-				3705C16B631467C16AD60277332F29FA /* EpomAd.swift */,
-				924AA95387EA3C09BA1DCAD67C5DC5B5 /* EpomNativeAd.swift */,
-			);
-			path = Ads;
-			sourceTree = "<group>";
-		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,39 +162,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1A245B65A7129D35A7C7C01303823E33 /* Services */ = {
+		182CB89CE1D064E3EEEEA67D8166F1B3 /* Ads */ = {
 			isa = PBXGroup;
 			children = (
-				FE187749A2C2450666A3487A9AF4928B /* DMImageService.swift */,
-				7D77D525BF2D9E3E4C99CA0072A2B3E8 /* Operations */,
+				2268A2802205755BBB88BCF696F3BEB9 /* Ad.swift */,
+				A72E38A01D2A60F73DEC6A2DA893FEAE /* EpomAd.swift */,
+				99E4199D7F86903346BC557F17015FCF /* EpomNativeAd.swift */,
 			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		1A5F7B72645751085707106A27A83149 /* Moduls */ = {
-			isa = PBXGroup;
-			children = (
-				94EBCE39DDFAFB6027083CEA26FBE9E8 /* DMNavigationController.swift */,
-				03A9081056BFCBF5E06090EC8369B06C /* Rewarded */,
-			);
-			path = Moduls;
-			sourceTree = "<group>";
-		};
-		1AE9BD9CA3B42689C24727B02C7D757A /* UiAds */ = {
-			isa = PBXGroup;
-			children = (
-				FFA305B5F19D0AB3D5EF06748C0AA732 /* RewardedAd.swift */,
-			);
-			path = UiAds;
-			sourceTree = "<group>";
-		};
-		26C2728970085CCBD21B2B64C86AADD3 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				AD270B3A753ED306A0027FF2694EA6D9 /* AdRequest.swift */,
-				E05B608779BA8EC8A904DD1F633ABC97 /* IDMRequest.swift */,
-			);
-			path = Request;
+			path = Ads;
 			sourceTree = "<group>";
 		};
 		2B124D3708A69E40B07DEAC51774A11F /* Development Pods */ = {
@@ -238,43 +180,68 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		3CFF580EB840C686C76F1DE44363F3DC /* Player */ = {
+		33E7F796E8FB0521B0F996BC213262EA /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				7A0E80929EA0666AD3FE2E6E59BC77AA /* DMPLayer.swift */,
-				5654B013DB0B79CFC85CED2D682150F1 /* DMPlayerTimeObserver.swift */,
+				1B87ECEB456178AC2D6E6AC46A295ADD /* DMImageService.swift */,
+				5944F2AE41F1B0250C4E9006A9208584 /* Operations */,
 			);
-			path = Player;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		3DEDD83A1F29491574C56F5E48410699 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1DC4260E79EF69FA32DDB67FE81A5DA3 /* DramAds.framework */,
-				EDCAA414CC8DAB2FB89B838A7E82F46B /* Pods_DramAdsObjcExample.framework */,
+				1DC4260E79EF69FA32DDB67FE81A5DA3 /* DramAds */,
+				EDCAA414CC8DAB2FB89B838A7E82F46B /* Pods-DramAdsObjcExample */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4B5DDEC6F9EC4B573AFA58E405884C67 /* Extensions */ = {
+		42BE03C6281A37812E90E718B3636E49 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				100BEB44AD8195F41D20FB24E99137CD /* Decoding+Operation.swift */,
-				EF5EA23045FBE459AF65213D08C9349D /* Dictionary+Operation.swift */,
-				109D20D99F2F821138EA9C84DF68AECC /* String+Operation.swift */,
+				5539319F309C948AE4FA3883CB39D09C /* Storyboard.storyboard */,
+				FB5BA7477E00BF4FA73A38BE28452AC0 /* Moduls */,
+			);
+			name = UI;
+			path = DramAds/Classes/Source/UI;
+			sourceTree = "<group>";
+		};
+		47405107ABE37F40CBE3694D019932AC /* Rewarded */ = {
+			isa = PBXGroup;
+			children = (
+				23F9007DDE6282679B3CE39AF878FB9B /* DMRewardedAdViewController.swift */,
+			);
+			path = Rewarded;
+			sourceTree = "<group>";
+		};
+		4A7EF9513C8261CB595C0D5254B895D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E0BDF345DA5CAC66033BDC6DF1A7BAB /* DMImageView.swift */,
+				50D381F5E3FB540F91A583437A38985A /* DMPlayerView.swift */,
+				A0C897D32AC49ABA004F2132 /* DMButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		506EF14806E6D6977635D410ED8ED639 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A443D2EE75C14E30D7125D688265172D /* Decoding+Operation.swift */,
+				905E5F686BDAE49DB50DE7080AA8740E /* Dictionary+Operation.swift */,
+				EB67F24F93497F6D49851C2CCCFDD291 /* String+Operation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		4E4B4E32F940DB39E673D1BF96FE5745 /* AD */ = {
+		5944F2AE41F1B0250C4E9006A9208584 /* Operations */ = {
 			isa = PBXGroup;
 			children = (
-				FC5CBADB42091C1C80697F64BCDDC636 /* ADService.swift */,
-				59B1C8A0E916C50722650F784AD66765 /* ADService+NativeAd.swift */,
-				15C4A82F3CC73EFE80BAEDA329F8DFBF /* Ads */,
-				1AE9BD9CA3B42689C24727B02C7D757A /* UiAds */,
+				F9C2368DE590EDC67378F47F502A2A87 /* DMImageServiceOperation.swift */,
 			);
-			path = AD;
+			path = Operations;
 			sourceTree = "<group>";
 		};
 		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
@@ -286,31 +253,71 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		67B53E9B6A79D79BE75A70303FCB8798 /* View */ = {
+		5AC93F3D35CB9F7691F6363979ADA58E /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				DE8A688788124E9F76CE6ED6E78E1095 /* DMImageView.swift */,
-				E3943649FD4BCA5E04F355A9854F482F /* DMPlayerView.swift */,
+				4A7EF9513C8261CB595C0D5254B895D0 /* View */,
 			);
-			path = View;
+			path = UI;
 			sourceTree = "<group>";
 		};
-		7D77D525BF2D9E3E4C99CA0072A2B3E8 /* Operations */ = {
+		6B2C686C5EF4FAB904C05C21AC40B0E6 /* Operation */ = {
 			isa = PBXGroup;
 			children = (
-				949874ACA9C977940D65188BF23DE865 /* DMImageServiceOperation.swift */,
+				F96F25B369FA946F15EEE8BD91C811F7 /* Operation.swift */,
+				51E908CD94CA7118EC964E41EC68F7DC /* OperationBase.swift */,
+				061D55963C6F0061E8DB08EDF45124AF /* OperationManager.swift */,
+				ABD3B95DCEF2A02F3BFAA5C0059E131F /* OperationQueue.swift */,
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
+		8EFFAC8C262DF50B3F59F84EC9538C4B /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				FE6CAD74BF5CEB037028F31B48582C7D /* NetworkDataOperation.swift */,
+				0B352853459EC97A677915974EA75209 /* NetworkDownloadOperation.swift */,
+				238DC437E957B4E808C61FB92B8773F0 /* NetworkOperation.swift */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
 		};
-		86E4DE9AA2C2FCD17F7A13399EA69D6F /* Network */ = {
+		954141B4375F3D737F5BE6CCBA308D1F /* Interstitial */ = {
 			isa = PBXGroup;
 			children = (
-				921A2132056428A2A376598A0B5062E1 /* NetworkDispatcher.swift */,
-				DA1212E5E2C578867F0690D47FF6D30B /* Operations */,
-				26C2728970085CCBD21B2B64C86AADD3 /* Request */,
+				677FC0BFC1D1342A4A80ED10B0F2CA86 /* DMInterstitialAdViewController.swift */,
+			);
+			path = Interstitial;
+			sourceTree = "<group>";
+		};
+		98F095BDF5F03E316EFC56696830E71A /* AD */ = {
+			isa = PBXGroup;
+			children = (
+				6832B0814DCA24CEADAA424E55430A22 /* ADService.swift */,
+				46E41DAFB44FB172147CD058486D9703 /* ADService+NativeAd.swift */,
+				182CB89CE1D064E3EEEEA67D8166F1B3 /* Ads */,
+				A70FA91C545480A2F4F72A7D25A32FC1 /* UiAds */,
+			);
+			path = AD;
+			sourceTree = "<group>";
+		};
+		A6B3A9D52370CDC338C08A7CE6D00415 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				535E4676255E605CEF590FD34C99A401 /* NetworkDispatcher.swift */,
+				8EFFAC8C262DF50B3F59F84EC9538C4B /* Operations */,
+				E1AAE6B0B0A721CEEB31879F71FAD46D /* Request */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		A70FA91C545480A2F4F72A7D25A32FC1 /* UiAds */ = {
+			isa = PBXGroup;
+			children = (
+				94C2AC3059D950AB2BBAF988E7FBC469 /* InterstitialAd.swift */,
+				196FFB115494BE42391C525CAD0E571D /* RewardedAd.swift */,
+			);
+			path = UiAds;
 			sourceTree = "<group>";
 		};
 		AD111BB766B0AAEFA9DE046F6F116602 /* Pods-DramAdsObjcExample */ = {
@@ -330,14 +337,19 @@
 			path = "Target Support Files/Pods-DramAdsObjcExample";
 			sourceTree = "<group>";
 		};
-		C16FB3BF44B8D69E008A1BFD1C02D4AF /* UI */ = {
+		C2726C7D3E57AF3833002A8424BF020A /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				070660D250DC30C0EA3F4C16094BB5FF /* Storyboard.storyboard */,
-				1A5F7B72645751085707106A27A83149 /* Moduls */,
+				98F095BDF5F03E316EFC56696830E71A /* AD */,
+				A6B3A9D52370CDC338C08A7CE6D00415 /* Network */,
+				6B2C686C5EF4FAB904C05C21AC40B0E6 /* Operation */,
+				D417113F92C2E31258E8BE345449CC99 /* Player */,
+				33E7F796E8FB0521B0F996BC213262EA /* Services */,
+				5AC93F3D35CB9F7691F6363979ADA58E /* UI */,
+				EA9114A860298E2D2CAB11712F5B9044 /* Utility */,
 			);
-			name = UI;
-			path = DramAds/Classes/Source/UI;
+			name = Common;
+			path = DramAds/Classes/Source/Common;
 			sourceTree = "<group>";
 		};
 		C2D2EFE2A9D26B88805771615209B52B /* Support Files */ = {
@@ -374,37 +386,38 @@
 			);
 			sourceTree = "<group>";
 		};
-		DA1212E5E2C578867F0690D47FF6D30B /* Operations */ = {
+		D417113F92C2E31258E8BE345449CC99 /* Player */ = {
 			isa = PBXGroup;
 			children = (
-				6EFCFC61237AB52979A01927703ECA0C /* NetworkDataOperation.swift */,
-				D5E77E8626F53894B73E2BEDAC16A12B /* NetworkDownloadOperation.swift */,
-				547E542632E018906A5BCE5EDBCEEABE /* NetworkOperation.swift */,
+				2493D307EB56640AFBD1F05BDAFD4034 /* DMPLayer.swift */,
+				ADAFD0C7E714C424A314B58C355C38A0 /* DMPlayerTimeCalculator.swift */,
+				B6DEA437F0EEE006F33F9632793C66FF /* DMPlayerTimeObserver.swift */,
 			);
-			path = Operations;
+			path = Player;
 			sourceTree = "<group>";
 		};
-		EA3F68B5F736FE61E431ACD265856D4A /* Common */ = {
+		E1AAE6B0B0A721CEEB31879F71FAD46D /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				4E4B4E32F940DB39E673D1BF96FE5745 /* AD */,
-				86E4DE9AA2C2FCD17F7A13399EA69D6F /* Network */,
-				04B8A19153CCAF33B4E0CCA4C368FAA6 /* Operation */,
-				3CFF580EB840C686C76F1DE44363F3DC /* Player */,
-				1A245B65A7129D35A7C7C01303823E33 /* Services */,
-				EB3B0458BE6478822AAF5D0A948132D8 /* UI */,
-				09A54780E2CA82D3C7A93C88DD0564EC /* Utility */,
+				C09E298D16C9AA822F3772F5B8D28903 /* AdRequest.swift */,
+				3D65D937250566B49EB54BC05E64A1E9 /* IDMRequest.swift */,
 			);
-			name = Common;
-			path = DramAds/Classes/Source/Common;
+			path = Request;
 			sourceTree = "<group>";
 		};
-		EB3B0458BE6478822AAF5D0A948132D8 /* UI */ = {
+		EA9114A860298E2D2CAB11712F5B9044 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				67B53E9B6A79D79BE75A70303FCB8798 /* View */,
+				FF1E46A9849EA87022A642E62F73771F /* Decoder.swift */,
+				1157AF5FBA0D92EA5D25BE0D544C5204 /* DmAudioSession.swift */,
+				0BF207D0DC4C24C0B57D82765A64A052 /* DMLocker.swift */,
+				DCB6AD8E648354526338A67CD8F6D2E9 /* Error.swift */,
+				6C0C8701B3F896651FC1C9C78F9EA927 /* Timer.swift */,
+				467671A2390A64847FB72431999A43A0 /* Utility.swift */,
+				366B0F67B92F913B43DA2494B0D6358E /* WeakArray.swift */,
+				506EF14806E6D6977635D410ED8ED639 /* Extensions */,
 			);
-			path = UI;
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		ED517464B894AE78303DCE65C0FAF7C3 /* Pod */ = {
@@ -417,14 +430,24 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
+		FB5BA7477E00BF4FA73A38BE28452AC0 /* Moduls */ = {
+			isa = PBXGroup;
+			children = (
+				2B1EDEA655C77FEC67420668AAE7A947 /* DMNavigationController.swift */,
+				954141B4375F3D737F5BE6CCBA308D1F /* Interstitial */,
+				47405107ABE37F40CBE3694D019932AC /* Rewarded */,
+			);
+			path = Moduls;
+			sourceTree = "<group>";
+		};
 		FBBD8CBDA1A08DC75E280450CFF606DF /* DramAds */ = {
 			isa = PBXGroup;
 			children = (
 				45593F96E2B24859FCD73A8B4957026F /* Dram.swift */,
-				EA3F68B5F736FE61E431ACD265856D4A /* Common */,
+				C2726C7D3E57AF3833002A8424BF020A /* Common */,
 				ED517464B894AE78303DCE65C0FAF7C3 /* Pod */,
 				C2D2EFE2A9D26B88805771615209B52B /* Support Files */,
-				C16FB3BF44B8D69E008A1BFD1C02D4AF /* UI */,
+				42BE03C6281A37812E90E718B3636E49 /* UI */,
 			);
 			name = DramAds;
 			path = ../../..;
@@ -441,11 +464,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		879880A57B211D2BEDD22FF724F3AE02 /* Headers */ = {
+		D70391AA612CF41B97A3C9C574ECBCB9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13299B403B1016F6B1B48BC0737C0504 /* DramAds-umbrella.h in Headers */,
+				FE16DC3FA8AC3C5864103AAE4E2047CC /* DramAds-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,21 +487,21 @@
 			buildRules = (
 			);
 			dependencies = (
-				6FE123AC7174678F1F3558F1F2D16B47 /* PBXTargetDependency */,
+				939A3EA7C4040E2E48AE0AE760832A9F /* PBXTargetDependency */,
 			);
 			name = "Pods-DramAdsObjcExample";
 			productName = Pods_DramAdsObjcExample;
-			productReference = EDCAA414CC8DAB2FB89B838A7E82F46B /* Pods_DramAdsObjcExample.framework */;
+			productReference = EDCAA414CC8DAB2FB89B838A7E82F46B /* Pods-DramAdsObjcExample */;
 			productType = "com.apple.product-type.framework";
 		};
 		80F48A4A9FE6297BA8C56CC0671F5306 /* DramAds */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27647889583E8915E50AD7CAFC4BFA92 /* Build configuration list for PBXNativeTarget "DramAds" */;
+			buildConfigurationList = D72B7A5D18947D7F609A8D075FE95B5F /* Build configuration list for PBXNativeTarget "DramAds" */;
 			buildPhases = (
-				879880A57B211D2BEDD22FF724F3AE02 /* Headers */,
-				B150B39244BC69326D5172D90AEA82DA /* Sources */,
-				71E5BE2D44C68C3E7C55BC237128EBC2 /* Frameworks */,
-				A2EDB6ABDFE9246725F35E8AF7DC890F /* Resources */,
+				D70391AA612CF41B97A3C9C574ECBCB9 /* Headers */,
+				08D39BBF347946A8158A4A09FF3AECB5 /* Sources */,
+				BDD5BBAF10A900642DFE74B4AA90D347 /* Frameworks */,
+				EC6ED92B2228473FEC2658F8C36F1D54 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -486,7 +509,7 @@
 			);
 			name = DramAds;
 			productName = DramAds;
-			productReference = 1DC4260E79EF69FA32DDB67FE81A5DA3 /* DramAds.framework */;
+			productReference = 1DC4260E79EF69FA32DDB67FE81A5DA3 /* DramAds */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -495,9 +518,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -519,7 +541,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A2EDB6ABDFE9246725F35E8AF7DC890F /* Resources */ = {
+		EC6ED92B2228473FEC2658F8C36F1D54 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -536,6 +558,54 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		08D39BBF347946A8158A4A09FF3AECB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DDC4513DF86D1B120E1598C4ECEDA15 /* Ad.swift in Sources */,
+				D8B9D43B716D8BAD99E645E8036C50C8 /* AdRequest.swift in Sources */,
+				ED9608BE3AB31131D91AF222BF315BC7 /* ADService.swift in Sources */,
+				B1E490DA22602BF10B5F626133A2ADD7 /* ADService+NativeAd.swift in Sources */,
+				AB66B899D0E4A510814A17DFDBE23AA9 /* Decoder.swift in Sources */,
+				08D93D60C7BBE0465A7A27C6FB1440FD /* Decoding+Operation.swift in Sources */,
+				92C4E2F28AEBD49D476BD7A0A23541C1 /* Dictionary+Operation.swift in Sources */,
+				777A627C5B45C2DAA1133B80FCCEC16D /* DmAudioSession.swift in Sources */,
+				2EC6972C5331C6534B9340EB86A19A2A /* DMImageService.swift in Sources */,
+				32EBDE9EFD286A929B626455FE96A3A8 /* DMImageServiceOperation.swift in Sources */,
+				4FDF55A94153602FF90C7631E8C229D2 /* DMImageView.swift in Sources */,
+				4D817826585361CC2E08650CED0DC97D /* DMInterstitialAdViewController.swift in Sources */,
+				F86CCE7B996828B99622693EF0B3B943 /* DMLocker.swift in Sources */,
+				ADDB877F4F23CA06C4CAC3DDB84E5310 /* DMNavigationController.swift in Sources */,
+				1F6C8E4853F5E1961EDD4B234EF2CA40 /* DMPLayer.swift in Sources */,
+				800EA276BA13F5561835F5828CDDF536 /* DMPlayerTimeCalculator.swift in Sources */,
+				41397B1A2A8ED39F3CA687CD8329B354 /* DMPlayerTimeObserver.swift in Sources */,
+				CEE5A1288343CDFB8698BB322658CB69 /* DMPlayerView.swift in Sources */,
+				4E20B2D31A607BDF9DA4DF2558BECF72 /* DMRewardedAdViewController.swift in Sources */,
+				A4D2EFF1EE2B1F0B715B67FA95D9756D /* Dram.swift in Sources */,
+				10E3568B69C6ED1E3936EDA5429CF516 /* DramAds-dummy.m in Sources */,
+				2D6A35CE1FDBBACF3867F21C73226E39 /* EpomAd.swift in Sources */,
+				D38F67D6E076E115D4D33796F5062603 /* EpomNativeAd.swift in Sources */,
+				A0C897D42AC49ABA004F2132 /* DMButton.swift in Sources */,
+				233B2B4FDEAC20B36DB4917648D45266 /* Error.swift in Sources */,
+				D343CE55C1F3AE807C23C13429A0033A /* IDMRequest.swift in Sources */,
+				722173540E2BB7A546F3DFC675C82177 /* InterstitialAd.swift in Sources */,
+				310FF7410B6226A44BB2480D08A5EE5F /* NetworkDataOperation.swift in Sources */,
+				81FC337A8D58BFA6B4CDA49B5F168372 /* NetworkDispatcher.swift in Sources */,
+				36916AA258D88D09C3D4B24B54C6E49E /* NetworkDownloadOperation.swift in Sources */,
+				DD763803A8F50DD471EAC6B51656D807 /* NetworkOperation.swift in Sources */,
+				DCCB913A69E31E022B23F6FEA7FB4C29 /* Operation.swift in Sources */,
+				56914E1FD4E855B812B3B4E796DDC6BC /* OperationBase.swift in Sources */,
+				7DB649FDF72F7BC7EE8E3CE8CECAC221 /* OperationManager.swift in Sources */,
+				03A1ACCD0017B2A601EBAA1F58EB5E32 /* OperationQueue.swift in Sources */,
+				FF4300F77D90C108F9B563C863E6A8C9 /* RewardedAd.swift in Sources */,
+				5682B80ABD6A21FE7FD50EA4F1CD655A /* Storyboard.storyboard in Sources */,
+				5A909DE505C980CC0B7E7394901C244A /* String+Operation.swift in Sources */,
+				AD81783A171312937940A46337AE1EFA /* Timer.swift in Sources */,
+				D61AD98F28A6354F4BCB239EE4C9A2F6 /* Utility.swift in Sources */,
+				541E75E65371217A9451A7C0B4F99C46 /* WeakArray.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		56245CFF58310A9CD1DBDDB58464F478 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -544,66 +614,58 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B150B39244BC69326D5172D90AEA82DA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7E800B6550B4DB5A706293619479E66A /* Ad.swift in Sources */,
-				7C84B89729B1A43E841F661B12F53D84 /* AdRequest.swift in Sources */,
-				98E75EDE33F1FE36447610E8532044C7 /* ADService.swift in Sources */,
-				988896585A4D6293BAF15013DCF158B4 /* ADService+NativeAd.swift in Sources */,
-				311DBEA1A27A23F7F2DB0E5F68DAE319 /* Decoder.swift in Sources */,
-				069AB5B95DFC95E13B5641A0A709B343 /* Decoding+Operation.swift in Sources */,
-				7938EBC8818F2028BD86F542FE857F87 /* Dictionary+Operation.swift in Sources */,
-				7E73C728B92F56C282D2208626D45818 /* DmAudioSession.swift in Sources */,
-				75B667B08B047F7A459011330F78CBA8 /* DMImageService.swift in Sources */,
-				60104ED6B0A8FE73FED8AD38B4FFBD55 /* DMImageServiceOperation.swift in Sources */,
-				ECEEED24809E922787EB582E2FA80B85 /* DMImageView.swift in Sources */,
-				481A78C7A12B54A744C69F50556A1888 /* DMLocker.swift in Sources */,
-				053E5EE0F781CCDFAF161A3754124DB3 /* DMNavigationController.swift in Sources */,
-				E8AED945D961B7D6AB9FFFBA4B077E83 /* DMPLayer.swift in Sources */,
-				31EFF948E54202ED8E638A43552E27A3 /* DMPlayerTimeObserver.swift in Sources */,
-				1FB6D42D16CADC5D9AED585B674DE685 /* DMPlayerView.swift in Sources */,
-				AB43472109F3D0BD2420056F56473D2F /* DMRewardedAdViewController.swift in Sources */,
-				19DAB2422FD27C9182ECC320F6524336 /* Dram.swift in Sources */,
-				47589D58CB6C37F4815026344B1DA2AE /* DramAds-dummy.m in Sources */,
-				F1ECFB460090E47167121166C668251F /* EpomAd.swift in Sources */,
-				C8BBDF288884980DE1C92522E3080416 /* EpomNativeAd.swift in Sources */,
-				BC510089F9AA46BECBCF4D0AA7368442 /* Error.swift in Sources */,
-				F21953C5D4B791DBF6A0C81B14035343 /* IDMRequest.swift in Sources */,
-				8DD1CD9B31BFB43A060DF266C7AB8951 /* NetworkDataOperation.swift in Sources */,
-				A95AD30A0DA356F68B6F3609D78E4BA5 /* NetworkDispatcher.swift in Sources */,
-				FED1F7D612CBCDAE87A0EFB6CD1CF0F5 /* NetworkDownloadOperation.swift in Sources */,
-				96CE1A2576C64F329B285BEB1B4B83ED /* NetworkOperation.swift in Sources */,
-				2E35EDF06D33798FBEDBDEB079E5AE8B /* Operation.swift in Sources */,
-				A98DEB3CBB8F0EF514234762929EBB06 /* OperationBase.swift in Sources */,
-				7318BAFC547CA34FBA29C577A160CFBD /* OperationManager.swift in Sources */,
-				4A44099DFF5E61FDCD00A5F6C2E35F9D /* OperationQueue.swift in Sources */,
-				83D09CCD69087B6DE9C3BF0EF448BA03 /* RewardedAd.swift in Sources */,
-				1B78A59661511E52BA14EA6CE76537F3 /* Storyboard.storyboard in Sources */,
-				DF60DC81FAB7908AFBCB498C0DEE75DB /* String+Operation.swift in Sources */,
-				BC16A11F675F444981C909D4EB421F4B /* Utility.swift in Sources */,
-				373F159C6C5B7A8BB91392FB29D22669 /* WeakArray.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6FE123AC7174678F1F3558F1F2D16B47 /* PBXTargetDependency */ = {
+		939A3EA7C4040E2E48AE0AE760832A9F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DramAds;
 			target = 80F48A4A9FE6297BA8C56CC0671F5306 /* DramAds */;
-			targetProxy = 201B551499FA3DEC890ED077A8EAA385 /* PBXContainerItemProxy */;
+			targetProxy = BE6EB6BC1E104FA2F8DC49ABA59FD652 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		87A92DDB4B50A8E50D5CE667A9859A71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6973B333A95FD80A45F7ACCE03EF1031 /* DramAds.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DramAds/DramAds-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DramAds/DramAds-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DramAds/DramAds.modulemap";
+				PRODUCT_MODULE_NAME = DramAds;
+				PRODUCT_NAME = DramAds;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -635,11 +697,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -660,6 +720,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -671,7 +732,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -703,11 +763,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -724,6 +782,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
@@ -735,15 +794,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FBFAF53EF5D9A7F7E41BCE05473A7486 /* Pods-DramAdsObjcExample.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-DramAdsObjcExample/Pods-DramAdsObjcExample-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -754,8 +814,6 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-DramAdsObjcExample/Pods-DramAdsObjcExample.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -769,18 +827,19 @@
 			};
 			name = Debug;
 		};
-		DC070C3DE33D6DDE0111EC2B10B4962E /* Release */ = {
+		D5EB02A9781248E31BAFE68FAD12D856 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6973B333A95FD80A45F7ACCE03EF1031 /* DramAds.release.xcconfig */;
+			baseConfigurationReference = 02805095A2493263F64A1651C3550AEF /* DramAds.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/DramAds/DramAds-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/DramAds/DramAds-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -791,8 +850,6 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "Target Support Files/DramAds/DramAds.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_MODULE_NAME = DramAds;
 				PRODUCT_NAME = DramAds;
 				SDKROOT = iphoneos;
@@ -800,25 +857,25 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		E2A193FF10591678F14AD6F757B2C971 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 472A3EA474374B4AB8A357EF591E5962 /* Pods-DramAdsObjcExample.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-DramAdsObjcExample/Pods-DramAdsObjcExample-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -829,8 +886,6 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-DramAdsObjcExample/Pods-DramAdsObjcExample.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -844,42 +899,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		EE0067AA7F34A033995E5B3242D248AC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02805095A2493263F64A1651C3550AEF /* DramAds.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DramAds/DramAds-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DramAds/DramAds-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/DramAds/DramAds.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				PRODUCT_MODULE_NAME = DramAds;
-				PRODUCT_NAME = DramAds;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -893,20 +912,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		27647889583E8915E50AD7CAFC4BFA92 /* Build configuration list for PBXNativeTarget "DramAds" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EE0067AA7F34A033995E5B3242D248AC /* Debug */,
-				DC070C3DE33D6DDE0111EC2B10B4962E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
 				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D72B7A5D18947D7F609A8D075FE95B5F /* Build configuration list for PBXNativeTarget "DramAds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5EB02A9781248E31BAFE68FAD12D856 /* Debug */,
+				87A92DDB4B50A8E50D5CE667A9859A71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

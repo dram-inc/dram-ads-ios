@@ -12,7 +12,7 @@ class DMRewardedAdViewController: UIViewController {
     @IBOutlet weak private var playerView: DMPlayerView!
     @IBOutlet weak private var imageView: DMImageView!
     @IBOutlet weak private var loadingView: UIActivityIndicatorView!
-    @IBOutlet weak private var closeButton: UIBarButtonItem!
+    @IBOutlet weak private var closeButton: UIButton!
     
     private var isFinishedAd: Bool = false
     private let player = DMPlayer()
@@ -36,10 +36,11 @@ class DMRewardedAdViewController: UIViewController {
         self.playerView.player = self.player.player
         self.player.delegate = self
         self.drawAd()
-        self.addSubscribers()
+        self.closeButton.isEnabled = false
+        self.addNotifications()
     }
     
-    private func addSubscribers() {
+    private func addNotifications() {
         NotificationCenter.default.addObserver(self, selector: #selector(willEnterForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
     }
     
@@ -61,12 +62,10 @@ class DMRewardedAdViewController: UIViewController {
     
     private func sendImpression() {
         self.ad.sendImpression { [weak self] result in
-            switch result {
-            case .success(_):
-                self?.closeButton.isEnabled = true
-            case .failure(_):
-                self?.closeButton.isEnabled = true
-            }
+            self?.closeButton.isEnabled = true
+            self?.closeButton.setTitle(nil, for: .normal)
+            self?.closeButton.backgroundColor = .clear
+            self?.closeButton.sizeToFit()
         }
     }
     
@@ -87,7 +86,12 @@ class DMRewardedAdViewController: UIViewController {
 
 extension DMRewardedAdViewController: DMPlayerDelegate {
     
-    func player(didChangeTime player: DMPlayer, time: TimeInterval) {}
+    func player(didChangeTime player: DMPlayer, time: TimeInterval) {
+        let time = Int(max(.zero, player.duration - time))
+        let title = time == .zero ? "Reward" : "Reward \(time)"
+        self.closeButton.setTitle(title, for: .normal)
+        self.closeButton.sizeToFit()
+    }
     
     func player(didChangeStatus player: DMPlayer, status: DMPlayer.Status) {}
     

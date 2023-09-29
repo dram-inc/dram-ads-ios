@@ -1,73 +1,77 @@
 //
-//  RewardedAd.swift
-//  DramAdsIosSdk
+//  InterstitialAD.swift
+//  DramAds
 //
-//  Created by Khoren Asatryan on 05.09.23.
+//  Created by Khoren Asatryan on 24.09.23.
 //
 
-import UIKit
+import Foundation
 
-/// RewardedAdDelegate
-@objc public protocol DMRewardedAdDelegate: NSObjectProtocol {
+@objc public protocol DMInterstitialAdDelegate: NSObjectProtocol {
     
     /// Is called when ad starting playing
     /// - Parameters:
-    ///     - ad: RewardedAd
-    @objc(rewardedAdDidStartPlaying:) optional func rewardedAd(didStartPlaying ad: DM.RewardedAd)
+    ///     - ad: InterstitialAd
+    @objc(interstitialAdDidStartPlaying:) optional func interstitialAd(didStartPlaying ad: DM.InterstitialAd)
     
     /// Is called when sended impression for ad
     /// - Parameters:
-    ///     - ad: RewardedAd
+    ///     - ad: InterstitialAd
     ///     - error: Request error
-    @objc(rewardedAdDidSendImpression:error:) optional func rewardedAd(didSendImpression ad: DM.RewardedAd, error: DM.ADService.AdError?)
+    @objc(interstitialAdDidSendImpression:error:) optional func interstitialAd(didSendImpression ad: DM.InterstitialAd, error: DM.ADService.AdError?)
     
     /// Is called when clicked ad
     /// - Parameters:
-    ///     - ad: RewardedAd
-    @objc(rewardedAdDidClicked:) optional func rewardedAd(didClicked ad: DM.RewardedAd)
+    ///     - ad: InterstitialAd
+    @objc(interstitialAdDidClicked:) optional func interstitialAd(didClicked ad: DM.InterstitialAd)
     
     /// Is called when  ad did completed
     /// - Parameters:
-    ///     - ad: RewardedAd
+    ///     - ad: InterstitialAd
     ///     - error: Request error
-    @objc(rewardedAdDidCompleted:error:) optional func rewardedAd(didCompleted ad: DM.RewardedAd, error: DM.ADService.AdError?)
+    @objc(interstitialAdDidCompleted:error:) optional func interstitialAd(didCompleted ad: DM.InterstitialAd, error: DM.ADService.AdError?)
+    
+    /// Is called when  ad did skiped
+    /// - Parameters:
+    ///     - ad: InterstitialAd
+    @objc(interstitialAdDidSkiped:) optional func interstitialAd(didSkiped ad: DM.InterstitialAd)
 }
 
-@objc public protocol DMRewardedAdUIDataSource: AnyObject {
-    @objc(rewardedAdShouldAutorotate:) optional func rewardedAd(shouldAutorotate ad: DM.RewardedAd) -> Bool
-    @objc(rewardedAdSupportedInterfaceOrientations:) optional func rewardedAd(supportedInterfaceOrientations ad: DM.RewardedAd) -> UIInterfaceOrientationMask
-    @objc(rewardedAdPreferredInterfaceOrientationForPresentation:) optional func rewardedAd(preferredInterfaceOrientationForPresentation ad: DM.RewardedAd) -> UIInterfaceOrientation
-}
 
 public extension DM {
     
-    @objc(DMRewardedAd)
-    class RewardedAd: NSObject {
+    @objc(DMInterstitialAd)
+    class InterstitialAd: NSObject {
         
         let image: DM.Ad.Image?
-        let video: DM.Ad.Video
+        let video: DM.Ad.Video?
+        let skipTime: TimeInterval?
         private let impressionUrl: URL?
         private let clickUrl: URL?
-        private var isSendedImpression: Bool = false
+        private(set) var isSendedImpression: Bool = false
         
         @objc public let bannerId: Int
         @objc public let placementId: Int
         @objc public let placementKey: String?
         
-        @objc public weak var delegate: DMRewardedAdDelegate?
-        @objc public weak var uiDataSource: DMRewardedAdUIDataSource?
-
+        @objc weak public var delegate: DMInterstitialAdDelegate?
+        
         init(ad: DM.NativeAd, placementKey: String?) throws {
-            guard let video = ad.videos?.first, let bannerId = ad.bannerId, let placementId = ad.placementId else {
+            guard let bannerId = ad.bannerId, let placementId = ad.placementId else {
                 throw DM.ADService.AdError.configurationError
             }
             self.impressionUrl = ad.beacons?.first(where: { $0.type == .impression })?.url
             self.clickUrl = ad.clickUrl
             self.image = ad.images?.first
-            self.video = video
+            self.video = ad.videos?.first
             self.placementId = placementId
             self.bannerId = bannerId
             self.placementKey = placementKey
+            if let time = ad.customization?["skip_time"] as? String {
+                self.skipTime = TimeInterval(time)
+            } else {
+                self.skipTime = nil
+            }
         }
         
         func sendImpression(callBack: @escaping DM.ResultCallBack<Void>) {
@@ -84,7 +88,6 @@ public extension DM {
             self.isSendedImpression = true
             let request = DM.Request(url: impressionUrl)
             DM.shared.network.request(string: request) { [weak self] result in
-                
                 switch result {
                 case .success(_):
                     DispatchQueue.main.async {
@@ -93,8 +96,7 @@ public extension DM {
                         guard let self = self else {
                             return
                         }
-                        self.delegate?.rewardedAd?(didSendImpression: self, error: nil)
-                        
+                        self.delegate?.interstitialAd?(didSendImpression: self, error: nil)
                     }
                 case .failure(let error):
                     DispatchQueue.main.async {
@@ -104,14 +106,13 @@ public extension DM {
                         guard let self = self else {
                             return
                         }
-                        self.delegate?.rewardedAd?(didSendImpression: self, error: DM.ADService.AdError(error: error))
+                        self.delegate?.interstitialAd?(didSendImpression: self, error: DM.ADService.AdError(error: error))
                     }
                 }
             }
         }
         
         func adClick(callBack: @escaping DM.ResultCallBack<Void>) {
-            
             guard let clickUrl = self.clickUrl, UIApplication.shared.canOpenURL(clickUrl) else {
                 callBack(.failure(error: DMError.notFound))
                 return
@@ -121,14 +122,12 @@ public extension DM {
                     callBack(.failure(error: DMError.notFound))
                     return
                 }
-                
                 callBack(.success(result: Void()))
                 guard let self = self else {
                     return
                 }
-                self.delegate?.rewardedAd?(didClicked: self)
+                self.delegate?.interstitialAd?(didClicked: self)
             }
-            
         }
         
         func addDidCompleted(error: IDMError?) {
@@ -136,18 +135,22 @@ public extension DM {
             if let error = error {
                 myError = .init(error: error)
             }
-            self.delegate?.rewardedAd?(didCompleted: self, error: myError)
+            self.delegate?.interstitialAd?(didCompleted: self, error: myError)
         }
         
         func didStartPlaying() {
-            self.delegate?.rewardedAd?(didStartPlaying: self)
+            self.delegate?.interstitialAd?(didStartPlaying: self)
+        }
+        
+        func didSkiped() {
+            self.delegate?.interstitialAd?(didSkiped: self)
         }
         
     }
     
 }
 
-public extension DM.RewardedAd {
+public extension DM.InterstitialAd {
 
     /// Loaded RewardedAd for configuration
     /// - Parameters:
@@ -155,13 +158,13 @@ public extension DM.RewardedAd {
     ///   - response: have 2 case success with RewardedAd and failure with IDMError
     /// - Returns: IDMNetworkOperation? for  cancel request any time
     @discardableResult
-    class func load(config: DM.AdRequest.Configuration, response: @escaping (DM.Result<DM.RewardedAd>) -> Void) -> IDMNetworkOperation? {
+    class func load(config: DM.AdRequest.Configuration, response: @escaping (DM.Result<DM.InterstitialAd>) -> Void) -> IDMNetworkOperation? {
        
         DM.shared.adService.load(nativeAd: config) { result in
             switch result {
             case .success(let nativeAd):
                 do {
-                    let ad = try DM.RewardedAd(ad: nativeAd, placementKey: config.placementIdentifier)
+                    let ad = try DM.InterstitialAd(ad: nativeAd, placementKey: config.placementIdentifier)
                     response(.success(result: ad))
                 } catch {
                     let error = DM.DMError.error(error: error)
@@ -178,25 +181,25 @@ public extension DM.RewardedAd {
     ///   - placementKey: identifier placement
     /// - Returns: IDMNetworkOperation? for  cancel request any time
     @discardableResult
-    class func load(placementKey: String, response: @escaping (DM.Result<DM.RewardedAd>) -> Void) -> IDMNetworkOperation? {
+    class func load(placementKey: String, response: @escaping (DM.Result<DM.InterstitialAd>) -> Void) -> IDMNetworkOperation? {
         let config = DM.AdRequest.Configuration(default: placementKey)
         return self.load(config: config, response: response)
     }
 
     @objc
     func show(in viewController: UIViewController) {
-        let vc = DMRewardedAdViewController.create(ad: self)
+        let vc = DMInterstitialAdViewController.create(ad: self)
         viewController.showDetailViewController(vc, sender: nil)
     }
     
 }
 
 @available (swift, obsoleted: 1)
-public extension DM.RewardedAd {
+public extension DM.InterstitialAd {
     
     ///Load and return ad give placementKey
     @discardableResult
-    @objc class func loadAd(placementKey: String, success: @escaping (DM.RewardedAd) -> Void, failure: @escaping (DM.ADService.AdError) -> Void) -> IDMNetworkOperation? {
+    @objc class func loadAd(placementKey: String, success: @escaping (DM.InterstitialAd) -> Void, failure: @escaping (DM.ADService.AdError) -> Void) -> IDMNetworkOperation? {
         return self.load(placementKey: placementKey) { result in
             switch result {
             case .success(let ad):
@@ -209,7 +212,7 @@ public extension DM.RewardedAd {
     
     ///Load and return ad give config
     @discardableResult
-    @objc class func loadAd(config: DM.AdRequest.Configuration, success: @escaping (DM.RewardedAd) -> Void, failure: @escaping (DM.ADService.AdError) -> Void) -> IDMNetworkOperation? {
+    @objc class func loadAd(config: DM.AdRequest.Configuration, success: @escaping (DM.InterstitialAd) -> Void, failure: @escaping (DM.ADService.AdError) -> Void) -> IDMNetworkOperation? {
         return self.load(config: config) { result in
             switch result {
             case .success(let ad):

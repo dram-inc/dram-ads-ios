@@ -14,6 +14,7 @@
 		A0111FFA2AB90F7800FC9869 /* DramAdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0111FF92AB90F7800FC9869 /* DramAdsViewController.swift */; };
 		A0111FFD2AB910E600FC9869 /* RewardedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0111FFC2AB910E600FC9869 /* RewardedViewController.swift */; };
 		A070E5E22AB9017200875E5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A070E5E12AB9017200875E5E /* Main.storyboard */; };
+		A09000402AC0934800EAEAE2 /* InterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A090003F2AC0934800EAEAE2 /* InterstitialViewController.swift */; };
 		A0E4688C2ABCB4880047515F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A0E468892ABCB4880047515F /* LICENSE */; };
 		A0E4688D2ABCB4880047515F /* DramAds.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A0E4688A2ABCB4880047515F /* DramAds.podspec */; };
 		A0E4688E2ABCB4880047515F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A0E4688B2ABCB4880047515F /* README.md */; };
@@ -45,6 +46,7 @@
 		A0111FF92AB90F7800FC9869 /* DramAdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DramAdsViewController.swift; sourceTree = "<group>"; };
 		A0111FFC2AB910E600FC9869 /* RewardedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardedViewController.swift; sourceTree = "<group>"; };
 		A070E5E12AB9017200875E5E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A090003F2AC0934800EAEAE2 /* InterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialViewController.swift; sourceTree = "<group>"; };
 		A0E468892ABCB4880047515F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
 		A0E4688A2ABCB4880047515F /* DramAds.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = DramAds.podspec; path = ../../DramAds.podspec; sourceTree = "<group>"; };
 		A0E4688B2ABCB4880047515F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				A0111FFC2AB910E600FC9869 /* RewardedViewController.swift */,
+				A090003F2AC0934800EAEAE2 /* InterstitialViewController.swift */,
 			);
 			path = Ads;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A09000402AC0934800EAEAE2 /* InterstitialViewController.swift in Sources */,
 				A0111FFA2AB90F7800FC9869 /* DramAdsViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				A0111FFD2AB910E600FC9869 /* RewardedViewController.swift in Sources */,

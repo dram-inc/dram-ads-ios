@@ -26,12 +26,12 @@ extension DM {
         }
         
         func response(value: T) {
-            let result = Result.success(value)
+            let result = Result.success(result: value)
             self.response(result)
         }
         
         func response(error: IDMError) {
-            let result = Result<T>.failure(error)
+            let result = Result<T>.failure(error: error)
             self.response(result)
         }
         

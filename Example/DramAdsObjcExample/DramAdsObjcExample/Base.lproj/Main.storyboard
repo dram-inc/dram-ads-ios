@@ -60,6 +60,47 @@
                                             <segue destination="Lp8-9H-K2y" kind="show" id="RoM-sK-SSY"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Pr1-pT-Y35">
+                                        <rect key="frame" x="0.0" y="94.333332061767578" width="393" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pr1-pT-Y35" id="Rqx-c4-KpE">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interstitial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGc-3H-avc">
+                                                    <rect key="frame" x="20" y="12" width="74.666666666666671" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="a3M-sz-2Xx">
+                                                    <rect key="frame" x="353.33333333333331" y="15.333333333333332" width="19.666666666666686" height="14.666666666666664"/>
+                                                    <color key="tintColor" systemColor="placeholderTextColor"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bl2-ra-drd" userLabel="Seperator">
+                                                    <rect key="frame" x="20" y="44" width="353" height="1"/>
+                                                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="DWl-gf-GC6"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="a3M-sz-2Xx" firstAttribute="centerY" secondItem="Rqx-c4-KpE" secondAttribute="centerY" id="6Ha-nh-6sB"/>
+                                                <constraint firstAttribute="trailing" secondItem="Bl2-ra-drd" secondAttribute="trailing" constant="20" id="7en-vq-AxE"/>
+                                                <constraint firstAttribute="trailing" secondItem="a3M-sz-2Xx" secondAttribute="trailing" constant="20" id="9ay-pz-hp0"/>
+                                                <constraint firstItem="Bl2-ra-drd" firstAttribute="leading" secondItem="Rqx-c4-KpE" secondAttribute="leading" constant="20" id="adW-sf-1Yp"/>
+                                                <constraint firstAttribute="bottom" secondItem="Bl2-ra-drd" secondAttribute="bottom" id="blv-mn-Hu1"/>
+                                                <constraint firstItem="dGc-3H-avc" firstAttribute="leading" secondItem="Rqx-c4-KpE" secondAttribute="leading" constant="20" id="q09-lo-JvF"/>
+                                                <constraint firstItem="dGc-3H-avc" firstAttribute="top" secondItem="Rqx-c4-KpE" secondAttribute="top" constant="12" id="sHc-A8-c5H"/>
+                                                <constraint firstAttribute="bottom" secondItem="dGc-3H-avc" secondAttribute="bottom" constant="12" id="tm8-Mw-HTv"/>
+                                                <constraint firstItem="a3M-sz-2Xx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dGc-3H-avc" secondAttribute="trailing" constant="8" id="zck-Pj-N6M"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="AZ4-Bf-a6t" kind="show" id="v4G-3c-H9l"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -108,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="17N-G0-jsN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2414.5038167938928" y="38.732394366197184"/>
+            <point key="canvasLocation" x="2224" y="777"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oVN-6e-Mr5">
@@ -126,6 +167,42 @@
             </objects>
             <point key="canvasLocation" x="687" y="39"/>
         </scene>
+        <!--Interstitial-->
+        <scene sceneID="rhJ-jq-8jx">
+            <objects>
+                <viewController id="AZ4-Bf-a6t" customClass="InterstitialViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="En8-oQ-5KP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQY-l7-elG">
+                                <rect key="frame" x="143.66666666666666" y="407" width="106" height="38"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="8" maxX="20" maxY="8"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Load Ad">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" systemColor="separatorColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectLoadAdButton:" destination="AZ4-Bf-a6t" eventType="touchUpInside" id="vtm-6G-Rx9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="k6o-Vz-hy8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MQY-l7-elG" firstAttribute="centerY" secondItem="En8-oQ-5KP" secondAttribute="centerY" id="ZdW-F9-AgJ"/>
+                            <constraint firstItem="MQY-l7-elG" firstAttribute="centerX" secondItem="En8-oQ-5KP" secondAttribute="centerX" id="pAv-If-qn6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Interstitial" id="cR2-Rq-AFV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D6f-gk-DoY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773" y="777"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow.right" catalog="system" width="128" height="95"/>
@@ -133,13 +210,13 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="placeholderTextColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="separatorColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
