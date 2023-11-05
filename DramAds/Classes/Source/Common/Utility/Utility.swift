@@ -38,9 +38,9 @@ extension DM {
             var url: String {
                 switch type {
                 case .demo:
-                    return "https://ads.epomtestsite.com"
+                    return "https://demoad.justdram.com"
                 case .live:
-                    return "https://ads.epomtestsite.com"
+                    return "https://ad.justdram.com"
                 }
             }
             

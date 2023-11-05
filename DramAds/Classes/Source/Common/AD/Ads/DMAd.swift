@@ -77,11 +77,11 @@ public extension DM.Ad {
         var path: String {
             switch self {
             case .site, .nonStandart:
-                return "ads-api-v3"
+                return "placement/banner"
             case .video:
                 return ""
             case .native:
-                return "ads-api-native"
+                return "placement/native"
             }
         }
         
