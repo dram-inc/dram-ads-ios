@@ -18,7 +18,7 @@ import UIKit
             guard let url = URL(string: urlStr) else {
                 throw DMError.incorrectUrl
             }
-            super.init(url: url, method: .post, queryParams: configuration.culculate())
+            super.init(url: url, method: .post, params: configuration.culculate())
         }
         
     }
